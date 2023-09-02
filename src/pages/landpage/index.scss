@@ -10,6 +10,7 @@
         align-items: center;
         justify-content: center;
 
+        padding: 20px;
         padding-top: 82px;
         padding-bottom: 130px;
 
@@ -17,82 +18,155 @@
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: center bottom;
+
+        .container-tela
+        {
+            width: 100%;
+            max-width: 1250px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 40px;
+
+            > div
+            {
+                display: flex;
+                flex-direction: column;
+                color: #33215B;
+                align-items: flex-end;
+                text-align: right;
+            }
+
+            h1
+            {
+                font-size: clamp(49px, 3.4vw, 65px);
+                font-weight: 700;
+                margin-bottom: 8px;
+            }
+
+            h2
+            {
+                font-size: clamp(45px, 3.1vw, 60px);
+                font-weight: 400;
+                margin-bottom: 24px;
+            }
+            
+            a
+            {
+                font-size: clamp(24px, 1.6vw, 32px);
+                font-weight: 700;
+                text-transform: uppercase;
+                text-decoration: none;
+
+                padding: 30px clamp(40px, 3vw, 58px);
+                color: #FFF;
+                background-color: #EA3849;
+                border-radius: 10px;
+            }
+
+            .data
+            {
+                background-color: #FFB354;
+                color: #FFF;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+
+                padding: 0 9vw;
+
+                h3
+                {
+                    font-size: clamp(37px, 2.5vw, 50px);
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+
+                h4
+                {
+                    font-size: clamp(30px, 2vw, 40px);
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    margin-bottom: 7px;
+                }
+
+                p
+                {
+                    font-size: clamp(24px, 1.6vw, 32px);
+                    font-weight: 500;
+                }
+            }
+        }
     }
 
-    .container-inicio
+    .sec-tempo
     {
-        width: 100%;
-        max-width: 1250px;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 40px;
+        align-items: center;
+        padding: 50px 20px;
 
-        > div
+        background-color: #A8DAEA;
+
+        .container-tela
         {
             display: flex;
             flex-direction: column;
-            color: #33215B;
-            align-items: flex-end;
-            text-align: right;
+            align-items: center;
+            gap: 16px;
+
+            max-width: 1140px;
+            width: 100%;
         }
 
         h1
         {
-            font-size: clamp(49px, 3.4vw, 65px);
-            font-weight: 700;
-            margin-bottom: 8px;
-        }
-
-        h2
-        {
-            font-size: clamp(45px, 3vw, 60px);
-            font-weight: 400;
-            margin-bottom: 24px;
-        }
-        
-        a
-        {
-            font-size: clamp(24px, 1.5vw, 32px);
+            font-size: 40px;
             font-weight: 700;
             text-transform: uppercase;
-            text-decoration: none;
-
-            padding: 30px clamp(40px, 3.25vw, 58px);
-            color: #FFF;
-            background-color: #EA3849;
-            border-radius: 10px;
+            color: #33215B;
         }
 
-        .data
+        .contador
         {
-            background-color: #FFB354;
-            color: #FFF;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
+            width: 100%;
+            padding: 50px 4vw;
+            gap: 20px;
 
-            padding: 0 100px;
+            display: flex;
+            justify-content: space-between;
 
-            h3
+            background-color: rgba($color: #0EB2C8, $alpha: 0.3);
+            box-shadow: 0 4px 4px 0 rgba($color: #000000, $alpha: 0.25);
+            border-radius: 10px;
+
+            > div
             {
-                font-size: clamp(37px, 2.5vw, 50px);
-                font-weight: 600;
-                text-transform: uppercase;
-            }
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
 
-            h4
-            {
-                font-size: clamp(30px, 2vw, 40px);
-                font-weight: 700;
-                text-transform: uppercase;
-                margin-bottom: 7px;
-            }
+                color: #FFF;
+                background-color: #00BDCE;
+                border-radius: 13px;
+                box-shadow: 0 2px 4px 2px rgba($color: #000000, $alpha: 0.15);
 
-            p
-            {
-                font-size: clamp(24px, 1.5vw, 32px);
-                font-weight: 500;
+                width: 100%;
+                max-width: 200px;
+                padding: 16px 50px;
+
+                h3
+                {
+                    font-size: clamp(49px, 3.4vw, 65px);
+                    font-weight: 700;
+                }
+
+                h4
+                {
+                    font-size: 25px;
+                    font-weight: 500;
+                }
             }
         }
     }
