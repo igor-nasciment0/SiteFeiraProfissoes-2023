@@ -1,0 +1,99 @@
+.pagina-landpage
+{
+    display: flex;
+    flex-direction: column;
+
+    .sec-inicio
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        padding-top: 82px;
+        padding-bottom: 130px;
+
+        background-image: url('../../../public/assets/images/background-quadrados.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+
+    .container-inicio
+    {
+        width: 100%;
+        max-width: 1250px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+
+        > div
+        {
+            display: flex;
+            flex-direction: column;
+            color: #33215B;
+            align-items: flex-end;
+            text-align: right;
+        }
+
+        h1
+        {
+            font-size: clamp(49px, 3.4vw, 65px);
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        h2
+        {
+            font-size: clamp(45px, 3vw, 60px);
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+        
+        a
+        {
+            font-size: clamp(24px, 1.5vw, 32px);
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            padding: 30px clamp(40px, 3.25vw, 58px);
+            color: #FFF;
+            background-color: #EA3849;
+            border-radius: 10px;
+        }
+
+        .data
+        {
+            background-color: #FFB354;
+            color: #FFF;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+
+            padding: 0 100px;
+
+            h3
+            {
+                font-size: clamp(37px, 2.5vw, 50px);
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+
+            h4
+            {
+                font-size: clamp(30px, 2vw, 40px);
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 7px;
+            }
+
+            p
+            {
+                font-size: clamp(24px, 1.5vw, 32px);
+                font-weight: 500;
+            }
+        }
+    }
+}
