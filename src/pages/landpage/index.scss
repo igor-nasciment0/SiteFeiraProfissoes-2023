@@ -11,8 +11,8 @@
         justify-content: center;
 
         padding: 20px;
-        padding-top: 82px;
-        padding-bottom: 130px;
+        padding-top: 68px;
+        padding-bottom: 110px;
 
         background-image: url('../../../public/assets/images/background-quadrados.png');
         background-size: 100%;
@@ -22,7 +22,7 @@
         .container-tela
         {
             width: 100%;
-            max-width: 1250px;
+            max-width: 1140px;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -39,26 +39,26 @@
 
             h1
             {
-                font-size: clamp(49px, 3.4vw, 65px);
+                font-size: 49px;
                 font-weight: 700;
                 margin-bottom: 8px;
             }
 
             h2
             {
-                font-size: clamp(45px, 3.1vw, 60px);
+                font-size: 45px;
                 font-weight: 400;
                 margin-bottom: 24px;
             }
             
             a
             {
-                font-size: clamp(24px, 1.6vw, 32px);
+                font-size: 24px;
                 font-weight: 700;
                 text-transform: uppercase;
                 text-decoration: none;
 
-                padding: 30px clamp(40px, 3vw, 58px);
+                padding: 30px 43px;
                 color: #FFF;
                 background-color: #EA3849;
                 border-radius: 10px;
@@ -72,18 +72,18 @@
                 align-items: center;
                 justify-content: center;
 
-                padding: 0 9vw;
+                padding: 0 90px;
 
                 h3
                 {
-                    font-size: clamp(37px, 2.5vw, 50px);
+                    font-size: 37px;
                     font-weight: 600;
                     text-transform: uppercase;
                 }
 
                 h4
                 {
-                    font-size: clamp(30px, 2vw, 40px);
+                    font-size: 30px;
                     font-weight: 700;
                     text-transform: uppercase;
                     margin-bottom: 7px;
@@ -91,7 +91,7 @@
 
                 p
                 {
-                    font-size: clamp(24px, 1.6vw, 32px);
+                    font-size: 24px;
                     font-weight: 500;
                 }
             }
@@ -104,7 +104,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 50px 20px;
+        padding: 40px 20px;
 
         background-color: #A8DAEA;
 
@@ -121,7 +121,7 @@
 
         h1
         {
-            font-size: 40px;
+            font-size: 35px;
             font-weight: 700;
             text-transform: uppercase;
             color: #33215B;
@@ -130,6 +130,7 @@
         .contador
         {
             width: 100%;
+            max-width: 900px;
             padding: 50px 4vw;
             gap: 20px;
 
@@ -149,25 +150,189 @@
 
                 color: #FFF;
                 background-color: #00BDCE;
-                border-radius: 13px;
+                border-radius: 10px;
                 box-shadow: 0 2px 4px 2px rgba($color: #000000, $alpha: 0.15);
 
                 width: 100%;
-                max-width: 200px;
+                max-width: 150px;
                 padding: 16px 50px;
 
                 h3
                 {
-                    font-size: clamp(49px, 3.4vw, 65px);
+                    font-size: 49px;
                     font-weight: 700;
                 }
 
                 h4
                 {
-                    font-size: 25px;
+                    font-size: 20px;
                     font-weight: 500;
                 }
             }
+        }
+    }
+
+    .sec-sobre
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .container-tela
+        {
+            width: 100%;
+            max-width: 1140px;
+            padding: 60px 20px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            h2
+            {
+                color: #33215B;
+                font-size: 27px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            h3
+            {
+                color: #999999;
+                font-size: 22px;
+                font-weight: 700;
+                text-transform: uppercase;
+
+                margin-bottom: 20px;
+            }
+
+            p
+            {
+                color: #33215B;
+
+                font-size: clamp(16px, 1vw, 18px);
+                font-weight: 500;
+                margin-bottom: 20px;
+
+                span
+                {
+                    font-weight: 700;
+                }
+            }
+
+            img
+            {
+                width: 50%;
+                max-width: 500px;
+            }
+        }
+    }
+
+    .faixa-img
+    {
+        align-self: center;
+        width: 100%;
+        max-width: 1140px;
+        padding: 0 20px;
+
+        img
+        {
+            width: 100%;
+        }
+    }
+
+    .sec-conheca
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        background-image: url('../../../public/assets/images/ImagemAulaFrei.png');
+        background-repeat: no-repeat;
+        background-size: 50% auto;
+        background-position: center left;
+    
+        .container-tela
+        {
+            width: 100%;
+            max-width: 1140px;
+            padding: 40px 20px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+
+            > div
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                width: 50%;
+                padding: 60px 0;
+                padding-left: 40px;
+
+                color: #33215B;
+                text-align: center;
+
+                h2
+                {
+                    font-size: 27px;
+                    font-weight: 700;
+                    margin-bottom: 45px;
+                }
+
+                p
+                {
+                    font-size: clamp(16px, 1vw, 18px);
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .faixa-inscreva
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        padding: 46px 20px;
+        background-color: #FFB354;
+
+        > div
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        h2
+        {
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        h3
+        {
+            font-size: 28px;
+            font-weight: 400;
+            margin-bottom: 22px;
+        }
+
+        a
+        {
+            padding: 17px 25px;
+            
+            font-size: 24px;
+            font-weight: 700;
+            color: #FFF;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            background-color: #EA3849;
+            border-radius: 8px;
         }
     }
 }
