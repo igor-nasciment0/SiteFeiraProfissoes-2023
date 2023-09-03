@@ -173,9 +173,8 @@
 
         @media (max-width: 700px)
         {
-            padding: 30px;
+            padding: 50px 30px;
 
-            background-size: cover;
             z-index: -1;
 
             .container-tela
@@ -190,7 +189,7 @@
 
                     h2
                     {
-                        font-weight: 700;
+                        font-weight: 600;
                     }
                 }
 
@@ -412,6 +411,38 @@
             {
                 width: 50%;
                 max-width: 500px;
+            }
+        }
+
+        @media (max-width: 768px)
+        {
+            .container-tela
+            {
+                padding: 45px 20px;
+                flex-direction: column-reverse;
+            
+                img
+                {
+                    width: 80%;
+                    max-width: unset;
+                }
+
+                h2
+                {
+                    font-size: 22px;
+                    text-align: center;
+                }
+
+                h3
+                {
+                    font-size: 18px;
+                    text-align: center;
+                }
+
+                p
+                {
+                    font-size: 14px;
+                }
             }
         }
     }
