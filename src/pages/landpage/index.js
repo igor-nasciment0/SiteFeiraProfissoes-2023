@@ -458,10 +458,10 @@ export default function Landpage() {
 
             <section className='rodape'>
 
-                <img className='superior' src='../assets/images/retangulorodape.png' alt='' />
+                <img className='superior' src='/assets/images/retangulorodape.png' alt='' />
 
                 <div className='cont'>
-                    <img className='logorodape' src='../assets/images/logorodape.png' alt='' />
+                    <img className='logorodape' src='/assets/images/logorodape.png' alt='' />
 
                         <div className='inicio'> 
                             <h1>Inicio</h1>
@@ -471,13 +471,13 @@ export default function Landpage() {
 
                         <div className='contato'>
                             <h1>Contato</h1>
-                            <a> <img src='../assets/images/icons/tel.png'/> TEL: (11) 5687-8876/(11) 3798-5036</a>
-                            <a> <img src='../assets/images/icons/email.png'/> acaosoc@globo.com</a>
-                            <a> <img src='../assets/images/icons/local.png'/> AV. CEL. OCTAVIANO DE FREITAS COSTA, 463 JD VELEIROS SÃO PAULO-SP</a>
+                            <a> <img src='/assets/images/icons/tel.png'/> TEL: (11) 5687-8876/(11) 3798-5036</a>
+                            <a> <img src='/assets/images/icons/email.png'/> acaosoc@globo.com</a>
+                            <a> <img src='/assets/images/icons/local.png'/> AV. CEL. OCTAVIANO DE FREITAS COSTA, 463 JD VELEIROS SÃO PAULO-SP</a>
                         </div>
 
                         <div className='siga'>
-                            <img src='../assets/images/icons/Siga-nos.png'/>
+                            <img src='/assets/images/icons/Siga-nos.png'/>
                         </div>
                 </div>
             </section>
