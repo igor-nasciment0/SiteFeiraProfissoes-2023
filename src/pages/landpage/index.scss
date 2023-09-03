@@ -187,6 +187,11 @@
                 {
                     align-items: center;
                     text-align: center;
+
+                    h2
+                    {
+                        font-weight: 700;
+                    }
                 }
 
                 .data
@@ -334,6 +339,11 @@
 
         @media (max-width: 700px)
         {
+            h1
+            {
+                font-size: 26px;
+            }
+
             .contador
             {
                 flex-wrap: wrap;
@@ -797,39 +807,38 @@
 
     .rodape
     {
-
+        background-color: #242C6B;
+        
         .superior
         {
             width: 100%;
-            position: relative;
-            top: 10px;
+            height: 20px;
         }
 
         .cont
         {
             display: flex;
-            background-color: #242C6B;
             height: 253px;
             justify-content: center;
             align-items: center;
             gap: 200px;
             color: #FFF;
-
+            
             .logorodape
             {
                 height: 65px;
             }
-
+        
             .inicio
             {
                 display: flex;
                 flex-direction: column;
                 padding: 10px;
                 gap: 10px;
-
+                
             }
 
-            .contato
+            .contat
             {
                 display: flex;
                 flex-direction: column;
@@ -840,17 +849,32 @@
                 justify-content: center;
                 top: 10px;
 
-                a
+                li
                 {
                     display: flex;
                     max-width: 50vh;
                     align-items: center;
-
+                    
                     img{
                         margin: 3px;
                     }
                 }
             }
+
+        }
+
+        .final
+        {
+            text-align: center;
+            width: 50vh;
+            margin: 0 auto ;   
+            color: #FFF;
+            padding: 3px;
+            
+            p{
+                padding: 10px;
+            }
+        
         }
     }
 }

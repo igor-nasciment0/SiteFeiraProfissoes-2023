@@ -80,7 +80,7 @@ export default function Landpage() {
                     </div>
                 </div>
             </section>
-{/* 
+
             <section className="sec-sobre">
                 <div className="container-tela">
                     <div>
@@ -454,32 +454,38 @@ export default function Landpage() {
                         </div>
                     </div>
                 </div>
-            </section> */}
+            </section> 
 
             <section className='rodape'>
-
-                <img className='superior' src='/assets/images/retangulorodape.png' alt='' />
-
+                
+                <img className='superior' src='../assets/images/retangulorodape.png' alt='' />
+                
                 <div className='cont'>
-                    <img className='logorodape' src='/assets/images/logorodape.png' alt='' />
-
+                    <img className='logorodape' src='../assets/images/logorodape.png' alt='' />
+                        
                         <div className='inicio'> 
                             <h1>Inicio</h1>
                             <a>Home</a>
                             <a>Ingressos</a>
                         </div>
 
-                        <div className='contato'>
+                        <div className='contat'>
                             <h1>Contato</h1>
-                            <a> <img src='/assets/images/icons/tel.png'/> TEL: (11) 5687-8876/(11) 3798-5036</a>
-                            <a> <img src='/assets/images/icons/email.png'/> acaosoc@globo.com</a>
-                            <a> <img src='/assets/images/icons/local.png'/> AV. CEL. OCTAVIANO DE FREITAS COSTA, 463 JD VELEIROS SÃO PAULO-SP</a>
+                            <li> <img src='../assets/images/icons/tel.png'/> TEL: (11) 5687-8876/(11) 3798-5036</li>
+                            <li> <img src='../assets/images/icons/email.png'/> acaosoc@globo.com</li>
+                            <li> <img src='../assets/images/icons/local.png'/> AV. CEL. OCTAVIANO DE FREITAS COSTA, 463 JD VELEIROS SÃO PAULO-SP</li>
                         </div>
 
                         <div className='siga'>
-                            <img src='/assets/images/icons/Siga-nos.png'/>
+                            <img src='../assets/images/icons/Siga-nos.png'/>
                         </div>
                 </div>
+                        
+                    <div className='final'>
+                        <hr />
+                        <p>2023 ©</p>
+                    </div>
+                
             </section>
         </div>
     )
