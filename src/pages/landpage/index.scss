@@ -335,4 +335,148 @@
             border-radius: 8px;
         }
     }
+
+    .sec-andares
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .container-tela
+        {
+            width: 100%;
+            max-width: 1140px;
+            padding: 32px 20px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2
+        {
+            color: #33215B;
+            font-size: 30px;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-align: center;
+
+            margin-bottom: 20px;
+        }
+
+        .container-andares
+        {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+
+            h3
+            {
+                font-size: 22px;
+                font-weight: 700;
+                letter-spacing: 5px;
+                color: #33215B;
+                text-transform: uppercase;
+
+                margin-bottom: 20px;
+            }
+
+            .grupo-andares
+            {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+
+                > div
+                {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 48%;
+
+                    padding: 16px 40px;
+                    border: 2.5px solid #33215B;
+                    border-radius: 8px;
+                }
+
+                > div:first-child
+                {
+                    margin-right: 22px;
+                }
+
+                .carousel
+                {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 20px;
+                }
+
+                button
+                {
+                    height: fit-content;
+                    border: none;
+                    background: none;
+                }
+
+                .carrossel-item
+                {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 30px;
+                }
+
+                .carousel__inner-slide
+                {
+                    display: flex;
+                }
+                .local
+                {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    color: #33215B;
+                    font-weight: 700;
+
+                    h4
+                    {
+                        font-size: 10px;
+                        text-transform: uppercase;
+                        letter-spacing: 10px;
+                        text-align: center;
+
+                        position: relative;
+                        left: 4px;
+                        top: 4px;
+                    }
+
+                    span
+                    {
+                        font-size: 50px;
+                        letter-spacing: 0;
+                    }
+
+                    .titulo-unico
+                    {
+                        font-size: 20px !important;
+                    }
+                }
+
+                h5
+                {
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+
+                p
+                {
+                    font-size: 12px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
 }
