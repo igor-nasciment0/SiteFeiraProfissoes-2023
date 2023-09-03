@@ -399,12 +399,16 @@
 
                 font-size: clamp(16px, 1vw, 18px);
                 font-weight: 500;
-                margin-bottom: 20px;
 
                 span
                 {
                     font-weight: 700;
                 }
+            }
+
+            p:not(p:last-child)
+            {
+                margin-bottom: 20px;
             }
 
             img
@@ -453,9 +457,13 @@
         width: 100%;
         max-width: 1140px;
         padding: 0 20px;
+        
+        min-height: 40px;
 
         img
         {
+            object-fit: cover;
+            min-height: 40px;
             width: 100%;
         }
     }
