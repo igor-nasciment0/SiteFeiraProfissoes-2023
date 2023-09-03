@@ -62,6 +62,14 @@
                 color: #FFF;
                 background-color: #EA3849;
                 border-radius: 10px;
+
+                transition: 0.3s;
+            }
+
+            a:hover
+            {
+                transform: scale(1.05);
+                background-color: #FF5E31;
             }
 
             .data
@@ -333,6 +341,15 @@
 
             background-color: #EA3849;
             border-radius: 8px;
+
+            transition: 0.3s;
+        }
+
+        a:hover
+        {
+            transform: scale(1.05);
+            background-color: #FFF;
+            color: #EA3849;
         }
     }
 
@@ -345,8 +362,8 @@
         .container-tela
         {
             width: 100%;
-            max-width: 1140px;
-            padding: 32px 20px;
+            max-width: 950px;
+            padding: 60px 20px;
 
             display: flex;
             flex-direction: column;
@@ -379,7 +396,7 @@
                 color: #33215B;
                 text-transform: uppercase;
 
-                margin-bottom: 20px;
+                margin-bottom: 5px;
             }
 
             .grupo-andares
@@ -387,6 +404,7 @@
                 width: 100%;
                 display: flex;
                 flex-direction: row;
+                justify-content: center;
 
                 > div
                 {
@@ -395,7 +413,7 @@
                     align-items: center;
                     width: 48%;
 
-                    padding: 16px 40px;
+                    padding: 16px 20px;
                     border: 2.5px solid #33215B;
                     border-radius: 8px;
                 }
@@ -427,6 +445,7 @@
                     flex-direction: row;
                     align-items: center;
                     gap: 30px;
+                    height: 100px;
                 }
 
                 .carousel__inner-slide
@@ -467,16 +486,143 @@
 
                 h5
                 {
-                    font-size: 14px;
+                    font-size: 12px;
                     font-weight: 700;
                 }
 
                 p
                 {
                     font-size: 12px;
-                    font-weight: 500;
+                    font-weight: 600;
                 }
             }
+        }
+    }
+
+    .sec-duvidas
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 30px;
+
+        background-image: url('../../../public/assets/images/background-quadrados-coloridos.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+
+        .container-tela
+        {
+            max-width: 1140px;
+            width: 100%;
+            padding: 0 20px;
+            padding-bottom: 48px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            > div
+            {
+                width: 100%;
+                max-width: 900px;
+                padding: 35px 47px;
+                display: flex;
+                flex-direction: row;
+                gap: 25px;
+    
+                background-color: #242C6B;
+                border-radius: 8px;
+            }
+        }
+    
+        h2
+        {
+            text-align: center;
+            font-size: 35px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 7px;
+
+            color: #33215B;
+        }
+
+        .informacoes-gerais
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+
+            color: #FFF;
+
+            > div
+            {
+                display: flex;
+                flex-direction: column;
+            }
+
+            h3
+            {
+                background-color: rgba($color: #FFF, $alpha: 0.2);
+                border-radius: 3px;
+
+                padding: 3px 8px;
+                font-size: 11px;
+                font-weight: 500;
+
+                margin-bottom: 9px;
+                width: fit-content;
+            }
+
+            p
+            {
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            .maiusculo
+            {
+                text-transform: uppercase;
+            }
+
+            span
+            {
+                font-size: 12px;
+                margin-bottom: 18px;
+            }
+
+            a
+            {
+                font-size: 12px;
+                font-weight: 600;
+                text-decoration: none;
+                color: #FFF;
+                padding: 9px;
+
+                background-color: #658CC5;
+                border-radius: 11px;
+                margin-right: 5px;
+                width: fit-content;                
+                
+                img
+                {
+                    vertical-align: middle;
+                    width: 14px;
+                }
+            }
+        }
+
+        .duvidas
+        {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 18px;
+
+            flex-grow: 1;
+            width: 70%;
         }
     }
 }

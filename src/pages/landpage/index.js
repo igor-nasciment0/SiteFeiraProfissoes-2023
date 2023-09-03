@@ -3,10 +3,11 @@ import Cabecalho from '../../components/cabecalho';
 import './index.scss';
 
 import Countdown from 'react-countdown';
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, CarouselContext } from 'pure-react-carousel';
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import './index.scss';
-import { useContext, useState } from 'react';
+import { useState } from 'react';
+import Duvida from '../../components/duvida';
 
 export default function Landpage() {
 
@@ -27,6 +28,13 @@ export default function Landpage() {
         interval: 7000,
         infinite: true
     };
+
+    const [duvidas, setDuvidas] = useState(
+        [
+            {pergunta: 'Quem pode ir à feira?', resposta: 'Todos podem participar!'},
+            {pergunta: 'O evento é gratuito?', resposta: 'Sim! A entrada na Feira de Profissões do Instituto é gratuita e sempre será.'}
+        ]
+    )
 
     return(
         <div className="pagina-landpage">
@@ -161,7 +169,7 @@ export default function Landpage() {
                                                 
                                                 <div>
                                                     <h5>Ótica Brauzo</h5>
-                                                    <p>(descobrir o que a otica Brauzo vai fazer)</p>
+                                                    <p style={{color: 'red'}}>(descobrir o que a otica Brauzo vai fazer)</p>
                                                 </div>
                                             </div>   
                                         </Slide>
@@ -188,8 +196,8 @@ export default function Landpage() {
                                                 </div>
                                                 
                                                 <div>
-                                                    <h5>Bate-papo sobre a escolha das profissões</h5>
-                                                    <p>Explore diferentes trajetórias profissionais e receba orientação valiosa para tomar decisões informadas sobre seu futuro profissional.</p>
+                                                    <h5>Bate-papo: escolha de profissão</h5>
+                                                    <p>Explore diferentes trajetórias profissionais conosco para tomar decisões acertadas sobre seu futuro profissional.</p>
                                                 </div>
                                             </div>   
                                         </Slide>
@@ -222,7 +230,7 @@ export default function Landpage() {
                                                 
                                                 <div>
                                                     <h5>Posto de Saúde</h5>
-                                                    <p>Faça um check-up da sua saúde com profissionais  qualificados.</p>
+                                                    <p>Faça um check-up da sua saúde com profissionais qualificados.</p>
                                                 </div>
                                             </div>   
                                         </Slide>
@@ -235,7 +243,7 @@ export default function Landpage() {
                                                 </div>
                                                 
                                                 <div>
-                                                    <h5>Administração: RH e POC</h5>
+                                                    <h5>ADM: RH e POC</h5>
                                                     <p>Descubra o que são e como funcionam os Recursos Humanos e a Prova de Conceito no contexto da administração de empresas.</p>
                                                 </div>
                                             </div>   
@@ -249,8 +257,8 @@ export default function Landpage() {
                                                 </div>
                                                 
                                                 <div>
-                                                    <h5>Administração: Empreendedorismo e Logística</h5>
-                                                    <p>Conheça o processo empreendedor, desde a ideia inicial de uma empresa até o sistema logístico, e tenha dicas de como ganhar eficiência.</p>
+                                                    <h5>ADM: Empreendedorismo e Logística</h5>
+                                                    <p>Conheça o processo empreendedor, desde a ideia inicial de uma empresa até o sistema logístico</p>
                                                 </div>
                                             </div>   
                                         </Slide>
@@ -278,7 +286,7 @@ export default function Landpage() {
                         </div>
 
                         <div className="grupo-andares">
-                            <div>
+                            <div> {/* CARROSSEL 2° ANDAR */}
                                 <h3>2° Andar</h3>
                                 <CarouselProvider
                                     {...settings}
@@ -352,7 +360,7 @@ export default function Landpage() {
                                 </CarouselProvider>
                             </div>
 
-                            <div>
+                            <div> {/* CARROSSEL 3° ANDAR */}
                                 <h3>3° Andar</h3>
 
                                 <CarouselProvider
@@ -371,8 +379,8 @@ export default function Landpage() {
                                                 </div>
                                                 
                                                 <div>
-                                                    <h5>CATE e Simulação de Entrevista de Emprego</h5>
-                                                    <p>Conheça o CATE, da Prefeitura de São Paulo, e tenha a oportunidade de participar de uma simulação de entrevista de emprego!</p>
+                                                    <h5>CATE e Simulação de Entrevista</h5>
+                                                    <p>Participe de uma simulação de entrevista de emprego com o CATE, da Perfeitura de São Paulo!</p>
                                                 </div>
                                             </div>   
                                         </Slide>
@@ -399,7 +407,7 @@ export default function Landpage() {
                                                 
                                                 <div>
                                                     <h5>LinkedIn</h5>
-                                                    <p>Aprenda sobre o LinkedIn, e como criar uma conta que chame a atenção e te ajude a conseguir um emprego na área que deseja. </p>
+                                                    <p>Aprenda sobre o LinkedIn, e a como criar uma conta que te ajude a trabalhar na área que deseja. </p>
                                                 </div>
                                             </div>   
                                         </Slide>
@@ -419,7 +427,31 @@ export default function Landpage() {
                 <div className="container-tela">
                     <h2>Dúvidas e Informações</h2>
                     <div>
-                        
+                        <div className="informacoes-gerais">
+                            <div>
+                                <h3>Data de Realização</h3>
+                                <p className="maiusculo">30 de setembro de 2023</p>
+                            </div>
+
+                            <div>
+                                <h3>Horário</h3>
+                                <p>09h às 15h</p>
+                            </div>
+
+                            <div>
+                                <h3>Local</h3>
+                                <p>Instituto Social Nossa Senhora de Fátima </p>
+                                <span>Av. Coronel Octaviano de Freitas Costa, 463 - Socorro, São Paulo - SP</span>
+                                <Link>Como Chegar <img src="/assets/images/icons/aviao.svg" alt="" /></Link>
+                            </div>
+                        </div>
+
+                        <div className="duvidas">
+                            {duvidas.map(
+                                duvida => 
+                                <Duvida pergunta={duvida.pergunta} resposta={duvida.resposta}/>
+                            )}
+                        </div>
                     </div>
                 </div>
             </section>
