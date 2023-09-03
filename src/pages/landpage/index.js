@@ -6,7 +6,6 @@ import Countdown from 'react-countdown';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import './index.scss';
-import { useState } from 'react';
 import Duvida from '../../components/duvida';
 
 export default function Landpage() {
@@ -29,12 +28,11 @@ export default function Landpage() {
         infinite: true
     };
 
-    const [duvidas, setDuvidas] = useState(
+    const duvidas =
         [
             {pergunta: 'Quem pode ir à feira?', resposta: 'Todos podem participar!'},
             {pergunta: 'O evento é gratuito?', resposta: 'Sim! A entrada na Feira de Profissões do Instituto é gratuita e sempre será.'}
         ]
-    )
 
     return(
         <div className="pagina-landpage">
@@ -461,23 +459,23 @@ export default function Landpage() {
                 <img className='superior' src='../assets/images/retangulorodape.png' alt='' />
                 
                 <div className='cont'>
-                    <img className='logorodape' src='../assets/images/logorodape.png' alt='' />
+                    <img alt='' className='logorodape' src='../assets/images/logorodape.png' />
                         
                         <div className='inicio'> 
                             <h1>Inicio</h1>
-                            <a>Home</a>
-                            <a>Ingressos</a>
+                            <Link>Home</Link>
+                            <Link>Ingressos</Link>
                         </div>
 
                         <div className='contat'>
                             <h1>Contato</h1>
-                            <li> <img src='../assets/images/icons/tel.png'/> TEL: (11) 5687-8876/(11) 3798-5036</li>
-                            <li> <img src='../assets/images/icons/email.png'/> acaosoc@globo.com</li>
-                            <li> <img src='../assets/images/icons/local.png'/> AV. CEL. OCTAVIANO DE FREITAS COSTA, 463 JD VELEIROS SÃO PAULO-SP</li>
+                            <li> <img alt='' src='../assets/images/icons/tel.png'/> TEL: (11) 5687-8876/(11) 3798-5036</li>
+                            <li> <img alt='' src='../assets/images/icons/email.png'/> acaosoc@globo.com</li>
+                            <li> <img alt='' src='../assets/images/icons/local.png'/> AV. CEL. OCTAVIANO DE FREITAS COSTA, 463 JD VELEIROS SÃO PAULO-SP</li>
                         </div>
 
                         <div className='siga'>
-                            <img src='../assets/images/icons/Siga-nos.png'/>
+                            <img alt='' src='../assets/images/icons/Siga-nos.png'/>
                         </div>
                 </div>
                         
