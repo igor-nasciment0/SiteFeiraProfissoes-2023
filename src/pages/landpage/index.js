@@ -80,7 +80,7 @@ export default function Landpage() {
                     </div>
                 </div>
             </section>
-
+{/* 
             <section className="sec-sobre">
                 <div className="container-tela">
                     <div>
@@ -123,7 +123,7 @@ export default function Landpage() {
                     
                     <div className="container-andares">
                         <div className="grupo-andares">
-                            <div> {/* CARROSSEL TÉRREO */}
+                            <div>
                                 <h3>Térreo</h3>
                                 <CarouselProvider
                                     {...settings}
@@ -210,7 +210,7 @@ export default function Landpage() {
                                 </CarouselProvider>
                             </div>
 
-                            <div> {/* CARROSSEL 1° ANDAR */}
+                            <div> 
                                 <h3>1° Andar</h3>
                                 <CarouselProvider
                                     {...settings}
@@ -286,7 +286,7 @@ export default function Landpage() {
                         </div>
 
                         <div className="grupo-andares">
-                            <div> {/* CARROSSEL 2° ANDAR */}
+                            <div>
                                 <h3>2° Andar</h3>
                                 <CarouselProvider
                                     {...settings}
@@ -360,7 +360,7 @@ export default function Landpage() {
                                 </CarouselProvider>
                             </div>
 
-                            <div> {/* CARROSSEL 3° ANDAR */}
+                            <div>
                                 <h3>3° Andar</h3>
 
                                 <CarouselProvider
@@ -454,7 +454,7 @@ export default function Landpage() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </div>
     )
 }

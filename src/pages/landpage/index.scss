@@ -103,6 +103,131 @@
                     font-weight: 500;
                 }
             }
+
+            @media (max-width: 1024px) {
+                h1
+                {
+                    font-size: 40px;
+                }
+
+                h2
+                {
+                    font-size: 32px;
+                    margin-bottom: 10px;
+                }
+
+                a
+                {
+                    font-size: 18px;
+                }
+
+                .data
+                {
+                    padding: 0 70px;
+
+                    h3
+                    {
+                        font-size: 28px;
+                    }
+
+                    h4
+                    {
+                        font-size: 24px;
+                    }
+
+                    p
+                    {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .container-tela
+            {
+                gap: 24px;
+
+                h1
+                {
+                    font-size: 35px;
+                }
+
+                h2
+                {
+                    font-size: 28px;
+                }
+
+                a
+                {
+                    font-size: 16px;
+                }
+
+                .data
+                {
+                    padding: 0 70px;
+                }
+            }
+        }
+
+        @media (max-width: 700px)
+        {
+            padding: 30px;
+
+            background-size: cover;
+            z-index: -1;
+
+            .container-tela
+            {
+                flex-direction: column;
+                align-items: center;
+
+                > div
+                {
+                    align-items: center;
+                    text-align: center;
+                }
+
+                .data
+                {
+                    padding: 20px 70px;
+                }
+            }
+        }
+
+        @media (max-width: 500px)
+        {
+            .container-tela
+            {
+                h1
+                {
+                    font-size: 28px;
+                }
+
+                h2
+                {
+                    font-size: 22px;
+                }
+
+                .data
+                {
+                    h3
+                    {
+                        font-size: 22px;
+                    }
+
+                    h4
+                    {
+                        font-size: 20px;
+                    }
+
+                    p
+                    {
+                        font-size: 16px;
+                    }
+                }
+            }
         }
     }
 
@@ -175,6 +300,50 @@
                 {
                     font-size: 20px;
                     font-weight: 500;
+                }
+            }
+        }
+
+        @media (max-width: 768px)
+        {
+            padding: 30px 20px;
+
+            h1
+            {
+                font-size: 30px;
+            }
+
+            .contador
+            {
+                > div
+                {
+                    padding: 16px 35px;
+                    
+                    h3
+                    {
+                        font-size: 40px;
+                    }
+
+                    h4
+                    {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 700px)
+        {
+            .contador
+            {
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 30px 4vw;
+
+                > div
+                {
+                    max-width: unset;
+                    width: 42%;
                 }
             }
         }
