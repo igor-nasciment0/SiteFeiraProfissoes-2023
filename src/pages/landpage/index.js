@@ -28,11 +28,19 @@ export default function Landpage() {
         infinite: true
     };
 
-    const duvidas =
+    const duvidas1 =
         [
             {pergunta: 'Quem pode ir à feira?', resposta: 'Todos podem participar!'},
-            {pergunta: 'O evento é gratuito?', resposta: 'Sim! A entrada na Feira de Profissões do Instituto é gratuita e sempre será.'}
+            {pergunta: 'O evento é gratuito?', resposta: 'Sim! A entrada na Feira de Profissões do Instituto é gratuita e sempre será.'},
+            {pergunta: 'Quem fez os projetos?', resposta:'Boa parte dos projetos apresentados na feira é feita pelos alunos, enquanto outra parte é de empresas e organizações convidadas.'},
         ]
+
+    const duvidas2 =
+    [
+        {pergunta: 'Sobre a alimentação', resposta:'Na lateral do prédio do Instituto, você tem acesso à nossa padaria. Bom apetite!'},
+        {pergunta: 'Empresas convidadas', resposta:'Estas são as empresas convidadas para nosso evento:', lista: ['Fios de Berenice (Cabeleireiro)', 'Universidade Ítalo-Brasileiro', 'UNISA', 'STB Intercâmbio', 'Instituto ITMídia', 'Daniela Matos (Nutricionista)', 'São Paulo Open Centre']},
+        {pergunta: 'Como fazer a inscrição?', resposta:'Preencha o formulário ', link: {texto: 'neste link', url:'/'}},
+    ]
 
     return(
         <div className="pagina-landpage">
@@ -447,16 +455,25 @@ export default function Landpage() {
                         </div>
 
                         <div className="duvidas">
-                            {duvidas.map(
-                                duvida => 
-                                <Duvida pergunta={duvida.pergunta} resposta={duvida.resposta}/>
-                            )}
+                            <div>
+                                {duvidas1.map(
+                                    duvida => 
+                                    <Duvida duvida={duvida}/>
+                                )}
+                            </div>
+                            
+                            <div>
+                                {duvidas2.map(
+                                    duvida =>
+                                    <Duvida duvida={duvida}/>
+                                )}
+                            </div>
                         </div>
                     </div>
                 </div>
             </section> 
 
-            <section className='rodape'>
+            {/* <section className='rodape'>
                 
                 <img className='superior' src='../assets/images/retangulorodape.png' alt='' />
                 
@@ -486,7 +503,7 @@ export default function Landpage() {
                         <p>2023 ©</p>
                     </div>
                 
-            </section>
+            </section> */}
         </div>
     )
 }
