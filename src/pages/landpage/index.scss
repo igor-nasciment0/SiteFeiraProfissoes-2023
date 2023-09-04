@@ -863,6 +863,48 @@
                 }
             }
         }
+
+        @media (max-width: 400px)
+        {
+            .container-andares
+            {
+                .grupo-andares
+                {
+                    .carousel
+                    {
+                        gap: 5px;
+                    }
+
+                    .local
+                    {
+                        h4
+                        {
+                            letter-spacing: normal;
+                            text-align: center;
+                        }
+
+                        span
+                        {
+                            text-align: center;
+                            width: min-content;
+                            max-width: 70px;
+                            width: fit-content;
+                            font-size: 30px;
+                        }
+
+                        .titulo-unico
+                        {
+                            font-size: 16px !important;
+                        }
+                    }
+
+                    .carrossel-item
+                    {
+                        height: 140px;
+                    }
+                }
+            }
+        }
     }
 
     .sec-duvidas
@@ -1032,6 +1074,18 @@
             .duvidas
             {
                 width: 100%;
+            }
+        }
+
+        @media (max-width: 470px) {
+            .duvidas
+            {
+                flex-direction: column;
+
+                > div
+                {
+                    width: 100%;
+                }
             }
         }
     }

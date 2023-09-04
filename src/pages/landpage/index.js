@@ -21,7 +21,7 @@ export default function Landpage() {
     const settings = {
         naturalSlideWidth: 100,
         naturalSlideHeight: 125,
-        touchEnabled: false,
+        touchEnabled: true,
         dragEnabled: false,
         isIntrinsicHeight: true,
         isPlaying: true,
