@@ -7,6 +7,7 @@ import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-re
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import './index.scss';
 import Duvida from '../../components/duvida';
+import Rodape from '../../components/rodape';
 
 export default function Landpage() {
 
@@ -473,37 +474,7 @@ export default function Landpage() {
                 </div>
             </section> 
 
-            {/* <section className='rodape'>
-                
-                <img className='superior' src='../assets/images/retangulorodape.png' alt='' />
-                
-                <div className='cont'>
-                    <img alt='' className='logorodape' src='../assets/images/logorodape.png' />
-                        
-                        <div className='inicio'> 
-                            <h1>Inicio</h1>
-                            <Link>Home</Link>
-                            <Link>Ingressos</Link>
-                        </div>
-
-                        <div className='contat'>
-                            <h1>Contato</h1>
-                            <li> <img alt='' src='../assets/images/icons/tel.png'/> TEL: (11) 5687-8876/(11) 3798-5036</li>
-                            <li> <img alt='' src='../assets/images/icons/email.png'/> acaosoc@globo.com</li>
-                            <li> <img alt='' src='../assets/images/icons/local.png'/> AV. CEL. OCTAVIANO DE FREITAS COSTA, 463 JD VELEIROS SÃO PAULO-SP</li>
-                        </div>
-
-                        <div className='siga'>
-                            <img alt='' src='../assets/images/icons/Siga-nos.png'/>
-                        </div>
-                </div>
-                        
-                    <div className='final'>
-                        <hr />
-                        <p>2023 ©</p>
-                    </div>
-                
-            </section> */}
+            <Rodape/>
         </div>
     )
 }

@@ -1000,6 +1000,9 @@
         }
 
         @media (max-width: 900px) {
+
+            background-size: auto;
+
             h2
             {
                 font-size: 30px;
@@ -1030,79 +1033,6 @@
             {
                 width: 100%;
             }
-        }
-    }
-
-    .rodape
-    {
-        background-color: #242C6B;
-        
-        .superior
-        {
-            width: 100%;
-            height: 20px;
-        }
-
-        .cont
-        {
-            display: flex;
-            height: 253px;
-            justify-content: center;
-            align-items: center;
-            gap: 200px;
-            color: #FFF;
-            
-            .logorodape
-            {
-                height: 65px;
-            }
-        
-            .inicio
-            {
-                display: flex;
-                flex-direction: column;
-                padding: 10px;
-                gap: 10px;
-                
-            }
-
-            .contat
-            {
-                display: flex;
-                flex-direction: column;
-                padding: 10px;
-                gap: 10px;
-                position: relative;
-                left: 120px;
-                justify-content: center;
-                top: 10px;
-
-                li
-                {
-                    display: flex;
-                    max-width: 50vh;
-                    align-items: center;
-                    
-                    img{
-                        margin: 3px;
-                    }
-                }
-            }
-
-        }
-
-        .final
-        {
-            text-align: center;
-            width: 50vh;
-            margin: 0 auto ;   
-            color: #FFF;
-            padding: 3px;
-            
-            p{
-                padding: 10px;
-            }
-        
         }
     }
 }
