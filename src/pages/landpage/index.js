@@ -39,7 +39,7 @@ export default function Landpage() {
     const duvidas2 =
     [
         {pergunta: 'Sobre a alimentação', resposta:'Na lateral do prédio do Instituto, você tem acesso à nossa padaria. Bom apetite!'},
-        {pergunta: 'Empresas convidadas', resposta:'Estas são as empresas convidadas para nosso evento:', lista: ['Fios de Berenice (Cabeleireiro)', 'Universidade Ítalo-Brasileiro', 'UNISA', 'STB Intercâmbio', 'Instituto ITMídia', 'Daniela Matos (Nutricionista)', 'São Paulo Open Centre']},
+        {pergunta: 'Empresas convidadas', resposta:'Estas são algumas das empresas convidadas para nosso evento:', lista: ['Fios de Berenice (Cabeleireiro)', 'Universidade Ítalo-Brasileiro', 'UNISA', 'STB Intercâmbio', 'Instituto ITMídia', 'Daniela Matos (Nutricionista)', 'São Paulo Open Centre']},
         {pergunta: 'Como fazer a inscrição?', resposta:'Preencha o formulário ', link: {texto: 'neste link', url:'/'}},
     ]
 
