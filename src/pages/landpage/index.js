@@ -389,7 +389,7 @@ export default function Landpage() {
                                                 
                                                 <div>
                                                     <h5>CATE e Simulação de Entrevista</h5>
-                                                    <p>Participe de uma simulação de entrevista de emprego com o CATE, da Perfeitura de São Paulo!</p>
+                                                    <p>Simule uma entrevista de emprego com o CATE, da Prefeitura de São Paulo!</p>
                                                 </div>
                                             </div>   
                                         </Slide>
@@ -451,7 +451,7 @@ export default function Landpage() {
                                 <h3>Local</h3>
                                 <p>Instituto Social Nossa Senhora de Fátima </p>
                                 <span>Av. Coronel Octaviano de Freitas Costa, 463 - Socorro, São Paulo - SP</span>
-                                <Link>Como Chegar <img src="/assets/images/icons/aviao.svg" alt="" /></Link>
+                                <Link to={"https://www.google.com/maps/place/Instituto+Social+Nossa+Senhora+de+Fátima/@-23.6803284,-46.7105058,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce502d2289a843:0x14406b17b30d0174!8m2!3d-23.6803333!4d-46.7079309!16s%2Fg%2F1ptxj22k2?entry=ttu"}>Como Chegar <img src="/assets/images/icons/aviao.svg" alt="" /></Link>
                             </div>
                         </div>
 

@@ -864,7 +864,7 @@
             }
         }
 
-        @media (max-width: 400px)
+        @media (max-width: 500px)
         {
             .container-andares
             {
@@ -881,6 +881,9 @@
                         {
                             letter-spacing: normal;
                             text-align: center;
+                            position: relative;
+                            left: 1px;
+                            letter-spacing: 2px;
                         }
 
                         span
@@ -901,6 +904,20 @@
                     .carrossel-item
                     {
                         height: 140px;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 400px)
+        {
+            .container-andares
+            {
+                .grupo-andares
+                {
+                    .carrossel-item
+                    {
+                        height: 165px;
                     }
                 }
             }

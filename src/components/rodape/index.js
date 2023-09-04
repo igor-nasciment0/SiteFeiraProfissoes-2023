@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './index.scss';
 
 export default function Rodape() {
@@ -19,7 +20,9 @@ export default function Rodape() {
                     </div>
 
                     <div className='siga'>
-                        <img alt='' src='../assets/images/icons/Siga-nos.png'/>
+                        <Link to={"https://www.instagram.com/institutonsfatima/"}><img src="/assets/images/icons/instagram.svg" alt="" /></Link>
+                        <Link to={"https://www.facebook.com/institutonsfatima"}><img src="/assets/images/icons/facebook.svg"  alt="" /></Link>
+                        <Link to={"https://www.tiktok.com/discover/instituto-social-nossa-senhora-de-fátima"}><img src="/assets/images/icons/brand-tiktok.svg"  alt="" /></Link>
                     </div>
                 </div>
             </div>    
