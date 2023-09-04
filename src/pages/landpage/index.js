@@ -104,6 +104,8 @@ export default function Landpage() {
                         <h2>Venha conhecer nossa instituição e os projetos desenvolvidos por nossos alunos.</h2>
                         <p>Na Feira de Profissões, você terá oportunidade de conhecer os cursos oferecidos pelo Instituto por meio de projetos criativos feitos pelos próprios alunos para demonstrarem seu conhecimento.</p>
                     </div>
+
+                    <img src="/assets/images/ImagemAulaFrei.png" alt="" />
                 </div>
             </section>
 
