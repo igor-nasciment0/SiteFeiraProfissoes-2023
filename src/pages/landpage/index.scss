@@ -715,6 +715,8 @@
                 flex-direction: row;
                 justify-content: center;
 
+                gap: 22px;
+
                 > div
                 {
                     display: flex;
@@ -725,11 +727,6 @@
                     padding: 16px 20px;
                     border: 2.5px solid #33215B;
                     border-radius: 8px;
-                }
-
-                > div:first-child
-                {
-                    margin-right: 22px;
                 }
 
                 .carousel
@@ -754,7 +751,7 @@
                     flex-direction: row;
                     align-items: center;
                     gap: 30px;
-                    height: 100px;
+                    height: 120px;
                 }
 
                 .carousel__inner-slide
@@ -803,6 +800,66 @@
                 {
                     font-size: 12px;
                     font-weight: 600;
+                }
+            }
+        }
+
+        @media (max-width: 960px)
+        {
+            h2
+            {
+                font-size: 27px;
+            }
+
+            .container-andares
+            {
+                .grupo-andares
+                {
+                    > div
+                    {
+                        padding: 12px;
+                    }
+
+                    .carousel
+                    {
+                        gap: 12px;
+                    }
+
+                    .carrossel-item
+                    {
+                        gap: 20px;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 800px)
+        {
+            .container-andares
+            {
+                .grupo-andares
+                {
+                    flex-direction: column;
+                
+                    > div
+                    {
+                        width: 100%;
+                    }
+
+                    .local
+                    {
+                        text-align: center;
+
+                        > span
+                        {
+                            width: 100px;
+                        }
+                    }
+
+                    .carrossel-item
+                    {
+                        width: 100%;
+                    }
                 }
             }
         }
