@@ -31,14 +31,14 @@ export default function Landpage() {
 
     const duvidas1 =
         [
-            {pergunta: 'Quem pode ir à feira?', resposta: 'Todos podem participar!'},
-            {pergunta: 'O evento é gratuito?', resposta: 'Sim! A entrada na Feira de Profissões do Instituto é gratuita e sempre será.'},
-            {pergunta: 'Quem fez os projetos?', resposta:'Boa parte dos projetos apresentados na feira é feita pelos alunos, enquanto outra parte é de empresas e organizações convidadas.'},
+            {pergunta: 'Quem pode ir à feira?', resposta: 'Todos podem participar! Para tanto, inscreva-se.' },
+            {pergunta: 'O evento é gratuito?', resposta: 'Sim! A entrada na Feira das Profissões do Instituto é gratuita e sempre será.'},
+            {pergunta: 'Quem fez os projetos?', resposta:'Todos os projetos apresentados na feira são feitos pelos alunos, enquanto alguns serviços (como a simulação de entrevista) serão oferecidos por empresas e organizações convidadas.'},
         ]
 
     const duvidas2 =
     [
-        {pergunta: 'Sobre a alimentação', resposta:'Na lateral do prédio do Instituto, você tem acesso à nossa padaria. Bom apetite!'},
+        {pergunta: 'Sobre a alimentação', resposta:'No prédio do Instituto, você também encontrará a nossa lanchonete. Bom apetite!'},
         {pergunta: 'Empresas convidadas', resposta:'Estas são algumas das empresas convidadas para nosso evento:', lista: ['Fios de Berenice (Cabeleireiro)', 'Universidade Ítalo-Brasileiro', 'UNISA', 'STB Intercâmbio', 'Instituto ITMídia', 'Daniela Matos (Nutricionista)', 'São Paulo Open Centre']},
         {pergunta: 'Como fazer a inscrição?', resposta:'Preencha o formulário ', link: {texto: 'neste link', url:'/'}},
     ]
@@ -51,7 +51,7 @@ export default function Landpage() {
                 <div className="container-tela">
                     <div>
                         <h1>Te esperamos na</h1>
-                        <h2>Feira de Profissões 2023</h2>
+                        <h2>Feira das Profissões 2023</h2>
                         <Link>Inscreva-se Agora</Link>
                     </div>
 
@@ -91,12 +91,13 @@ export default function Landpage() {
             <section className="sec-sobre">
                 <div className="container-tela">
                     <div>
-                        <h2>Na nossa feira de profissões,</h2>
-                        <h3>Mais de mil visitantes por ano</h3>
+                        <h2>Na nossa Feira das Profissões,</h2>
+                        <h3>Mais de dois mil visitantes por ano,</h3>
+                        <h3>Com mais de 4.600 atendimentos</h3>
 
-                        <p>Há 3 anos realizamos em nosso instituto a Feira de Profissões, um evento para todas as famílias para que <span>conheçam um pouco do que temos feito por nossos alunos.</span></p>
-                        <p>Neste evento nossos alunos mostrarão seus projetos usando tudo o que aprenderam aqui, querendo mostrar o melhor que se há de oferecer no FREI. </p>
-                        <p>Além de poder participar e observar os projetos, pode ser uma oportunidade para conhecer melhor aquilo que gosta e deseja para seu futuro.</p>
+                        <p>Há 3 anos realizamos em nosso instituto a Feira das Profissões, um evento para todas as famílias para que <span>conheçam um pouco do que temos feito por nossos alunos.</span></p>
+                        <p>Neste evento nossos alunos mostrarão seus projetos usando um pouco do que aprenderam aqui, demonstrando o melhor que o Instituto pode oferecer. </p>
+                        <p>Além de poder participar e observar os projetos, pode ser uma oportunidade para os <span>que buscam uma vaga de emprego.</span></p>
                     </div>
 
                     <img src="/assets/images/imagem-feira.png" alt="Imagem da Feira de 2021" />
@@ -111,7 +112,7 @@ export default function Landpage() {
                 <div className="container-tela">
                     <div>
                         <h2>Venha conhecer nossa instituição e os projetos desenvolvidos por nossos alunos.</h2>
-                        <p>Na Feira de Profissões, você terá oportunidade de conhecer os cursos oferecidos pelo Instituto por meio de projetos criativos feitos pelos próprios alunos para demonstrarem seu conhecimento.</p>
+                        <p>Na Feira das Profissões, você terá oportunidade de conhecer os cursos oferecidos pelo Instituto por meio de projetos criativos feitos pelos próprios alunos para demonstrarem seu conhecimento.</p>
                     </div>
 
                     <img src="/assets/images/ImagemAulaFrei.png" alt="" />
@@ -151,7 +152,7 @@ export default function Landpage() {
                                                 
                                                 <div>
                                                     <h5>Estandes de Empresas Convidadas</h5>
-                                                    <p>Descubra um novo corte de cabelo, visite o nutricionista e muito mais com algumas de nossas empresas colaboradoras.</p>
+                                                    <p>Doe seu cabelo para quem precisa, visite o nutricionista e muito mais com algumas de nossas empresas colaboradoras.</p>
                                                 </div>
                                             </div>   
                                         </Slide>
@@ -388,8 +389,8 @@ export default function Landpage() {
                                                 </div>
                                                 
                                                 <div>
-                                                    <h5>CATE e Simulação de Entrevista</h5>
-                                                    <p>Simule uma entrevista de emprego com o CATE, da Prefeitura de São Paulo!</p>
+                                                    <h5>Simulação de Entrevista</h5>
+                                                    <p>Simule uma entrevista de emprego com a Seguradora Maphre!</p>
                                                 </div>
                                             </div>   
                                         </Slide>

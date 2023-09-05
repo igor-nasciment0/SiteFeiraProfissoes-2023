@@ -14,9 +14,9 @@ export default function Rodape() {
 
                     <div className='contat'>
                         <h1>Contato</h1>
-                        <li> <img alt='' src='../assets/images/icons/tel.png'/> Tel: (11) 5687-8876/(11) 3798-5036</li>
-                        <li> <img alt='' src='../assets/images/icons/email.png'/> acaosoc@globo.com</li>
-                        <li> <img alt='' src='../assets/images/icons/local.png'/> Av. Cel. Octaviano De Freitas Costa, 463 – Jd. Veleiros, São Paulo, SP</li>
+                        <li> <img alt='' src='../assets/images/icons/tel.png'/> Tel: (11) 5687-8876 / (11) 3798-5037</li>
+                        <li> <img alt='' src='../assets/images/icons/email.png'/> adm@acaonsfatima.org.br</li>
+                        <li> <img alt='' src='../assets/images/icons/local.png'/> Av. Cel. Octaviano de Freitas Costa, 463 – Jd. Veleiros, São Paulo, SP</li>
                     </div>
 
                     <div className='siga'>
