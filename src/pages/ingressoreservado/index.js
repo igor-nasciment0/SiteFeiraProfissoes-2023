@@ -6,7 +6,7 @@ export default function Ingresso() {
     <div className="pagina-ingresso">
       <header>
         <div>
-          <img src="/images/frei.png"></img>
+          <img src="/assets/images/logo.png"></img>
         </div>
 
         <div>
@@ -18,11 +18,11 @@ export default function Ingresso() {
         </div>
       </header>
       <div className="faixa">
-        <img src="/images/faixa.png"></img>
+        <img src="/assets/images/faixa.png"></img>
       </div>
 
       <nav>
-        <img src="/images/ingresso.png"></img>
+        <img src="/assets/images/ingresso.png"></img>
         <h2>Ingresso reservado com sucesso !!!
           Esperamos voce no dia 30/09</h2>
           <h2>Em nosso instituto</h2>
@@ -33,7 +33,7 @@ export default function Ingresso() {
 
 
       <footer>
-        <img src="/assets/images/fundo.png"></img>
+        <img src="/assets/images/background-quadrados.png"></img>
       </footer>
 
     </div>

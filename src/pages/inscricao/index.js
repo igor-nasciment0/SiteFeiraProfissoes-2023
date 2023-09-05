@@ -74,7 +74,7 @@ async function inscrever() {
     <div className="pagina-ingresso">
       <header>
         <div>
-          <img src="/assets/images/frei.png"></img>
+          <img src="/assets/images/logo.png"></img>
         </div>
 
         <div>
@@ -146,7 +146,7 @@ async function inscrever() {
 
 
       <footer>
-        <img src="/assets/images/fundo.png"></img>
+        <img src="/assets/images/background-quadrados.png"></img>
       </footer>
 
     </div>
