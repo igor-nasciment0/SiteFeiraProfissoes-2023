@@ -8,7 +8,7 @@ export default function Cabecalho() {
                     <img src="/assets/images/logo.png" alt="Logo do Instituto" />
                 </div> 
 
-                <h1>Feira de Profissões 2023</h1>
+                <h1>Feira das Profissões 2023</h1>
 
                 <h2>Instituto Social Nossa Senhora de Fátima</h2>
             </div>
@@ -19,7 +19,7 @@ export default function Cabecalho() {
                 </div> 
 
                 <div>
-                    <h1>Feira de Profissões 2023</h1>
+                    <h1>Feira das Profissões 2023</h1>
 
                     <h2>Instituto Social Nossa Senhora de Fátima</h2>
                 </div>
