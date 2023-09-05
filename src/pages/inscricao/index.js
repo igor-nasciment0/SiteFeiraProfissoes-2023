@@ -23,7 +23,7 @@ export default function Ingresso() {
   async function inscrever() {
     // Verifica se os campos obrigatórios estão preenchidos
     if (!nome || !chamado || !email || !telefone || !bairro || !previsao || !sabendo || !foialuno ) {
-      setCampoobrigatorio('Campos obrigatorios ');
+      setCampoobrigatorio('⚠ Campos obrigatorios ');
       return;
     }
 
@@ -145,7 +145,7 @@ export default function Ingresso() {
         </article>
 
         <button onClick={inscrever}>Salvar</button>
-        <p> {campoobrigatorio} </p>
+        <p>{campoobrigatorio} </p>
       </nav>
 
 
