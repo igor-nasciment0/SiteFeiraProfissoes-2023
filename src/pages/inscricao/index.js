@@ -9,23 +9,25 @@ import InputMask from 'react-input-mask';
 
 export default function Ingresso() {
 
-const [nome, setNome] = useState('')
-const [chamado, setChamado] = useState('')
-const [email, setEmail] = useState('')
-const [telefone, setTelefone] = useState('')
-const [bairro, setBairro] = useState('')
-const [previsao, setPrevisao] = useState('')
-const [sabendo, setSabendo] = useState('')
-const [foialuno, setFoialuno] = useState('')
+  const [nome, setNome] = useState('')
+  const [chamado, setChamado] = useState('')
+  const [email, setEmail] = useState('')
+  const [telefone, setTelefone] = useState('')
+  const [bairro, setBairro] = useState('')
+  const [previsao, setPrevisao] = useState('')
+  const [sabendo, setSabendo] = useState('')
+  const [foialuno, setFoialuno] = useState('')
 
+  const [campoobrigatorio, setCampoobrigatorio] = useState('')
 
-async function inscrever() {
+  async function inscrever() {
     // Verifica se os campos obrigatórios estão preenchidos
-    if (!nome || !email || !telefone) {
-      alert('Os campos nome, email e telefone são obrigatórios.');
+    if (!nome || !chamado || !email || !telefone || !bairro || !previsao || !sabendo || !foialuno ) {
+      setCampoobrigatorio('Campos obrigatorios ');
       return;
     }
-  
+
+
     // Exibe um alerta de confirmação antes de salvar
     confirmAlert({
       title: 'Confirmar inscrição',
@@ -48,7 +50,7 @@ async function inscrever() {
             try {
               let url = 'http://localhost:5000/inserir';
               let resposta = await axios.post(url, inscricao);
-  
+
               if (resposta.status === 200) {
                 alert('Dados salvos com sucesso!');
               } else {
@@ -78,7 +80,7 @@ async function inscrever() {
         </div>
 
         <div>
-          <h1>Feira de Profissões 2023</h1>
+          <h1>Feira das Profissões 2023</h1>
         </div>
 
         <div>
@@ -101,6 +103,7 @@ async function inscrever() {
               <input value={nome} onChange={e => setNome(e.target.value)} placeholder="  Ex: João Lucas da Silva"></input>
             </div>
 
+
             <div>
               <h1>Como gostaria de ser chamado?</h1>
               <input value={chamado} onChange={e => setChamado(e.target.value)} placeholder="  Ex: João"></input>
@@ -108,7 +111,7 @@ async function inscrever() {
 
             <div>
               <h1>E-MAIL</h1>
-              <InputMask type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="  Ex: nome123@gmail.com" required />
+              <InputMask type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="  Ex: nome123@gmail.com" maskPlaceholder={setEmail} required />
             </div>
 
             <div>
@@ -142,6 +145,7 @@ async function inscrever() {
         </article>
 
         <button onClick={inscrever}>Salvar</button>
+        <p> {campoobrigatorio} </p>
       </nav>
 
 
@@ -150,6 +154,8 @@ async function inscrever() {
       </footer>
 
     </div>
+
+
   );
 }
 
