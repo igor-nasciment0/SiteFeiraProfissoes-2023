@@ -1,0 +1,113 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+  }
+  
+  .pagina-ingresso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+  
+  
+    header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: 11vh;
+      width: 90vw;
+      
+  
+  
+  
+      img {
+        height: 70px;
+        width: 50px;
+        
+  
+      }
+  
+      h1 {
+        color: #33215B;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        
+  
+      }
+  
+      h2 {
+        color: #33215B;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+  
+  
+      }
+  
+    
+  
+  
+    }
+  
+    .faixa {
+      overflow: hidden;
+      margin-right: 4px;
+      margin-top: -25px;
+      width: 100vw;
+  
+      img {
+        width: 100.5vw;
+        height: 6vh;
+      }
+    }
+  
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 1165px;
+      height: 527px;
+      margin-top: 20px;
+      img{
+        margin-bottom: 25px;
+      }
+      h2{
+        font-size: 19px;
+        text-align: center;
+        width: 310px;
+      }
+      p{
+        margin-top: 10px;
+        font-size: 15px;
+        a{
+          text-decoration: none;
+          font-weight: 600;
+        }
+      }
+  
+      h1{
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 600;
+      }
+      
+    }
+  
+    footer {
+      margin-top: 20px;
+      width: 100vw;
+  
+  
+      img {
+        width: 100vw;
+      }
+    }
+  }
