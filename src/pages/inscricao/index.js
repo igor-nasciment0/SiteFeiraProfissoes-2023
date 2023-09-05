@@ -87,11 +87,11 @@ export default function Ingresso() {
           <h2>Bem-vindo</h2>
         </div>
       </header>
-      <div className="faixa">
+      <div className="faixa-inscricao">
         <img src="/assets/images/faixa.png"></img>
       </div>
 
-      <nav>
+      <nav className='meio'>
         <div>
           <h1>Inscrição</h1>
         </div>
