@@ -151,7 +151,7 @@ export default function Ingresso() {
       </nav>
 
 
-      <footer>
+      <footer className='rodape'>
         <img src="/assets/images/background-quadrados.png"></img>
       </footer>
 
