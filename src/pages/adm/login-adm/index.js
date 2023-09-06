@@ -15,7 +15,7 @@ export default function LoginAdm() {
       const credencial = response.data;
 
       if (login === credencial.login && senha === credencial.senha) {
-        window.location.href = 'https://www.youtube.com/watch?v=jO1QcffRoIM';
+        window.location.href = 'http://localhost:3000/adm';
       } else {
         setMessage('⚠ Login ou senha incorretos');
       }
