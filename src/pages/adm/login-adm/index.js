@@ -26,12 +26,14 @@ export default function LoginAdm() {
   }
 
   return (
-    <div className="pagina-login-adm">
+    <div className="pagina-login-admn">
       <header>
         <img src='/assets/images/logo.png' alt='' />
         <h1> Feira de Profissões 2023</h1>
         <h2> Instituto Social Nossa Senhora de Fátima</h2>
       </header>
+    
+
       <aside>
         <section>
           <div className='faixa1'>
@@ -69,8 +71,10 @@ export default function LoginAdm() {
             </div>
             <button onClick={entrar}>Entrar</button>
           </div>
-        </section>
+        </section> 
+        <img className='fundo' src='/assets/images/background-quadrados.png' />
       </aside>
+      
     </div>
   );
 }
