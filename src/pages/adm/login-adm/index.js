@@ -41,7 +41,7 @@ export default function LoginAdm() {
               <img src='/assets/images/logo.png' alt='' />
               <div>
                 <p>Faça login ao lado</p>
-                <p>e divirta-se com o melhor de nossos alunos.</p>
+                <p>e divirta-se com o melhor de nossos alunos</p>
                 <hr />
               </div>
             </div>
