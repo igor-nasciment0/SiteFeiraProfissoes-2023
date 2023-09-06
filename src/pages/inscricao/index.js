@@ -20,63 +20,65 @@ export default function Ingresso() {
 
   const [campoobrigatorio, setCampoobrigatorio] = useState('')
 
-  async function inscrever() {
-    // Verifica se os campos obrigatórios estão preenchidos
-    if (!nome || !chamado || !email || !telefone || !bairro || !previsao || !sabendo || !foialuno ) {
-      setCampoobrigatorio('⚠ Campos obrigatorios ');
-      return;
-    }
+  async function inscrever() { 
 
+     // Verifica se os campos obrigatórios estão preenchidos
+    
+     if (nome && chamado && email && telefone && bairro && previsao && sabendo && foialuno) {
 
-    // Exibe um alerta de confirmação antes de salvar
-    confirmAlert({
-      title: 'Confirmar inscrição',
-      message: 'Deseja salvar os dados?',
-      buttons: [
-        {
-          label: 'Sim',
-          onClick: async () => {
-            let inscricao = {
-              nm_nome: nome,
-              nm_ser_chamado: chamado,
-              ds_email: email,
-              nr_telefone: telefone,
-              nm_bairro: bairro,
-              ds_prev_chegada: previsao,
-              ds_sabendo: sabendo,
-              ds_foialuno: foialuno,
-            };
-
-            try {
-              let url = 'http://localhost:5000/inserir';
-              let resposta = await axios.post(url, inscricao);
-
-              if (resposta.status === 200) {
-                alert('Dados salvos com sucesso!');
-              } else {
-                alert('Erro ao salvar os dados. Tente novamente.');
+      // Exibe um alerta de confirmação antes de salvar
+      confirmAlert({
+        title: 'Confirmar inscrição',
+        message: 'Deseja salvar os dados?',
+        buttons: [
+          {
+            label: 'Sim',
+            onClick: async () => {
+              let inscricao = {
+                nm_nome: nome,
+                nm_ser_chamado: chamado,
+                ds_email: email,
+                nr_telefone: telefone,
+                nm_bairro: bairro,
+                ds_prev_chegada: previsao,
+                ds_sabendo: sabendo,
+                ds_foialuno: foialuno,
+              };
+  
+              try {
+                let url = 'http://localhost:5000/inserir';
+                let resposta = await axios.post(url, inscricao);
+                if (resposta.status === 200) {
+                  
+                  window.location.href = 'http://localhost:3000/reservado';
+                }
+              } catch (error) {
+                
               }
-            } catch (error) {
-              alert('Erro ao salvar os dados. Tente novamente.');
-            }
+            },
           },
-        },
-        {
-          label: 'Não',
-          onClick: () => {
-            // Não faz nada se o usuário pressionar "Não"
+          {
+            label: 'Não',
+            onClick: () => {
+              // Não faz nada se o usuário pressionar "Não"
+            },
           },
-        },
-      ],
-    });
+        ],
+      });
+    } else {
+      // Caso algum campo obrigatório esteja vazio, exibe uma mensagem de erro
+      setCampoobrigatorio('⚠ Campos obrigatórios não preenchidos');
+    }
+   
+    
   }
 
 
   return (
     <div className="pagina-ingresso">
-      <header>
+      <header >
         <div>
-          <img src="/assets/images/logo.png"></img>
+          <img className='logo' src="/assets/images/logo.png"></img>
         </div>
 
         <div>
@@ -144,7 +146,7 @@ export default function Ingresso() {
           </aside>
         </article>
 
-        <button onClick={inscrever}>Salvar</button>
+       <button onClick={inscrever} to="/ingressoreservado" >Salvar</button>
         <p>{campoobrigatorio} </p>
       </nav>
 
