@@ -4,7 +4,7 @@ import "./index.scss"
 export default function Ingresso() {
   return (
     <div className="pagina-ingresso">
-      <header>
+      <header className="cabecalho">
         <div>
           <img src="/assets/images/logo.png"></img>
         </div>

@@ -20,13 +20,17 @@ export default function Ingresso() {
 
   const [campoobrigatorio, setCampoobrigatorio] = useState('')
 
-  async function inscrever() {
-    // Verifica se os campos obrigatórios estão preenchidos
-    if (!nome || !chamado || !email || !telefone || !bairro || !previsao || !sabendo || !foialuno ) {
-      setCampoobrigatorio('⚠ Campos obrigatorios ');
-      return;
-    }
+  async function inscrever() { 
 
+     // Verifica se os campos obrigatórios estão preenchidos
+    
+     if (nome && chamado && email && telefone && bairro && previsao && sabendo && foialuno) {
+      // Todos os campos obrigatórios estão preenchidos, então prosseguimos com o redirecionamento
+      window.location.href = 'http://localhost:3000/reservado';
+    } else {
+      // Caso algum campo obrigatório esteja vazio, exibe uma mensagem de erro
+      setCampoobrigatorio('⚠ Campos obrigatórios não preenchidos');
+    }
 
     // Exibe um alerta de confirmação antes de salvar
     confirmAlert({
@@ -51,13 +55,8 @@ export default function Ingresso() {
               let url = 'http://localhost:5000/inserir';
               let resposta = await axios.post(url, inscricao);
 
-              if (resposta.status === 200) {
-                alert('Dados salvos com sucesso!');
-              } else {
-                alert('Erro ao salvar os dados. Tente novamente.');
-              }
-            } catch (error) {
-              alert('Erro ao salvar os dados. Tente novamente.');
+            } catch (err) {
+            
             }
           },
         },
@@ -69,6 +68,7 @@ export default function Ingresso() {
         },
       ],
     });
+    
   }
 
 
@@ -144,7 +144,7 @@ export default function Ingresso() {
           </aside>
         </article>
 
-        <button onClick={inscrever}>Salvar</button>
+       <button onClick={inscrever} to="/ingressoreservado" >Salvar</button>
         <p>{campoobrigatorio} </p>
       </nav>
 
