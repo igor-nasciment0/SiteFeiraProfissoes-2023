@@ -114,7 +114,7 @@ export default function Landpage() {
                         <h2>Um <a>DIA</a> especial!</h2>
                             <h3>Estantes de convidados (Fios de Berenice, Universidades, Nutricionista, Exame de vista e muito mais!).</h3>
                         <p>Na Feira das Profissões, você terá oportunidade de conhecer os cursos oferecidos pelo Instituto por meio de projetos criativos feitos pelos próprios alunos para demonstrarem seu conhecimento.</p>
-                        <p>Haverá troca de livros, bate papo sobre profissões, caricuturas, apresentação de montagens e redes, oficina mecânica, elaboração de currículos, linkedin, simulação de entrevistas, e claro, a lanchonete do Frei com preços especial!</p>
+                        <p>Haverá troca de livros, bate papo sobre profissões, caricuturas, apresentação de montagens e redes, oficina mecânica, elaboração de currículos, linkedin, simulação de entrevistas, e também, a lanchonete do Frei com preços especial!</p>
                     </div>
 
                     
