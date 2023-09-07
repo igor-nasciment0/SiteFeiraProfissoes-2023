@@ -1,0 +1,115 @@
+.cabecalho-usuario
+{
+    width: 100%;
+    padding: 22px 30px 16px;
+    box-shadow: 0 1px 4px 0 rgba($color: #000000, $alpha: 0.25);
+
+    color: #33215B;
+    font-variant: small-caps;
+
+    .header-desktop
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-mobile
+    {
+        display: none;
+    }
+
+    .container-logo
+    {
+        width: 100%;
+
+        img
+        {
+            width: 100%;
+            max-width: 70px;
+        }
+    }
+
+    h1
+    {
+        font-size: 22px;
+        font-weight: 700;
+        width: 100%;
+        text-align: center;
+    }
+
+    h2
+    {
+        font-size: 16px;
+        font-weight: 700;
+        width: 100%;
+        text-align: right;
+    }
+
+    @media (max-width: 1024px) {
+        .header-desktop
+        {
+            display: none;
+        }
+
+        .header-mobile
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .container-logo
+            {
+                width: fit-content;
+                margin-right: 10px;
+            }
+
+            h1
+            {
+                text-align: left;
+                width: max-content;
+            }
+
+            h2
+            {
+                text-align: left;
+                width: max-content;
+            }
+
+            > div
+            {
+                display: flex;
+                flex-direction: column;
+                width: fit-content;
+            }
+        }
+    }
+
+    @media (max-width: 500px)
+    {
+        .header-mobile
+        {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .header-mobile > div
+        {
+            align-items: center;
+        }
+
+        h1
+        {
+            font-size: 16px !important;
+        }
+
+        h2
+        {
+            font-size: 14px !important;
+        }
+
+        padding: 12px;
+    }
+}

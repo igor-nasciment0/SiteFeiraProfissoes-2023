@@ -1,0 +1,75 @@
+.duvida
+{
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px 15px;
+
+    border-radius: 6px;
+    background-color: rgba($color: #FFF, $alpha: 0.1);
+    color: #FFF;
+
+    cursor: pointer;
+    transition: 0.3s;
+
+    > div
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        h4, h5
+        {
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        h5
+        {
+            width: 18px;
+            height: 18px;
+            background-color: rgba($color: #FFF, $alpha: 0.1);
+            border-radius: 100px;
+
+            text-align: center;
+            vertical-align: middle;
+        }
+    }
+
+    p
+    {
+        padding: 15px;
+        font-size: 12px;
+        font-weight: 500;
+    
+        transition: 0.3s;
+    }
+
+    ul
+    {
+        padding-inline-start: 10px;
+    }
+
+    .show
+    {
+        display: block !important;
+        opacity: 1;
+    }
+
+    .hide {
+        display: none;
+        opacity: 0;
+    }
+}
+
+.duvida:hover
+{
+    background-color: #FFF;
+    color: #33215B;
+
+    h5
+    {
+        background-color: rgba($color: #000, $alpha: 0.1);
+    }
+}
