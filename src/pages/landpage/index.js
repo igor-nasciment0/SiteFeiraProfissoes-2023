@@ -91,16 +91,15 @@ export default function Landpage() {
             <section className="sec-sobre">
                 <div className="container-tela">
                     <div>
-                        <h2>Na nossa Feira das Profissões,</h2>
-                        <h3>Mais de dois mil visitantes por ano</h3>
-                        <h4>E mais de 4.600 atendimentos</h4>
+                        <h2>3ª <span>Feira Frei</span> das Profissões!</h2>
+                        <h3>2000 mil visitantes por ano, 4.600 atendimentos</h3>
 
-                        <p>Há 3 anos realizamos em nosso instituto a Feira das Profissões, um evento para todas as famílias para que <span>conheçam um pouco do que temos feito por nossos alunos.</span></p>
-                        <p>Neste evento nossos alunos mostrarão seus projetos usando um pouco do que aprenderam aqui, demonstrando o melhor que o Instituto pode oferecer. </p>
+                        <p>Nossa terceira ediçao da feira das Profissões do <span>Instituto Nossa Senhora de Fátima.</span></p>
+                        <p>Você é nosso CONVIDADO para conhecer a nossa MISSÃO, os nossos cursos e fazer parte da nossa trajetória!<span> Um evento para a família, empresários, educadores e estudantes.</span> </p>
                         <p>Além de poder participar e observar os projetos, pode ser uma oportunidade para os <span>que buscam uma vaga de emprego.</span></p>
                     </div>
 
-                    <img src="/assets/images/imagem-feira.png" alt="Imagem da Feira de 2021" />
+                    <img src="/assets/images/img-patio.png" alt="" />
                 </div>
             </section>
 
@@ -110,12 +109,15 @@ export default function Landpage() {
 
             <section className="sec-conheca">
                 <div className="container-tela">
-                    <div>
-                        <h2>Venha conhecer nossa instituição e os projetos desenvolvidos por nossos alunos.</h2>
-                        <p>Na Feira das Profissões, você terá oportunidade de conhecer os cursos oferecidos pelo Instituto por meio de projetos criativos feitos pelos próprios alunos para demonstrarem seu conhecimento.</p>
-                    </div>
+                    <img src="/assets/images/img-mecanica.png" alt="" />
 
-                    <img src="/assets/images/ImagemAulaFrei.png" alt="" />
+                    <div>
+                        <h2>Um <span>DIA</span> especial!</h2>
+                        <h3>Estandes de convidados (Doação de Cabelo, Universidades, Nutricionista, Exame de vista e muito mais!).</h3>
+                        
+                        <p>Na Feira das Profissões, você terá oportunidade de conhecer os cursos oferecidos pelo Instituto por meio de projetos criativos feitos pelos próprios alunos para demonstrarem seu conhecimento.</p>
+                        <p>Haverá troca de livros, bate papo sobre profissões, caricuturas, apresentação de montagens e redes, oficina mecânica, elaboração de currículos, linkedin, simulação de entrevistas, e claro, a lanchonete do Frei com preços especial!</p>
+                    </div>
                 </div>
             </section>
 

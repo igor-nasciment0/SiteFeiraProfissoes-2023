@@ -381,20 +381,17 @@
                 font-size: 27px;
                 font-weight: 700;
                 text-transform: uppercase;
+
+                span
+                {
+                    color: #00BDCE;
+                }
             }
 
             h3
             {
                 color: #999999;
-                font-size: 22px;
-                font-weight: 700;
-                text-transform: uppercase;
-            }
-
-            h4
-            {
-                color: #999999;
-                font-size: 19px;
+                font-size: 20px;
                 font-weight: 700;
                 text-transform: uppercase;
                 margin-bottom: 20px;
@@ -415,7 +412,7 @@
 
             p:not(p:last-child)
             {
-                margin-bottom: 20px;
+                margin-bottom: 12px;
             }
 
             img
@@ -486,97 +483,97 @@
         flex-direction: row;
         justify-content: center;
 
-        background-image: url('../../../public/assets/images/ImagemAulaFrei.png');
-        background-repeat: no-repeat;
-        background-size: 50% auto;
-        background-position: center left;
-    
         .container-tela
         {
             width: 100%;
             max-width: 1140px;
-            padding: 40px 20px;
+            padding: 60px 20px;
 
             display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
 
-            > div
+            h2
             {
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
-                width: 50%;
-                padding: 60px 0;
-                padding-left: 40px;
-
                 color: #33215B;
-                text-align: center;
-
-                h2
+                font-size: 27px;
+                font-weight: 700;
+                text-transform: uppercase;
+                
+                span
                 {
-                    font-size: 27px;
+                    color: #00BDCE;
+                }
+            }
+
+            h3
+            {
+                color: #999999;
+                font-size: 18px;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+
+            p
+            {
+                color: #33215B;
+
+                font-size: clamp(16px, 1vw, 18px);
+                font-weight: 500;
+                
+                span
+                {
                     font-weight: 700;
-                    margin-bottom: 45px;
-                }
-
-                p
-                {
-                    font-size: clamp(16px, 1vw, 18px);
-                    font-weight: 500;
                 }
             }
 
-            > img
+            p:not(p:last-child)
             {
-                display: none;
+                margin-bottom: 20px;
             }
-        }
 
-        @media (max-width: 900px)
-        {
-            .container-tela
+            img
             {
-                > div
-                {
-                    padding: 0;
-                    padding-left: 40px;
-                }
-            }    
+                width: 50%;
+                max-width: 500px;
+            }
         }
 
         @media (max-width: 768px)
         {
-            background: none;
-
             .container-tela
             {
-                flex-direction: column;
-                justify-content: flex-start;
+                padding: 45px 20px;
+                flex-direction: column-reverse;
 
-                > div
+                img
                 {
-                    width: unset;
-                    margin-bottom: 20px;
-                    padding-left: 0;
-
-                    h2
-                    {
-                        font-size: 22px;
-                        margin-bottom: 20px;
-                    }
-
-                    p
-                    {
-                        font-size: 14px;
-                    }
+                    width: 80%;
+                    max-width: unset;
                 }
 
-                > img
+                h2
                 {
-                    display: inline-block;
-                    width: 100%;
-                    box-shadow: 0 0 6px 2px rgba($color: #33215B, $alpha: 0.5);
+                    font-size: 22px;
+                    text-align: center;
+                }
+
+                h3
+                {
+                    font-size: 18px;
+                    text-align: center;
+                }
+
+                h4
+                {
+                    font-size: 16px;
+                }
+
+                p
+                {
+                    font-size: 14px;
                 }
             }
         }
