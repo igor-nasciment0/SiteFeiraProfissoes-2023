@@ -50,7 +50,7 @@ export default function Landpage() {
             <section className="sec-inicio">
                 <div className="container-tela">
                     <div>
-                        <h1>Te esperamos na</h1>
+                        <h1>Esperamos você na</h1>
                         <h2>Feira das Profissões 2023</h2>
                         <Link>Inscreva-se Agora</Link>
                     </div>
@@ -92,8 +92,8 @@ export default function Landpage() {
                 <div className="container-tela">
                     <div>
                         <h2>Na nossa Feira das Profissões,</h2>
-                        <h3>Mais de dois mil visitantes por ano,</h3>
-                        <h3>Com mais de 4.600 atendimentos</h3>
+                        <h3>Mais de dois mil visitantes por ano</h3>
+                        <h4>E mais de 4.600 atendimentos</h4>
 
                         <p>Há 3 anos realizamos em nosso instituto a Feira das Profissões, um evento para todas as famílias para que <span>conheçam um pouco do que temos feito por nossos alunos.</span></p>
                         <p>Neste evento nossos alunos mostrarão seus projetos usando um pouco do que aprenderam aqui, demonstrando o melhor que o Instituto pode oferecer. </p>
