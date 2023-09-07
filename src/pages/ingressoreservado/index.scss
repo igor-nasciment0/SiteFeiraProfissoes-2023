@@ -5,56 +5,11 @@
     
   }
   
-  .pagina-ingresso {
+  .pagina-ingresso-concluido {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-  
-  
-    .cabecalho {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      height: 13vh;
-      width: 90vw;
-      
-  
-  
-  
-      img {
-        height: 70px;
-        width: 50px;
-        
-  
-      }
-  
-      h1 {
-        color: #33215B;
-        font-size: 26px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        
-  
-      }
-  
-      h2 {
-        color: #33215B;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-  
-  
-      }
-  
-    
-  
-  
-    }
   
     .faixa {
       margin-top: 10px;
@@ -97,15 +52,5 @@
         font-weight: 600;
       }
       
-    }
-  
-    footer {
-      width: 98.5vw;
-      margin-top: 30px;
-  
-      img {
-        width: 100vw;
-        height: 20.7vh;
-      }
     }
   }

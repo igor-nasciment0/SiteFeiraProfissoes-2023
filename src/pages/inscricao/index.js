@@ -1,13 +1,13 @@
-import { Link } from 'react-router-dom';
 import './index.scss';
 import { useState } from 'react';
 import axios from 'axios';
 import { confirmAlert } from 'react-confirm-alert';
 import 'react-confirm-alert/src/react-confirm-alert.css';
 import InputMask from 'react-input-mask';
+import Cabecalho from '../../components/cabecalho';
 
 
-export default function Ingresso() {
+export default function Inscricao() {
 
   const [nome, setNome] = useState('')
   const [chamado, setChamado] = useState('')
@@ -76,21 +76,9 @@ export default function Ingresso() {
 
   return (
     <div className="pagina-ingresso">
-      <header >
-        <div>
-          <img className='logo' src="/assets/images/logo.png"></img>
-        </div>
-
-        <div>
-          <h1>Feira das Profissões 2023</h1>
-        </div>
-
-        <div>
-          <h2>Bem-vindo</h2>
-        </div>
-      </header>
+      <Cabecalho/>
       <div className="faixa-inscricao">
-        <img src="/assets/images/faixa.png"></img>
+        <img src="/assets/images/faixa.png" alt=""/>
       </div>
 
       <nav className='meio'>
@@ -102,30 +90,30 @@ export default function Ingresso() {
           <aside>
             <div>
               <h1>Nome</h1>
-              <input value={nome} onChange={e => setNome(e.target.value)} placeholder="  Ex: João Lucas da Silva"></input>
+              <input value={nome} onChange={e => setNome(e.target.value)} placeholder="Ex: João Lucas da Silva"></input>
             </div>
 
 
             <div>
               <h1>Como gostaria de ser chamado?</h1>
-              <input value={chamado} onChange={e => setChamado(e.target.value)} placeholder="  Ex: João"></input>
+              <input value={chamado} onChange={e => setChamado(e.target.value)} placeholder="Ex: João"></input>
             </div>
 
             <div>
               <h1>E-MAIL</h1>
-              <InputMask type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="  Ex: nome123@gmail.com" maskPlaceholder={setEmail} required />
+              <InputMask type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Ex: nome123@gmail.com" maskPlaceholder={setEmail} required />
             </div>
 
             <div>
               <h1>Número de telefone</h1>
-              <InputMask mask="(99) 99999-9999" maskChar=" " value={telefone} onChange={e => setTelefone(e.target.value)} placeholder="  Ex: (11) 99999-5555" required />
+              <InputMask mask="(99) 99999-9999" maskChar=" " value={telefone} onChange={e => setTelefone(e.target.value)} placeholder="Ex: (11) 99999-5555" required />
             </div>
           </aside>
 
           <aside>
             <div>
               <h1>Bairro</h1>
-              <input value={bairro} onChange={e => setBairro(e.target.value)} placeholder="  Ex: Cocaia"></input>
+              <input value={bairro} onChange={e => setBairro(e.target.value)} placeholder="Ex: Cocaia"></input>
             </div>
 
             <div>
@@ -135,12 +123,12 @@ export default function Ingresso() {
 
             <div>
               <h1>Como ficou sabendo da feira ?</h1>
-              <input value={sabendo} onChange={e => setSabendo(e.target.value)} placeholder="  Ex: Amigos"></input>
+              <input value={sabendo} onChange={e => setSabendo(e.target.value)} placeholder="Ex: Amigos"></input>
             </div>
 
             <div>
               <h1>Já foi aluno do FREI ?</h1>
-              <input value={foialuno} onChange={e => setFoialuno(e.target.value)} placeholder="  Ex: Sim"></input>
+              <input value={foialuno} onChange={e => setFoialuno(e.target.value)} placeholder="Ex: Sim"></input>
 
             </div>
           </aside>
@@ -152,9 +140,8 @@ export default function Ingresso() {
 
 
       <footer className='rodape'>
-        <img src="/assets/images/background-quadrados.png"></img>
+        <img src="/assets/images/background-quadrados.png" alt=""/>
       </footer>
-
     </div>
 
 

@@ -1,28 +1,18 @@
 
+import Cabecalho from "../../components/cabecalho";
 import "./index.scss"
 
 export default function Ingresso() {
   return (
-    <div className="pagina-ingresso">
-      <header className="cabecalho">
-        <div>
-          <img src="/assets/images/logo.png"></img>
-        </div>
+    <div className="pagina-ingresso-concluido">
+      <Cabecalho/>
 
-        <div>
-          <h1>Feira de Profissões 2023</h1>
-        </div>
-
-        <div>
-          <h2>Bem-vindo</h2>
-        </div>
-      </header>
       <div className="faixa">
-        <img src="/assets/images/faixa.png"></img>
+        <img src="/assets/images/faixa.png" alt=""/>
       </div>
 
       <nav>
-        <img src="/assets/images/ingresso.png"></img>
+        <img src="/assets/images/ingresso.png" alt="" />
         <h2>Ingresso reservado com sucesso !!!
           Esperamos voce no dia 30/09</h2>
           <h2>Em nosso instituto</h2>
@@ -31,7 +21,7 @@ export default function Ingresso() {
 
 
       <footer>
-        <img src="/assets/images/background-quadrados.png"></img>
+        <img src="/assets/images/background-quadrados.png" alt="" />
       </footer>
 
     </div>
