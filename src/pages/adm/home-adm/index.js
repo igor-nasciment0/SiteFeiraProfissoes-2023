@@ -122,13 +122,14 @@ export default function HomeAdm(){
                             <div className='inputs-filtro'>
 
                                 <div>
-                                    <input type='checkbox'/>
-                                    <span>MAIOR</span>
+                                    <input type='checkbox' id='maior'/>
+                                    <label for='maior'>MAIOR</label>
                                 </div>
                                 
                                 <div>
-                                    <input type='checkbox'/>
-                                    <span>MENOR</span>
+                                    
+                                    <input type='checkbox' id='menor'/>
+                                    <label for='menor'>MENOR</label>
                                 </div>
                             </div>
 
