@@ -83,6 +83,7 @@ export default function Inscricao() {
 
       <nav className='meio'>
         <div>
+          
           <h1>Inscrição</h1>
         </div>
 
