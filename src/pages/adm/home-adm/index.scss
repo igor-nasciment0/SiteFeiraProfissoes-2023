@@ -226,6 +226,8 @@
                                 background-image: url("data:image/svg+xml,%3Csvg width='20' height='23' viewBox='0 0 20 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1022_2)'%3E%3Cpath d='M19.5798 4.73364C20.1378 5.29517 20.1378 6.20708 19.5798 6.7686L8.15123 18.2686C7.59319 18.8301 6.68694 18.8301 6.12891 18.2686L0.414621 12.5186C-0.143415 11.9571 -0.143415 11.0452 0.414621 10.4836C0.972656 9.92212 1.87891 9.92212 2.43694 10.4836L7.1423 15.2139L17.5619 4.73364C18.12 4.17212 19.0262 4.17212 19.5843 4.73364H19.5798Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1022_2'%3E%3Crect width='20' height='23' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
                                 background-position: center center;
                                 background-repeat: no-repeat;
+
+                                transition: background-image 1s, background-color 0.2s;
                             }
                         }
                     }
