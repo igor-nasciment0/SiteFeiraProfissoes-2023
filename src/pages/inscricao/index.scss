@@ -112,12 +112,13 @@
   }
 
   footer {
+    background-color: #FFF;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
 
     img {
       width: 100%;
-      height: 23vh;
+      height: 20vh;
     }
   }
 }
@@ -131,7 +132,7 @@
       align-items: center;
       justify-content: center;
       border-radius: 18px;
-      background: rgb(237, 237, 237);
+      background: rgb(241, 241, 241);
       width: 100%;
       max-width: 800px;
       margin-top: 70px;
@@ -171,15 +172,92 @@
 
 
 @media (max-width: 1280px) {
+
   .pagina-ingresso {
+
+    .meio {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      background: rgb(237, 237, 237);
+      width: 100%;
+      max-width: 780px;
+      margin-top: 90px;
+      padding: 10px 5px;
+      height: 480px;
+
+      article {
+
+        aside {
+
+          div {
+
+            input {
+              margin-top: 30px;
+              width: 350px;
+              margin: 0px;
+              padding: 10px;
+              height: 34px;
+            }
+          }
+        }
+      }
+    }
 
     footer {
       width: 100%;
-      margin-top: 30px;
+      margin-top: 60px;
 
       img {
         width: 100%;
-        height: 24.3vh;
+        height: 22vh;
+      }
+    }
+  }
+}
+
+@media (max-width: 638px) {
+
+  .pagina-ingresso {
+    .meio {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      background: rgb(237, 237, 237);
+      width: 100%;
+      max-width: 400px;
+      margin-top: 70px;
+      margin-bottom: 50px;
+      padding: 10px 5px;
+      height: 530px;
+
+      article {
+        aside {
+          div {
+
+            input {
+              margin-top: 30px;
+              width: 240px;
+              margin: 0px;
+              padding: 10px;
+              height: 36px;
+            }
+          }
+        }
+      }
+    }
+
+    footer {
+      width: 100%;
+      margin-top: 40px;
+
+      img {
+        width: 100%;
+        height: 13vh;
       }
     }
   }
@@ -198,14 +276,15 @@
       width: 100%;
       max-width: 650px;
       margin-top: 70px;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
       padding: 10px 5px;
-      height: 508px;
+      height: 530px;
 
       article {
 
         aside {
           flex-direction: column;
+
           div {
 
             input {
@@ -222,11 +301,11 @@
 
     footer {
       width: 100%;
-      margin-top: 30px;
+      margin-top: 70px;
 
       img {
         width: 100%;
-        height: 24.9vh;
+        height: 17.7vh;
       }
     }
   }
@@ -250,6 +329,7 @@
 
       article {
         flex-direction: column;
+
         aside {
 
           div {
@@ -277,8 +357,8 @@
 
       img {
         width: 100%;
-        height: 19vh;
-        
+        height: 20vh;
+
       }
     }
   }
