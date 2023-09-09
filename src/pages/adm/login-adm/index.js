@@ -34,7 +34,7 @@ export default function LoginAdm() {
       <div className='login'>
 
         <div>
-          <h1>LOGIN ADM</h1>
+          <h1>LOGIN ADM </h1>
           <hr></hr>
         </div>
 
