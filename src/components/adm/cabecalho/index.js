@@ -1,4 +1,5 @@
 import './index.scss';
+import {Link} from 'react-router-dom';
 
 export default function AdmHeader(){
 
@@ -9,7 +10,6 @@ export default function AdmHeader(){
             <div> </div>
             <h1>VOCÊ ESTÁ LOGADO COMO ADMINISTRADOR DA FEIRA</h1>
             <h2>BEM-VINDO @USER</h2>
-
         </header>
     );
 }

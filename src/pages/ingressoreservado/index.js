@@ -5,23 +5,24 @@ import "./index.scss"
 export default function Ingresso() {
   return (
     <div className="pagina-ingresso-concluido">
-      <Cabecalho/>
+      <Cabecalho />
 
-      <div className="faixa">
-        <img src="/assets/images/faixa.png" alt=""/>
+      <div className="faixa-ingresso">
+        <img src="/assets/images/faixa-reta.png" alt="" />
       </div>
 
       <nav>
-        <img src="/assets/images/ingresso.png" alt="" />
-        <h2>Ingresso reservado com sucesso !!!
-          Esperamos voce no dia 30/09</h2>
-          <h2>Em nosso instituto</h2>
-        
+        <img src="/assets/images/ingressoo.png" alt="" />
+        <h2>Ingresso reservado com sucesso !!
+            Esperamos voce no dia 30/09
+            Em nosso instituto</h2>
+
+
       </nav>
 
 
       <footer>
-        <img src="/assets/images/background-quadrados.png" alt="" />
+        <img src="/assets/images/background-quadrados.png" />
       </footer>
 
     </div>
