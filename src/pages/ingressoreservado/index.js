@@ -22,7 +22,7 @@ export default function Ingresso() {
 
 
       <footer>
-        <img src="/assets/images/background-quadrados.png" />
+        <img src="/assets/images/background-quadrados.png" alt=""/>
       </footer>
 
     </div>

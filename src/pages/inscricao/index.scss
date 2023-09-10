@@ -103,6 +103,18 @@
       font-weight: 700;
       line-height: normal;
       border: none;
+
+      transition: 0.3s;
+
+      cursor: pointer;
+      margin-top: 16px;
+    }
+
+    button:hover
+    {
+      color: #F7941D;
+      background-color: #ffe3c0;
+      box-shadow: 0 0 4px 0 #6e3d00bd;
     }
 
     p {

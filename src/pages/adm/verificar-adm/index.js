@@ -1,4 +1,4 @@
-import './index.scss';
+/* import './index.scss';
 import './responsive.scss';
 import { useEffect, useState } from 'react';
 import { Await, Link } from 'react-router-dom';
@@ -143,4 +143,4 @@ export default function Verificar() {
                 border: 1px solid #ffffff;
             }
 
-*/}
+*/
