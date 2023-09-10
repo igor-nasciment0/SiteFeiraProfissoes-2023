@@ -1,6 +1,5 @@
 import './index.scss';
 import './responsive.scss';
-import AdmHeader from '../../../components/adm/cabecalho';
 import { useEffect, useState } from 'react';
 import { Await, Link } from 'react-router-dom';
 import HomeAdm from '../home-adm';
@@ -53,7 +52,6 @@ export default function Verificar() {
         <div className='page-verificar-adm'>
 
             <header>
-
                 <Link className='voltar-home' to={'/adm'}>
                     Voltar
                     <span> para Pagina </span>
