@@ -6,7 +6,7 @@ export default function Cabecalho() {
         <header className="cabecalho-usuario">
             <div className="header-desktop">
                 <div className="container-logo">
-                    
+             
                     <Link to={'/'}><img src="/assets/images/logo.png" alt="Logo do Instituto" /></Link>
                 </div> 
 

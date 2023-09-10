@@ -2,7 +2,6 @@
 
     display:flex;
     flex-direction: column;
-
     overflow-x: hidden;
 
     .conteudo{
@@ -17,25 +16,31 @@
 
             width:50%;
 
-            >h3{
-
-                margin-bottom:10px;
-
-                color:#33215B;
-                font-size:50px;
-                text-align: center;
-            }
-
             .infs-gerais{
 
                 display:flex;
-                flex-direction: row;
-                justify-content: space-evenly;
+                flex-direction: column;
 
-                gap:40px;
-                margin-bottom:10px;
+                >h3{
 
-                .usuarios-cadastrados,.visitantes-totais{
+                    margin-bottom:10px;
+    
+                    color:#33215B;
+                    font-size:30px;
+                    text-align: center;
+                }
+
+                .container-infs-gerais{
+
+                    display:flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+
+                    gap:40px;
+                    margin-bottom:10px;
+                }
+
+                .container-infs-gerais .usuarios-cadastrados,.visitantes-totais{
 
                     display:flex;
                     flex-direction: column;
@@ -69,33 +74,34 @@
                         }
                     }
                 }
-            }
 
-            .taxa-presenca{
+                .taxa-presenca{
 
-                margin-bottom:20px;
-
-                font-size:24px;
-                text-align: center;
-                font-weight: 600;
-                color:#33215B;
-
-                span{
+                    margin-bottom:20px;
     
-                    font-weight: 700;
-                }
-
-                hr{
-
-                    height:3px;
-                    background-color:#33215B;
-                }
-            }  
+                    font-size:24px;
+                    text-align: center;
+                    font-weight: 600;
+                    color:#33215B;
+    
+                    span{
+        
+                        font-weight: 700;
+                    }
+    
+                    hr{
+    
+                        height:3px;
+                        background-color:#33215B;
+                    }
+                }  
+            }
             
             .listar-salas-lotacao{
 
                 display:flex;
-                flex-direction:row;
+                flex-direction:column-reverse;
+                align-items: center;
 
                 width:100%;
                 gap:20px;
@@ -125,10 +131,11 @@
                     align-items: center;
 
                     overflow-y:auto;
-                    width:75%;
+                    width:100%;
                     max-height:500px;
 
                     padding:20px;
+                    margin-bottom:30px;
 
                     background-color: #343D90;
                     border-radius:5px;
@@ -147,8 +154,11 @@
                         overflow-y: auto;
 
                         thead{
+
                             font-weight:600;
                             text-align: left;
+                            font-size:16px;
+                            text-align: center;
 
                             height:20px;
                         }
@@ -160,7 +170,8 @@
                                 padding:20px;
 
                                 border: 1px solid #FFF;
-                                font-size:18px;
+                                font-size:14px;
+                                text-align: center;
                             }
                         }
                     }
@@ -174,12 +185,13 @@
                     background-color: #343D90;
                     color:#fff;
 
-                    width:25%;
-                    height:150px;
+                    width:60%;
+                    height:100px;
 
                     h6{
 
                         font-size:16px;
+                        text-align:center;
                     }
 
                     hr{
@@ -188,6 +200,10 @@
                     }
 
                     .inputs-filtro{
+
+                        display:flex;
+                        flex-direction: row;
+                        justify-content: space-evenly;
 
                         >div{
 
@@ -256,7 +272,7 @@
                 h3{
     
                     color:#00BDCE;
-                    font-size:28px;
+                    font-size:30px;
                 }
     
                 hr{
@@ -267,15 +283,23 @@
                 }
             }
             
-            .contagem,.validacao{
+            .container-selecionar{
+
+                display:flex;
+                flex-direction:column;
+
+                gap:20px;
+            }
+
+            .container-selecionar .contagem,.validacao{
 
                 display:flex;
                 flex-direction: column;
                 align-items: center;
 
-                width:500px;
+                width:400px;
                 height:250px;
-                padding:20px 0px;
+                padding:20px 10px;
 
                 border-radius:10px;
                 background-color: #00BDCED9;
@@ -314,7 +338,7 @@
 
                     margin-right:10px;
                 }
-
+                
                 .botao-direcionar{
 
                     display:flex;
@@ -352,21 +376,125 @@
 
     .page-homeAdm{
         .conteudo{
-            .titulo-conteudo{
+            .informacoes{
 
-                margin-bottom:10px;
-                >div{
-                    h3{
-                        font-size:22px;
+                .container-infs-gerais .usuarios-cadastrados,.visitantes-totais{
+
+                    max-height: 120px;
+                    width:200px !important;
+
+                    h5{
+
+                        font-size:16px !important;
                     }
-                    hr{
-                        width:350px;
+
+                    div{
+
+                        font-size:14px;
+                        span{
+
+                            font-size:30px !important;
+                        }
+                    }          
+                }
+
+                .listar-salas-lotacao{
+
+                    .filtro .inputs-filtro > div label{
+
+                        font-size:14px;
+                    }
+
+                    .filtro .inputs-filtro > div label:before{
+
+                        width:25px;
+                        height:25px;
+                    }
+                    
+                    .tabela {
+
+                        h6 {
+
+                            font-size: 16px;
+                        }
+
+                        table {
+                            thead {
+
+                                font-size:14px;
+                            }
+                            tbody{
+
+                                tr{
+                                    font-size:13px;
+                                }
+                            }
+                        }
                     }
                 }
             }
-            .selecionar{
 
-                padding:50px 0px;
+            .selecionar{
+                .titulo{
+
+                    margin-bottom:10px;
+                    
+                    h3{
+                        font-size:20px;
+                    }
+                    hr{
+                        width:300px;
+                    }         
+                }
+
+                .container-selecionar .contagem,.validacao{
+
+                    width:300px;
+                    height:250px;
+
+                    h4{
+
+
+                        font-size:14px;
+                    }
+
+                    #icon-lupa{
+
+                        width:15px;
+                        height:15px;
+                    }
+
+                    #icon-contar{
+
+                        width:22px;
+                        height:21px;
+                    }
+
+
+                    #icon-gear{
+
+                        width:52px;
+                        height:54px;
+                    }
+
+                    #icon-user-valid{
+
+                        width:75px;
+                        height:56px;
+                    }
+
+                    .botao-direcionar{
+
+                        font-size:12px;
+                        padding:10px 20px;
+
+                        svg{
+
+                            width:18px;
+                            height:13px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -376,19 +504,52 @@
 
     .page-homeAdm{
         .conteudo{
-            .titulo-conteudo{
-                >div{
-                    h3{
-                        font-size:18px;
+
+            flex-direction: column-reverse;
+            .informacoes{
+
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                width:100%;
+                padding:0px 30px;
+                gap:10px;
+
+                .infs-gerais .container-infs-gerais{
+
+                    flex-direction:column;
+                    align-items: center;
+                }
+
+                .listar-salas-lotacao .tabela{
+
+                    max-height:400px;
+
+                    table thead {
+                        font-size:13px;
                     }
-                    hr{
-                        width:300px;
-                    }
+                } 
+                
+                .listar-salas-lotacao .filtro{
+
+                    width:100%;
                 }
             }
 
             .selecionar{
-                .contagem,.validacao{
+
+                width:100vw;
+                margin-bottom:40px;
+
+                .container-selecionar{
+
+                    flex-direction:row;
+                }
+
+                .container-selecionar .contagem,.validacao{
+
+                    width:270px;
 
                     h4{
 
@@ -404,7 +565,7 @@
                     }
                     .botao-direcionar{
     
-                        padding:10px 80px;
+                        padding:10px 10px;
                         font-size:14px;
                     }
 
@@ -429,44 +590,48 @@
 
     .page-homeAdm{
         .conteudo{
+            flex-direction: column-reverse;
+            
+            .informacoes{
+
+                flex-direction:column;
+                padding:0px 10px;
+
+                .infs-gerais .container-infs-gerais{
+
+                    flex-direction: row;
+                    justify-content: center;
+                    width:100%;
+                }
+
+                .listar-salas-lotacao .tabela{
+
+                    overflow-x:hidden;
+                    max-height:300px;
+                }
+            }
+
             .selecionar{
-                .contagem,.validacao{
 
-                    max-width:350px;
-                    h4{
+                margin-bottom:20px;
 
-                        font-size:12px;
-                    }
+                .container-selecionar{
+
+                    flex-direction:column;
+                }
+
+                .container-selecionar .contagem, .validacao{
+
+                    height:120px;
+                    width:240px;
                     p{
-                        font-size:9px;
-                    }
-                    img{
 
-                        width: 120px;
-                        height: 90px;
-                    }
-                    .botao-direcionar{
-    
-                        padding:10px 80px;
-                        font-size:12px;
-
-                        svg{
-
-                            width:18px;
-                            height:13px;
-                        }
+                        display:none;
                     }
 
-                    #icon-lupa{
+                    .svg-main{
 
-                        width:15px;
-                        height:15px;
-                    }
-
-                    #icon-contar{
-
-                        width:19px;
-                        height:18px;
+                        display:none;
                     }
                 }
             }
@@ -474,30 +639,43 @@
     }
 }
 
-@media(max-width:440px){
+@media(max-width:460px){
 
     .page-homeAdm{
         .conteudo{
-            .selecionar{
-                .contagem,.validacao{
-
-                    max-width:300px;
-
-                    .botao-direcionar{
-    
-                        padding:10px 60px;
-                        font-size:12px;
-                    }
-                }
-            }
-
-            .titulo-conteudo{
-                >div{
+            .informacoes{
+                .infs-gerais{
                     h3{
-                        font-size:12px;
+
+                        font-size:20px;
                     }
-                    hr{
-                        width:180px;
+
+                    .container-infs-gerais{
+
+                        gap:20px;
+                    }
+
+                    .container-infs-gerais .usuarios-cadastrados, .visitantes-totais{
+
+                        height:100px !important;
+                        padding:10px;
+
+                        h5{
+                            font-size:14px !important;
+                        }
+
+                        div{
+
+                           font-size:12px;
+                        }
+
+                        div span{
+                            font-size:20px !important;
+                        }    
+                    }
+
+                    .taxa-presenca{
+                        margin-bottom:10px;
                     }
                 }
             }
@@ -505,56 +683,41 @@
     }
 }
 
-@media(max-width:369px){
+@media(max-width:380px){
 
-    .page-homeAdm{
+   .page-homeAdm{
         .conteudo{
-            .selecionar{
-                .contagem,.validacao{
+            .informacoes{
+                .listar-salas-lotacao{
 
-                    max-width:200px;
-                    height:200px;
+                    .tabela h6{
 
-                    h4{
-
-                        font-size:10px;
-                        margin-bottom:5px;
+                        font-size:14px;
                     }
-                    p{
-                        font-size:8px;
-                        margin-bottom:5px;
-                    }
-                    img{
 
-                        width: 90px;
-                        height: 60px;
-                    }
-                    .botao-direcionar{
-    
-                        padding:8px 30px;
-                        font-size:10px;
+                    .tabela table{
 
-                        svg{
-
-                            width:15px;
-                            height:10px;
+                        thead{
+                            font-size:12px;
                         }
-                    }
 
-                    #icon-lupa{
-
-                        width:12px;
-                        height:12px;
-                    }
-
-                    #icon-contar{
-
-                        width:16px;
-                        height:15px;
+                        tbody tr{
+                            font-size:12px;
+                        }
                     }
                 }
             }
+
+            .selecionar .titulo h3{
+
+                font-size:16px;
+            }
+
+            .selecionar .titulo hr{
+
+                width:250px;
+            }
         }
-    }
+   }
 }
 

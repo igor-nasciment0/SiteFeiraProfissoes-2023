@@ -1,0 +1,361 @@
+@media(max-width:1280px) {
+    .page-verificar-adm {
+
+        main {
+            >h2 {
+                font-size: 20px;
+            }
+
+            section {
+                .verificar-adm {
+                    margin-top: 50px;
+
+                    >img {
+                        width: 250px;
+                        height: auto;
+                    }
+
+                    .verificar-inp {
+                        width: 425px;
+                        padding: 22px 25px;
+
+                        >h2 {
+                            font-size: 21px;
+                        }
+
+                        .verificar-input {
+                            label {
+                                font-size: 14px;
+                            }
+
+                            input {
+                                width: 340px;
+                                height: 35px;
+                                font-size: 13px;
+                                padding: 0 12px;
+                                margin-bottom: 35px;
+                            }
+
+                            >button {
+                                width: 225px;
+                                height: 40px;
+                                font-size: 11.5px;
+                            }
+                        }
+                    }
+                }
+
+                .validar-adm {
+                    margin-top: 35px;
+                    padding: 0 0 18px;
+
+                    h2 {
+                        font-size: 22px;
+                    }
+
+                    .edit {
+                        max-height: 300px;
+
+                        thead {
+                            height: 35px;
+
+                            th {
+                                font-size: 14.5px;
+                            }
+                        }
+
+                        tbody {
+                            tr {
+                                height: 40px;
+                            }
+
+                            td {
+                                font-size: 15px;
+                            }
+
+                            button {
+                                font-size: 12.33px;
+                                margin-top: 2.5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:980px) {
+    .page-verificar-adm {
+
+        main {
+            >h2 {
+                font-size: 20px;
+            }
+
+            section {
+                .verificar-adm {
+                    margin-top: 50px;
+
+                    >img {
+                        width: 250px;
+                        height: auto;
+                    }
+
+                    .verificar-inp {
+                        width: 425px;
+                        padding: 22px 25px;
+
+                        >h2 {
+                            font-size: 21px;
+                        }
+
+                        .verificar-input {
+                            label {
+                                font-size: 14px;
+                            }
+
+                            input {
+                                width: 340px;
+                                height: 35px;
+                                font-size: 13px;
+                                padding: 0 12px;
+                                margin-bottom: 35px;
+                            }
+
+                            >button {
+                                width: 225px;
+                                height: 40px;
+                                font-size: 11.5px;
+                            }
+                        }
+                    }
+                }
+
+                .validar-adm {
+                    margin-top: 35px;
+                    padding: 0 0 18px;
+
+                    h2 {
+                        font-size: 22px;
+                    }
+
+                    .edit {
+                        max-height: 300px;
+
+                        thead {
+                            height: 35px;
+
+                            th {
+                                font-size: 14.5px;
+                            }
+                        }
+
+                        tbody {
+                            tr {
+                                height: 40px;
+                            }
+
+                            td {
+                                font-size: 15px;
+                            }
+
+                            button {
+                                font-size: 12.33px;
+                                margin-top: 2.5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:910px) {
+
+    .page-verificar-adm {
+        width: 100%;
+
+        main {
+            >h2 {
+                font-size: 18.5px;
+            }
+
+            section {
+                .verificar-adm {
+                    margin-top: 35px;
+
+                    >img {
+                        display: none;
+                    }
+
+                    .verificar-inp {
+                        width: 425px;
+                        padding: 22px 25px;
+
+                        >h2 {
+                            font-size: 18px;
+                        }
+
+                        .verificar-input {
+                            label {
+                                font-size: 13.5px;
+                            }
+
+                            input {
+                                width: 340px;
+                                height: 35px;
+                                font-size: 13px;
+                                padding: 0 12px;
+                                margin-bottom: 35px;
+                            }
+
+                            >button {
+                                width: 225px;
+                                height: 40px;
+                                font-size: 11.5px;
+                            }
+                        }
+                    }
+                }
+
+                .validar-adm {
+                    width: 90%;
+                    margin-top: 35px;
+                    padding: 0 0 20px;
+
+                    h2 {
+                        font-size: 22px;
+                        margin: 25px 0px;
+                    }
+
+                    .edit {
+                        max-height: 300px;
+
+                        thead {
+                            height: 35px;
+
+                            th {
+                                font-size: 13px;
+                            }
+                        }
+
+                        tbody {
+                            tr {
+                                height: 40px;
+                            }
+
+                            td {
+                                font-size: 12px;
+                            }
+
+                            button {
+                                font-size: 10.33px;
+                                margin-top: 2.5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 428px) {
+
+    .page-verificar-adm {
+        width: 100%;
+
+        main {
+            >h2 {
+                font-size: 15.5px;
+            }
+
+            section {
+                .verificar-adm {
+                    margin-top: 35px;
+                    width: 100%;
+
+                    >img {
+                        display: none;
+                    }
+
+                    .verificar-inp {
+                        width: 100%;
+                        padding: 22px 25px;
+
+                        >h2 {
+                            font-size: 14px;
+                        }
+
+                        .verificar-input {
+                            label {
+                                font-size: 12.5px;
+                            }
+
+                            input {
+                                width: 340px;
+                                height: 30px;
+                                font-size: 11.5px;
+                                padding: 0 10px;
+                                margin-bottom: 35px;
+                            }
+
+                            >button {
+                                width: 200px;
+                                height: 33px;
+                                font-size: 9.7px;
+                            }
+                        }
+                    }
+                }
+
+                .validar-adm {
+                    width: 100%;
+                    margin-top: 25px;
+                    padding: 0 0 20px;
+
+                    h2 {
+                        font-size: 15px;
+                        margin: 25px 0px;
+                    }
+
+                    .edit {
+                        max-height: 300px;
+                        width: 95%;
+
+                        thead {
+                            height: 45px;
+
+                            th {
+                                font-size: 10.5px;
+                            }
+                        }
+
+                        tbody {
+                            tr {
+                                height: 40px;
+                            }
+
+                            td {
+                                font-size: 9px;
+                            }
+
+                            button {
+                                font-size: 8px;
+                                margin-top: 2.5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        footer {
+            img {
+                display: none;
+            }
+        }
+    }
+}

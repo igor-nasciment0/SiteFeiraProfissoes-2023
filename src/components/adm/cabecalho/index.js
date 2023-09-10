@@ -7,10 +7,9 @@ export default function AdmHeader(){
         
         <header className='cabecalho-adm'>
 
-            <Link to='/adm' class='botao-header'>VOLTAR PARA PÁGINA INICIAL</Link>
+            <Link to='/adm' className='botao-header'>VOLTAR PARA HOME</Link>
             <h1>VOCÊ ESTÁ LOGADO COMO ADMINISTRADOR DA FEIRA</h1>
             <h2>BEM-VINDO @USER</h2>
-
         </header>
     );
 }
