@@ -6,19 +6,77 @@ import { Link } from 'react-router-dom';
 
 export default function HomeAdm(){
 
+    const[usuariosCadastrados,setUsuariosCadastrados]=useState('');
+    const[visitantes,setVisitantes]=useState('');
+    const[porcentagem,setPorcentagem]=useState(0);
+    const[filtro,setFiltro]=useState('maior');
+    const[salas,setSalas]=useState([]);
+
     async function chamarUsuariosInscritos(){
 
-        const url='http://localhost:5000/';
+        const url='http://localhost:5000/inscricao/quantidade';
+
+        const resp=await axios.get(url);
+
+        setUsuariosCadastrados(resp.data);
     }
 
     async function chamarVisitantes(){
 
+        const url='http://localhost:5000/inscricao/visitantes';
 
+        const resp=await axios.get(url);
+
+        setVisitantes(resp.data);
     }
 
-    async function listarSalasMaior(){}
+    function calcularPorcentagem(){
+
+        const inscritos=Number(usuariosCadastrados);
+        const qtdVisitantes=Number(visitantes);
+
+        for(let cont=0;cont<=100;cont++){
+
+            let calculo=(inscritos*cont)/100;
+
+            if(calculo===qtdVisitantes){
+
+                setPorcentagem(cont);
+            }
+        }
+    }
+
+    async function listarSalas(){
+
+        const url='http://localhost:5000/salas/'+filtro;
+
+        const resp=await axios.get(url);
+
+        console.log(resp);
+        setSalas(resp.data);
+    }
 
     async function listarSalasMenor(){}
+
+    useEffect(() => {
+
+        chamarUsuariosInscritos();
+        chamarVisitantes();
+    },[]);
+
+    useEffect(() => {
+
+        if(usuariosCadastrados!=='' || visitantes!==''){
+
+            calcularPorcentagem();
+        }
+    },[usuariosCadastrados,visitantes]);
+
+    useEffect(() => {
+
+        listarSalas();
+
+    },[filtro]);
 
     return(
         
@@ -38,19 +96,19 @@ export default function HomeAdm(){
 
                             <h5>USUÁRIOS CADASTRADOS</h5>
 
-                            <div> <span>43932</span> USUÁRIOS</div>
+                            <div> <span>{usuariosCadastrados}</span> USUÁRIOS</div>
                         </div>
 
                         <div className='visitantes-totais'>
 
                             <h5>VISITANTES TOTAIS</h5>
 
-                            <div> <span>43932</span>VISITANTES</div>
+                            <div> <span>{visitantes}</span>VISITANTES</div>
                         </div>
                     </div>
 
                     <div className='taxa-presenca'>
-                        <h5>Taxa de presença: <span>83%</span> </h5>
+                        <h5>Taxa de presença: <span>{porcentagem}%</span> </h5>
                         <hr/>
                     </div>
 
@@ -66,65 +124,20 @@ export default function HomeAdm(){
                                     <tr>
                                         <th>SALAS</th>
                                         <th>VISITANTES</th>
+                                        <th>APRESENTAÇÃO</th>
                                     </tr>
                                     
                                 </thead>
 
                                 <tbody>
-                                    <tr>
-                                        <td>SALA 24 - Comunicação Visual</td>
-                                        <td>355</td>
-                                    </tr>
+
+                                    {salas.map(item => 
 
                                     <tr>
-                                        <td>SALA 24 - Comunicação Visual</td>
-                                        <td>355</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>SALA 24 - Comunicação Visual</td>
-                                        <td>355</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>SALA 24 - Comunicação Visual</td>
-                                        <td>355</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>SALA 24 - Comunicação Visual</td>
-                                        <td>355</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>SALA 24 - Comunicação Visual</td>
-                                        <td>355</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>SALA 24 - Comunicação Visual</td>
-                                        <td>355</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>SALA 24 - Comunicação Visual</td>
-                                        <td>355</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>SALA 24 - Comunicação Visual</td>
-                                        <td>355</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>SALA 24 - Comunicação Visual</td>
-                                        <td>355</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>SALA 24 - Comunicação Visual</td>
-                                        <td>355</td>
-                                    </tr>
+                                        <td>{item.DS_SALAS}</td>
+                                        <td>{item.NR_PESSOAS}</td>
+                                        <td>{item.DS_APRESENTACAO}</td>
+                                    </tr>)}
                                 </tbody>
                             </table>
                         </div>
@@ -137,13 +150,13 @@ export default function HomeAdm(){
                             <div className='inputs-filtro'>
 
                                 <div>
-                                    <input type='checkbox' id='maior'/>
+                                    <input type='checkbox' id='maior' value='maior' checked={filtro==='maior'} onChange={(e) => {setFiltro(e.target.value)}}/>
                                     <label for='maior'>MAIOR</label>
                                 </div>
                                 
                                 <div>
                                     
-                                    <input type='checkbox' id='menor'/>
+                                    <input type='checkbox' id='menor' value='menor'checked={filtro==='menor'}  onChange={(e) => {setFiltro(e.target.value)}}/>
                                     <label for='menor'>MENOR</label>
                                 </div>
                             </div>
