@@ -1,4 +1,4 @@
-/* import './index.scss';
+import './index.scss';
 import './responsive.scss';
 import { useEffect, useState } from 'react';
 import { Await, Link } from 'react-router-dom';
@@ -123,7 +123,7 @@ export default function Verificar() {
 }
 
 
-{/* repositorio de codigos para usar quando a api estiver feita
+/* repositorio de codigos para usar quando a api estiver feita
 
 
         {NomeEmail.map(item =>
@@ -141,6 +141,4 @@ export default function Verificar() {
             tr{
                 width: 100%;
                 border: 1px solid #ffffff;
-            }
-
-*/
+            } */
