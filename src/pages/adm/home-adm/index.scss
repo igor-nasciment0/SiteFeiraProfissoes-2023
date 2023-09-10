@@ -135,6 +135,7 @@
                     max-height:500px;
 
                     padding:20px;
+                    margin-bottom:30px;
 
                     background-color: #343D90;
                     border-radius:5px;
@@ -411,7 +412,7 @@
                     }
                     
                     .tabela {
-                    
+
                         h6 {
 
                             font-size: 16px;
@@ -524,7 +525,6 @@
                 .listar-salas-lotacao .tabela{
 
                     max-height:400px;
-                    margin-bottom:30px;
 
                     table thead {
                         font-size:13px;
@@ -607,6 +607,7 @@
                 .listar-salas-lotacao .tabela{
 
                     overflow-x:hidden;
+                    max-height:300px;
                 }
             }
 
@@ -648,31 +649,33 @@
 
                         font-size:20px;
                     }
-                    .container-infs-gerais >div{
 
-                        height:200px;
-                        
+                    .container-infs-gerais{
+
+                        gap:20px;
+                    }
+
+                    .container-infs-gerais .usuarios-cadastrados, .visitantes-totais{
+
+                        height:100px !important;
+                        padding:10px;
+
                         h5{
                             font-size:14px !important;
                         }
+
+                        div{
+
+                           font-size:12px;
+                        }
+
+                        div span{
+                            font-size:20px !important;
+                        }    
                     }
-                }
-            }
 
-            .selecionar{
-                .contagem,.validacao{
-
-                    max-width:300px;
-                }
-            }
-
-            .titulo-conteudo{
-                >div{
-                    h3{
-                        font-size:12px;
-                    }
-                    hr{
-                        width:180px;
+                    .taxa-presenca{
+                        margin-bottom:10px;
                     }
                 }
             }
@@ -680,8 +683,41 @@
     }
 }
 
-@media(max-width:369px){
+@media(max-width:380px){
 
-   
+   .page-homeAdm{
+        .conteudo{
+            .informacoes{
+                .listar-salas-lotacao{
+
+                    .tabela h6{
+
+                        font-size:14px;
+                    }
+
+                    .tabela table{
+
+                        thead{
+                            font-size:12px;
+                        }
+
+                        tbody tr{
+                            font-size:12px;
+                        }
+                    }
+                }
+            }
+
+            .selecionar .titulo h3{
+
+                font-size:16px;
+            }
+
+            .selecionar .titulo hr{
+
+                width:250px;
+            }
+        }
+   }
 }
 
