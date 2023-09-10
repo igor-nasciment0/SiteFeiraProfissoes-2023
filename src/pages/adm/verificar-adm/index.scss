@@ -1,0 +1,221 @@
+.page-verificar-adm {
+    width: 100%;
+
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 10vh;
+        padding: 0px 20px;
+        box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.25);
+        color: #33215B;
+        text-align: center;
+
+        .voltar-home {
+            background-color: #242B6B;
+            padding: 8px 20px;
+            color: #fff;
+            border-radius: 10px;
+            font-size: 12px;
+            text-decoration: none;
+        }
+
+        .voltar-home:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 18px;
+        }
+
+        h2 {
+            font-size: 16px;
+        }
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        >h2 {
+            color: #33215B;
+        }
+
+        section {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .verificar-adm {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: auto;
+                height: auto;
+                margin-top: 70px;
+
+                >img {
+                    position: relative;
+                    width: 279px;
+                    height: auto;
+                }
+
+                .verificar-inp {
+                    background-color: #00BDCE;
+                    display: flex;
+                    flex-direction: column;
+                    width: 475px;
+                    height: auto;
+                    padding: 30px 35px;
+                    border-radius: 2px;
+
+                    >hr {
+                        height: 2px;
+                        border: none;
+                        background-color: #fff;
+                        margin: 10px 0 20px;
+                        padding: 0px;
+                        margin-top: 10px;
+                    }
+
+                    >h2 {
+                        color: #fff;
+                    }
+
+                    .verificar-input {
+                        display: flex;
+                        flex-direction: column;
+
+                        label {
+                            color: #fff;
+                            font-size: 16px;
+                            margin: 30px 0 7px;
+                        }
+
+                        input {
+                            width: 365px;
+                            height: 40px;
+                            border: none;
+                            border-radius: 7px;
+                            font-size: 14px;
+                            padding: 0 15px;
+                            margin-bottom: 55px;
+                        }
+
+                        input:focus {
+                            outline: none;
+                        }
+
+                        >button {
+                            width: 250px;
+                            height: 45px;
+                            font-size: 13.5px;
+                            align-self: center;
+                            background-color: #017a85;
+                            color: #fff;
+                            border: none;
+                            border-radius: 3px;
+                        }
+
+                        button:hover {
+                            cursor: pointer;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+            .validar-adm {
+                width: 80%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 50px;
+                background-color: #242C6B;
+                color: #fff;
+                padding: 0 0px 20px;
+
+                h2 {
+                    text-align: center;
+                    margin: 25px 0 25px;
+                    font-size: 24px;
+                }
+
+                .container {
+                    border-left: 2px solid rgb(255, 255, 255);
+                    border-right: 2px solid rgb(255, 255, 255);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .edit {
+                    width: 90%;
+                    opacity: 0;
+                    transition: opacity 0.2s ease-in-out;
+
+                    max-height: 350px;
+                    overflow-y: auto;
+
+                    &.mostrar {
+                        opacity: 1;
+                    }
+
+                    thead {
+                        height: 50px;
+
+                        th {
+                            text-align: start;
+                            font-size: 16px;
+                        }
+                    }
+
+                    tbody {
+                        tr {
+                            width: auto;
+                            height: 40px;
+                        }
+
+                        td {
+                            font-size: 16px;
+                        }
+
+                        button {
+                            display: flex;
+                            margin-top: 3px;
+                            background: none;
+                            border: transparent;
+                            background-color: #434979;
+                            color: #fff;
+                            padding: 8px 10px;
+                            border-radius: 3.5px;
+                            font-size: 13.33px;
+                        }
+
+                        button:hover {
+                            cursor: pointer;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+}

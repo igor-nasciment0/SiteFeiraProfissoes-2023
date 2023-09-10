@@ -7,6 +7,7 @@ import Inscricao from './pages/inscricao';
 import Reservado from './pages/ingressoreservado';
 import LoginAdm from './pages/adm/login-adm';
 import HomeAdm from './pages/adm/home-adm';
+import Verificar from './pages/adm/verificar-adm';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +18,7 @@ root.render(
         <Route path='/inscricao' exact={true} element={<Inscricao/>}/>
         <Route path='/reservado' exact={true} element={<Reservado/>}/>
         <Route path='/adm/login' exact={true} element={<LoginAdm/>}/>
+        <Route path='/adm/verificacao' exact={true} element={<Verificar/>} />
         <Route path='/adm' exact={true} element={<HomeAdm/>}/>
       </Routes>
     </BrowserRouter>
