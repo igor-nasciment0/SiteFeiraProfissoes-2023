@@ -1,14 +1,14 @@
-* {
-  margin: 0px;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
 .pagina-ingresso {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  *{
+    margin: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
 
   .faixa-inscricao {
 

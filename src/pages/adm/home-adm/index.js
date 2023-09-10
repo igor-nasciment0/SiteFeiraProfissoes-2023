@@ -1,9 +1,24 @@
 import './index.scss';
 import AdmHeader from '../../../components/adm/cabecalho';
-import { useState } from 'react';
+import axios from 'axios';
+import { useState,useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function HomeAdm(){
+
+    async function chamarUsuariosInscritos(){
+
+        const url='http://localhost:5000/';
+    }
+
+    async function chamarVisitantes(){
+
+
+    }
+
+    async function listarSalasMaior(){}
+
+    async function listarSalasMenor(){}
 
     return(
         
