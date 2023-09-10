@@ -2,7 +2,7 @@ import './index.scss';
 import './responsive.scss';
 import { useEffect, useState } from 'react';
 import { Await, Link } from 'react-router-dom';
-import HomeAdm from '../home-adm';
+import Cabecalho from '../../../components/adm/cabecalho';
 import axios from 'axios';
 
 export default function Verificar() {
@@ -51,18 +51,7 @@ export default function Verificar() {
     return (
         <div className='page-verificar-adm'>
 
-            <header>
-                <Link className='voltar-home' to={'/adm'}>
-                    Voltar
-                    <span> para Pagina </span>
-                </Link>
-                <h1>VOCÊ ESTÁ LOGADO COMO ADMINISTRADOR DA FEIRA</h1>
-                <h2>
-                    <span>BEM-VINDO</span> @USER
-                </h2>
-
-            </header>
-
+            <Cabecalho/>
 
             <main>
                 <h2>Verificar Ingresso</h2>
