@@ -17,12 +17,21 @@ export default function Inscricao() {
   const [foialuno, setFoialuno] = useState('')
 
   const [campoobrigatorio, setCampoobrigatorio] = useState('')
+  const [inscricaoigual, setInscricaoigual] = useState('')
 
-  async function inscrever() { 
+  async function inscrever() {
 
-     // Verifica se os campos obrigatórios estão preenchidos
-    
-     if (nome && email && telefone && bairro && sabendo && foialuno) {
+    // Verifica se os campos obrigatórios estão preenchidos
+    if (!(nome && email && telefone && bairro && sabendo && foialuno)) {
+      // Caso algum campo obrigatório esteja vazio, exibe uma mensagem de erro
+      setCampoobrigatorio('⚠ Campos obrigatórios não preenchidos');
+      return;
+    }
+
+    try {
+
+
+
 
       // Exibe um alerta de confirmação antes de salvar
       confirmAlert({
@@ -40,16 +49,11 @@ export default function Inscricao() {
                 ds_sabendo: sabendo,
                 ds_foialuno: foialuno,
               };
-  
-              try {
-                let url = 'http://localhost:5000/inserir';
-                let resposta = await axios.post(url, inscricao);
-                if (resposta.status === 200) {
-                  
-                  window.location.href = 'http://localhost:3000/reservado';
-                }
-              } catch (error) {
-                
+
+              let url = 'http://localhost:5000/inserir';
+              let resposta = await axios.post(url, inscricao);
+              if (resposta.status === 200) {
+                window.location.href = 'http://localhost:3000/reservado';
               }
             },
           },
@@ -61,25 +65,47 @@ export default function Inscricao() {
           },
         ],
       });
-    } else {
-      // Caso algum campo obrigatório esteja vazio, exibe uma mensagem de erro
-      setCampoobrigatorio('⚠ Campos obrigatórios não preenchidos');
+
+      // Chama a função verificarDuplicado para verificar se o telefone já existe
+      const duplicado = await verificarDuplicado('http://localhost:5000', telefone);
+      if (duplicado) {
+        setInscricaoigual('⚠ Este número de telefone já foi registrado.');
+        return;
+      }
+    } catch (error) {
+      console.error(error);
     }
-   
-    
+  }
+
+
+
+  async function verificarDuplicado(apiUrl, telefone) {
+    try {
+      const response = await axios.get(`${apiUrl}/verificarDuplicado/${telefone}`);
+
+      // Verifica se a resposta da API indica que o telefone está duplicado
+      if (response.data && response.data.duplicado) {
+        return true
+      } else {
+        return false; // Retorna falso se o telefone não estiver duplicado
+      }
+    } catch (error) {
+      console.error(error);
+      throw error; // Trata erros de forma apropriada de acordo com sua lógica
+    }
   }
 
 
   return (
     <div className="pagina-ingresso">
-      <Cabecalho/>
+      <Cabecalho />
       <div className="faixa-inscricao">
-        <img src="/assets/images/faixa.png" alt=""/>
+        <img src="/assets/images/faixa.png" alt="" />
       </div>
 
       <nav className='meio'>
         <div>
-          
+
           <h1>Inscrição</h1>
         </div>
 
@@ -121,13 +147,21 @@ export default function Inscricao() {
           </aside>
         </article>
 
-       <button onClick={inscrever} to="/ingressoreservado" >Salvar</button>
-        <p>{campoobrigatorio} </p>
+        
+
+        <button onClick={inscrever}>Salvar</button>
+        <div>
+          <p> {inscricaoigual} </p>
+          <p>{inscricaoigual}</p>
+        </div>
+
       </nav>
 
 
+
+
       <footer className='rodape'>
-        <img src="/assets/images/background-quadrados.png" alt=""/>
+        <img src="/assets/images/background-quadrados.png" alt="" />
       </footer>
     </div>
 
