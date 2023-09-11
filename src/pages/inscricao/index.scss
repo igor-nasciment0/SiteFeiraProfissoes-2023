@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
 
   background-image: url('../../../public/assets/images/background-quadrados.png');
   background-size: 100%;
@@ -32,12 +33,13 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
     width: 100%;
     max-width: 1180px;
     padding: 0 20px;
     padding-bottom: 100px;
+    flex-grow: 1;
   }
 
   .meio {
