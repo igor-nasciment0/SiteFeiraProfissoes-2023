@@ -30,50 +30,27 @@ export default function Inscricao() {
 
     try {
 
+      let inscricao = {
+        nm_nome: nome,
+        ds_email: email,
+        nr_telefone: telefone,
+        nm_bairro: bairro,
+        ds_sabendo: sabendo,
+        ds_foialuno: foialuno,
+      };
 
-
-
-      // Exibe um alerta de confirmação antes de salvar
-      confirmAlert({
-        title: 'Confirmar inscrição',
-        message: 'Deseja salvar os dados?',
-        buttons: [
-          {
-            label: 'Sim',
-            onClick: async () => {
-              let inscricao = {
-                nm_nome: nome,
-                ds_email: email,
-                nr_telefone: telefone,
-                nm_bairro: bairro,
-                ds_sabendo: sabendo,
-                ds_foialuno: foialuno,
-              };
-
-              let url = 'http://localhost:5000/inserir';
-              let resposta = await axios.post(url, inscricao);
-              if (resposta.status === 200) {
-                window.location.href = 'http://localhost:3000/reservado';
-              }
-            },
-          },
-          {
-            label: 'Não',
-            onClick: () => {
-              // Não faz nada se o usuário pressionar "Não"
-            },
-          },
-        ],
-      });
+      let url = 'http://localhost:5000/inserir';
+      let resposta = await axios.post(url, inscricao);
+      if (resposta.status === 200) {
+        window.location.href = 'http://localhost:3000/reservado';
+      }
 
       // Chama a função verificarDuplicado para verificar se o telefone já existe
       const duplicado = await verificarDuplicado('http://localhost:5000', telefone);
       if (duplicado) {
-        setInscricaoigual('⚠ Este número de telefone já foi registrado.');
-        return;
       }
     } catch (error) {
-      console.error(error);
+      setCampoobrigatorio('⚠ Este número de telefone já foi registrado.');
     }
   }
 
@@ -90,8 +67,7 @@ export default function Inscricao() {
         return false; // Retorna falso se o telefone não estiver duplicado
       }
     } catch (error) {
-      console.error(error);
-      throw error; // Trata erros de forma apropriada de acordo com sua lógica
+      setCampoobrigatorio('⚠ Este número de telefone já foi registrado.')
     }
   }
 
@@ -110,55 +86,52 @@ export default function Inscricao() {
             <h1>Inscrição</h1>
           </div>
 
-            <article>
-              <aside>
-                <div>
-                  <h1>Nome</h1>
-                  <input value={nome} onChange={e => setNome(e.target.value)} placeholder="Ex: João Lucas da Silva"></input>
-                </div>
+          <article>
+            <aside>
+              <div>
+                <h1>Nome</h1>
+                <input value={nome} onChange={e => setNome(e.target.value)} placeholder="Ex: João Lucas da Silva"></input>
+              </div>
 
-                <div>
-                  <h1>E-mail</h1>
-                  <InputMask type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Ex: nome123@gmail.com" maskPlaceholder={setEmail} required />
-                </div>
+              <div>
+                <h1>E-mail</h1>
+                <InputMask type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Ex: nome123@gmail.com" maskPlaceholder={setEmail} required />
+              </div>
 
-                <div>
-                  <h1>Número de telefone</h1>
-                  <InputMask mask="(99) 99999-9999" maskChar=" " value={telefone} onChange={e => setTelefone(e.target.value)} placeholder="Ex: (11) 99999-5555" required />
-                </div>
-              </aside>
+              <div>
+                <h1>Número de telefone</h1>
+                <InputMask mask="(99) 99999-9999" maskChar=" " value={telefone} onChange={e => setTelefone(e.target.value)} placeholder="Ex: (11) 99999-5555" required />
+              </div>
+            </aside>
 
-              <aside>
-                <div>
-                  <h1>Bairro</h1>
-                  <input value={bairro} onChange={e => setBairro(e.target.value)} placeholder="Ex: Cocaia"></input>
-                </div>
+            <aside>
+              <div>
+                <h1>Bairro</h1>
+                <input value={bairro} onChange={e => setBairro(e.target.value)} placeholder="Ex: Cocaia"></input>
+              </div>
 
 
-                <div>
-                  <h1>Como ficou sabendo da feira?</h1>
-                  <input value={sabendo} onChange={e => setSabendo(e.target.value)} placeholder="Ex: Amigos"></input>
-                </div>
+              <div>
+                <h1>Como ficou sabendo da feira?</h1>
+                <input value={sabendo} onChange={e => setSabendo(e.target.value)} placeholder="Ex: Amigos"></input>
+              </div>
 
-                <div>
-                  <h1>Já foi aluno do FREI?</h1>
-                  <input value={foialuno} onChange={e => setFoialuno(e.target.value)} placeholder="Ex: Sim"></input>
+              <div>
+                <h1>Já foi aluno do FREI?</h1>
+                <input value={foialuno} onChange={e => setFoialuno(e.target.value)} placeholder="Ex: Sim"></input>
 
               </div>
             </aside>
           </article>
 
-          
+
 
           <button onClick={inscrever}>Salvar</button>
           <div>
             <p>{campoobrigatorio} </p>
-            <p>{inscricaoigual}</p>
           </div>
         </nav>
       </main>
     </div>
   );
 }
-
-
