@@ -17,7 +17,6 @@ export default function Inscricao() {
   const [foialuno, setFoialuno] = useState('')
 
   const [campoobrigatorio, setCampoobrigatorio] = useState('')
-  const [inscricaoigual, setInscricaoigual] = useState('')
 
   async function inscrever() {
 
