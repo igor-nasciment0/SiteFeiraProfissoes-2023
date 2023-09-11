@@ -157,10 +157,6 @@ export default function Inscricao() {
           </div>
         </nav>
       </main>
-
-      <footer className='rodape'>
-        <img src="/assets/images/background-quadrados.png" alt="" />
-      </footer>
     </div>
   );
 }
