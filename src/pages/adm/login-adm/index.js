@@ -17,7 +17,7 @@ export default function LoginAdm() {
       if (login === credencial.login && senha === credencial.senha) {
         window.location.href = 'http://localhost:3000/adm';
       } else {
-        setMessage('⚠ Login ou senha incorretos');
+        setMessage('⚠ Login ou senha incorretos ');
       }
     } catch (error) {
       console.error('⚠ Erro ao verificar as credenciais:', error);
