@@ -27,41 +27,46 @@ export default function LoginAdm() {
 
   return (
     <div className="pagina-login-admn">
-      <header>
-        <Cabecalho />
-      </header>  
-
-      <div className='login'>
-
-        <div>
-          <h1>LOGIN ADM </h1>
-          <hr></hr>
-        </div>
-
-        <aside>
-          <section>
-            <label>Login:</label>
-            <input value={login} onChange={(e) => setLogin(e.target.value)} />
-          </section>
-
-          <section>
-            <label>Senha:</label>
-            <div className='senha'>
-                    <input type={showPassword ? 'text' : 'password'} value={senha} onChange={(e) => setSenha(e.target.value)} />
-                    <button onClick={() => setShowPassword(!showPassword)}>
-                      {showPassword ? <img src="/assets/images/img4.png" alt="Senha" /> : <img src="/assets/images/img3.png" alt="Senha" />}
-                    </button>
-                  </div>
-          </section>
-          <h4>{message}</h4>
-        </aside>
-
-        <button onClick={entrar}>Entrar</button>
+      <Cabecalho />
+      <div className="faixa-inscricao">
+        <img src="/assets/images/faixa.png" alt="" />
       </div>
 
-      <footer>
-        <img src='/assets/images/background-quadrados.png' alt='' />
-      </footer>
+      <main>
+        <nav className='meio'>
+          <div>
+
+            <h1>LOGIN ADM</h1>
+            
+          </div>
+
+          <article>
+          <aside>
+              <div>
+                <h1>LOGIN</h1>
+                <input value={login} onChange={e => setLogin(e.target.value)} />
+              </div>
+
+              <div>
+                <h1>SENHA</h1>
+                <div className='senha'>
+                <input  type={showPassword ? 'text' : 'password'} value=    {senha} onChange={(e) => setSenha(e.target.value)}/>
+                <button onClick={() => setShowPassword(!showPassword)}>
+                      {showPassword ? <img src="/assets/images/img4.png" alt="Senha" /> : <img src="/assets/images/img3.png" alt="Senha" />}
+                    </button>
+                </div>
+              </div>
+            </aside>
+          </article>
+
+
+
+          <button onClick={entrar}>Salvar</button>
+          <div>
+            <p>{message} </p>
+          </div>
+        </nav>
+      </main>
 
     </div >
   );
