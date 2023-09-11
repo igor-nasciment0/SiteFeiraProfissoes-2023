@@ -77,54 +77,54 @@ export default function Inscricao() {
         <img src="/assets/images/faixa.png" alt=""/>
       </div>
 
-      <nav className='meio'>
-        <div>
-          
-          <h1>Inscrição</h1>
-        </div>
+      <main>
+        <nav className='meio'>
+          <div>
+            <h1>Inscrição</h1>
+          </div>
 
-        <article>
-          <aside>
-            <div>
-              <h1>Nome</h1>
-              <input value={nome} onChange={e => setNome(e.target.value)} placeholder="Ex: João Lucas da Silva"></input>
-            </div>
+          <article>
+            <aside>
+              <div>
+                <h1>Nome</h1>
+                <input value={nome} onChange={e => setNome(e.target.value)} placeholder="Ex: João Lucas da Silva"></input>
+              </div>
 
-            <div>
-              <h1>E-MAIL</h1>
-              <InputMask type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Ex: nome123@gmail.com" maskPlaceholder={setEmail} required />
-            </div>
+              <div>
+                <h1>E-mail</h1>
+                <InputMask type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Ex: nome123@gmail.com" maskPlaceholder={setEmail} required />
+              </div>
 
-            <div>
-              <h1>Número de telefone</h1>
-              <InputMask mask="(99) 99999-9999" maskChar=" " value={telefone} onChange={e => setTelefone(e.target.value)} placeholder="Ex: (11) 99999-5555" required />
-            </div>
-          </aside>
+              <div>
+                <h1>Número de telefone</h1>
+                <InputMask mask="(99) 99999-9999" maskChar=" " value={telefone} onChange={e => setTelefone(e.target.value)} placeholder="Ex: (11) 99999-5555" required />
+              </div>
+            </aside>
 
-          <aside>
-            <div>
-              <h1>Bairro</h1>
-              <input value={bairro} onChange={e => setBairro(e.target.value)} placeholder="Ex: Cocaia"></input>
-            </div>
+            <aside>
+              <div>
+                <h1>Bairro</h1>
+                <input value={bairro} onChange={e => setBairro(e.target.value)} placeholder="Ex: Cocaia"></input>
+              </div>
 
 
-            <div>
-              <h1>Como ficou sabendo da feira ?</h1>
-              <input value={sabendo} onChange={e => setSabendo(e.target.value)} placeholder="Ex: Amigos"></input>
-            </div>
+              <div>
+                <h1>Como ficou sabendo da feira?</h1>
+                <input value={sabendo} onChange={e => setSabendo(e.target.value)} placeholder="Ex: Amigos"></input>
+              </div>
 
-            <div>
-              <h1>Já foi aluno do FREI ?</h1>
-              <input value={foialuno} onChange={e => setFoialuno(e.target.value)} placeholder="Ex: Sim"></input>
+              <div>
+                <h1>Já foi aluno do FREI?</h1>
+                <input value={foialuno} onChange={e => setFoialuno(e.target.value)} placeholder="Ex: Sim"></input>
 
-            </div>
-          </aside>
-        </article>
+              </div>
+            </aside>
+          </article>
 
-       <button onClick={inscrever} to="/ingressoreservado" >Salvar</button>
-        <p>{campoobrigatorio} </p>
-      </nav>
-
+        <button onClick={inscrever} to="/ingressoreservado" >Salvar</button>
+          <p>{campoobrigatorio} </p>
+        </nav>
+      </main>
 
       <footer className='rodape'>
         <img src="/assets/images/background-quadrados.png" alt=""/>
