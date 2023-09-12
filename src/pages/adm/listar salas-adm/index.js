@@ -16,7 +16,7 @@ export default function ListagemAdm() {
                     <section className='blocos'>
                         <div>
                             <h1>Pátio</h1>
-                            <Link to='/adm/contador/1'>
+                            <Link to='/adm/contador/0'>
                                 Ótica Brauzo
                                 <span>SALA 4</span>
                             </Link>

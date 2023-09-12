@@ -157,4 +157,105 @@
     #enviar-bt:hover {
         box-shadow: 0px 0px 5px 0px #ffffff88;
     }
+
+    @media (max-width: 1360px) {
+        .avaliacao {
+            max-width: 874.14px;
+            min-height: 335.3px;
+        }
+
+        .contador {
+            max-width: 874.14px;
+            min-height: 490px;
+        }
+    
+        .contador > h1 {
+            font: 40px "Lexend Deca";
+            margin-bottom: 20px;
+        }
+    
+        .contador button {
+            width: 110.6px;
+            height: 92.4px;
+            font: 100px "Lexend Deca";
+        }
+        
+        #avaliar-sala {
+            width: 320.6px;
+            height: 100px;
+            font: 40px "Lexend Deca";
+            margin-top: 20px;
+        }
+    
+        #nr-visitantes {
+            font: 150px "Lexend Deca";
+        }
+    }
+
+    @media (max-width: 980px) {
+        .avaliacao {
+            max-width: 674.14px;
+            min-height: 335.3px;
+        }
+
+        .contador {
+            max-width: 674.14px;
+            min-height: 490px;
+        }
+    
+        .contador > h1 {
+            font: 40px "Lexend Deca";
+            margin-bottom: 20px;
+        }
+    
+        .contador button {
+            width: 90.6px;
+            height: 82.4px;
+            font: 80px "Lexend Deca";
+        }
+        
+        #avaliar-sala {
+            width: 280.6px;
+            height: 70px;
+            font: 30px "Lexend Deca";
+            margin-top: 40px;
+        }
+    
+        #nr-visitantes {
+            font: 100px "Lexend Deca";
+        }
+
+        #buttons {
+            gap: 30px;
+        }
+    
+        #buttons button {
+            max-width: 100px;
+            width: 100%;
+        }
+
+        #buttons img {
+            max-width: 100px;
+            width: 100%;
+        }
+
+        .corpo {
+            padding: 50px 50px;
+        }
+    }
+
+    @media (max-width: 660px) {
+        .contador > h1 {
+            font: 40px "Lexend Deca";
+            margin-bottom: 20px;
+        }
+
+        .avaliacao > h1{
+            font: 40px "Lexend Deca";
+        }
+
+        #nr-visitantes {
+            font: 50px "Lexend Deca";
+        }
+    }
 }
