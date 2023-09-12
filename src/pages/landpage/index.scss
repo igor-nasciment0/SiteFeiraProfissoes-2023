@@ -943,7 +943,7 @@
         background-image: url('../../../public/assets/images/background-quadrados-coloridos.png');
         background-size: 100%;
         background-repeat: no-repeat;
-        background-position: 0 100px;
+        background-position: bottom;
 
         .container-tela
         {
@@ -1075,8 +1075,8 @@
 
         @media (max-width: 768px) {
 
-            background-size: 100% 50%;
-            background-position: bottom;
+            background-size: auto 60%;
+            background-position: center bottom;
 
             .container-tela
             {
