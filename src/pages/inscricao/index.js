@@ -1,7 +1,6 @@
 import './index.scss';
 import { useState } from 'react';
 import axios from 'axios';
-import { confirmAlert } from 'react-confirm-alert';
 import 'react-confirm-alert/src/react-confirm-alert.css';
 import InputMask from 'react-input-mask';
 import Cabecalho from '../../components/cabecalho';
@@ -19,23 +18,15 @@ export default function Inscricao() {
   const [campoobrigatorio, setCampoobrigatorio] = useState('')
 
   async function inscrever() {
-
-    // Verifica se os campos obrigatórios estão preenchidos
-    if (!(nome && email && telefone && bairro && sabendo && foialuno)) {
-      // Caso algum campo obrigatório esteja vazio, exibe uma mensagem de erro
-      setCampoobrigatorio('⚠ Campos obrigatórios não preenchidos');
-      return;
-    }
-
     try {
 
       let inscricao = {
-        nm_nome: nome,
-        ds_email: email,
-        nr_telefone: telefone,
-        nm_bairro: bairro,
-        ds_sabendo: sabendo,
-        ds_foialuno: foialuno,
+        nome: nome,
+        email: email,
+        telefone: telefone,
+        bairro: bairro,
+        sabendo: sabendo,
+        foialuno: foialuno,
       };
 
       let url = 'http://localhost:5000/inserir';
@@ -44,32 +35,10 @@ export default function Inscricao() {
         window.location.href = 'http://localhost:3000/reservado';
       }
 
-      // Chama a função verificarDuplicado para verificar se o telefone já existe
-      const duplicado = await verificarDuplicado('http://localhost:5000', telefone);
-      if (duplicado) {
-      }
-    } catch (error) {
-      setCampoobrigatorio('⚠ Este número de telefone já foi registrado.');
+    } catch (err) {
+      setCampoobrigatorio(err.response.data.erro);
     }
   }
-
-
-
-  async function verificarDuplicado(apiUrl, telefone) {
-    try {
-      const response = await axios.get(`${apiUrl}/verificarDuplicado/${telefone}`);
-
-      // Verifica se a resposta da API indica que o telefone está duplicado
-      if (response.data && response.data.duplicado) {
-        return true
-      } else {
-        return false; // Retorna falso se o telefone não estiver duplicado
-      }
-    } catch (error) {
-      setCampoobrigatorio('⚠ Este número de telefone já foi registrado.')
-    }
-  }
-
 
   return (
     <div className="pagina-ingresso">
