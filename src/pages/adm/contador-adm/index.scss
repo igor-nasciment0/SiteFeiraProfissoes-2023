@@ -1,0 +1,160 @@
+@import 'https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@900&display=swap';
+
+.pagina-contador {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+
+    .corpo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        height: 100%;
+        width: 100vw;
+        padding: 50px 100px;
+    }
+
+    .corpo > h1 {
+        font: 50px 'Lexend Deca';
+        color: #33215B;
+        align-self: flex-start;
+        margin-bottom: 50px;
+    }
+
+    .corpo > h2 {
+        font: 40px 'Lexend Deca';
+        color: #33215B;
+        align-self: flex-start;
+    }
+
+    #titles {
+        margin-bottom: 50px;
+    }
+
+    .contador {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 1367px;
+        min-height: 700px;
+        width: 100%;
+        height: 100%;
+        background-color: #343D90;
+    }
+
+    .contador > h1 {
+        font: 50px "Lexend Deca";
+        color: #fff;
+        text-align: center;
+    }
+
+    .contador div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contador button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 158px;
+        height: 132px;
+        background-color: transparent;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        font: 130px "Lexend Deca";
+        color: #fff;
+        padding: 0px 0px 15px 0px;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .contador button:hover {
+        box-shadow: 0px 0px 5px 0px #ffffff88;
+    }
+
+    #avaliar-sala {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 458px;
+        height: 100px;
+        background-color: transparent;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        font: 50px "Lexend Deca";
+        color: #fff;
+        padding: 0px;
+        margin-top: 20px;
+    }
+
+    #nr-visitantes {
+        font: 200px "Lexend Deca";
+        color: #fff;
+    }
+
+    .avaliacao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        max-width: 1367px;
+        min-height: 479px;
+        width: 100%;
+        height: 100%;
+        background-color: #343D90;
+        margin-top: 40px;
+    }
+
+    .avaliacao > h1 {
+        font: 64px "Lexend Deca";
+        color: #fff;
+        margin-bottom: 30px;
+    }
+
+    #buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    #buttons button {
+        width: 100px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    #buttons button:active {
+        transform: translateY(-3px);
+    }
+
+    #enviar-bt {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 279px;
+        height: 80px;
+        border-radius: 5px;
+        border: 2px solid #fff;
+        font: 40px "Lexend Deca";
+        background-color: transparent;
+        color: #fff;
+        margin-top: 50px;
+        cursor: pointer;
+    }
+
+    #enviar-bt:hover {
+        box-shadow: 0px 0px 5px 0px #ffffff88;
+    }
+}

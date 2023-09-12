@@ -193,7 +193,7 @@ export default function HomeAdm(){
                             </svg>
 
 
-                            <Link className='botao-direcionar' to='/adm/contador'>IR PARA PÁGINA
+                            <Link className='botao-direcionar' to='/adm/listagem'>IR PARA PÁGINA
                                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 25 22" fill="none">
                                     <path d="M24.4754 12.1593C25.173 11.4513 25.173 10.3015 24.4754 9.59351L15.5469 0.531006C14.8493 -0.177002 13.7165 -0.177002 13.019 0.531006C12.3214 1.23901 12.3214 2.38882 13.019 3.09683L18.9062 9.06675H1.78571C0.797991 9.06675 0 9.87671 0 10.8792C0 11.8818 0.797991 12.6917 1.78571 12.6917H18.9007L13.0246 18.6617C12.327 19.3697 12.327 20.5195 13.0246 21.2275C13.7221 21.9355 14.8549 21.9355 15.5525 21.2275L24.481 12.165L24.4754 12.1593Z" fill="white"/>
                                 </svg>

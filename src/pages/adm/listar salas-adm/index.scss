@@ -1,0 +1,185 @@
+@import 'https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@900&display=swap';
+
+.pagina-contador-adm {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+
+    .corpo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        padding: 50px;
+    }
+
+    .corpo > img{
+        max-width: 636px;
+        min-width: 500px;
+        width: 100%;
+    }
+
+    .salas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .salas > h1 {
+        font: 50px 'Lexend Deca';
+        color: #33215B;
+    }
+
+    .blocos {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .blocos div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 410px;
+        height: 545px;
+        border-radius: 5px;
+        background-color: #262C68;
+        margin: 40px;
+        gap: 30px;
+    }
+
+    .blocos h1 {
+        font: 50px 'Lexend Deca';
+        color: #FFF;
+    }
+
+    .blocos a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 340px;
+        min-height: 88px;
+        text-align: center;
+        background-color: #EA3849;
+        border-radius: 5px;
+        font: 24px 'Lexend Deca';
+        color: #fff;
+        text-decoration: none;
+        padding: 5px;
+        transition: 0.5s;
+    }
+
+    .blocos a:hover {
+        background-color: #ff5566;
+    }
+
+    .blocos a:active {
+        transition: 0.2s;
+        background-color: #8d2f39;
+    }
+
+    .blocos span {
+        font: 24px 'Lexend Deca';
+        color: #fff;
+        margin-top: 5px;
+    }
+
+    @media (max-width: 1440px) {
+        .corpo > img{
+            max-width: 500px;
+        }
+
+        .blocos div {
+            width: 310px;
+            height: 445px;
+        }
+    
+        .blocos h1 {
+            font: 40px 'Lexend Deca';
+            color: #FFF;
+        }
+    
+        .blocos a {
+            width: 240px;
+            min-height: 68px;
+            font: 20px 'Lexend Deca';
+        }
+
+        .blocos span {
+            font: 20px 'Lexend Deca';
+        }
+    }
+
+    @media (max-width: 1280px) {
+        .corpo > img{
+            min-width: 400px;
+        }
+
+        .blocos div {
+            max-width: 310px;
+            min-width: 248px;
+            margin: 20px;
+
+            width: 100%;
+        }
+    
+        .blocos h1 {
+            font: 35px 'Lexend Deca';
+            color: #FFF;
+        }
+    
+        .blocos a {
+            width: 192px;
+            min-height: 68px;
+            font: 17px 'Lexend Deca';
+        }
+
+        .blocos span {
+            font: 17px 'Lexend Deca';
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .salas > h1 {
+            font: 40px 'Lexend Deca';
+            color: #33215B;
+            margin-bottom: 30px;
+        }
+
+        .blocos {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin: 15px 0px;
+        }
+        
+        .corpo > img{
+            display: none;
+        }
+
+        .blocos div {
+            max-width: 410px;
+            min-width: 348px;
+            margin: 0px;
+
+            width: 100%;
+        }
+    
+        .blocos h1 {
+            font: 35px 'Lexend Deca';
+            color: #FFF;
+        }
+    
+        .blocos a {
+            width: 292px;
+            min-height: 88px;
+            font: 20px 'Lexend Deca';
+        }
+
+        .blocos span {
+            font: 20px 'Lexend Deca';
+        }
+    }
+}
