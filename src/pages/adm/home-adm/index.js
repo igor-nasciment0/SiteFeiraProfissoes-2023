@@ -5,75 +5,35 @@ import { useState,useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function HomeAdm(){
+    const [info, setInfo] = useState([]);
+    const [cadasuser, setCadasuser] = useState(0)
+    const [totuser, setTotuser] = useState(0)
 
-    const[usuariosCadastrados,setUsuariosCadastrados]=useState('');
-    const[visitantes,setVisitantes]=useState('');
-    const[porcentagem,setPorcentagem]=useState(0);
-    const[filtro,setFiltro]=useState('maior');
-    const[salas,setSalas]=useState([]);
-
-    async function chamarUsuariosInscritos(){
-
-        const url='http://localhost:5000/inscricao/quantidade';
-
-        const resp=await axios.get(url);
-
-        setUsuariosCadastrados(resp.data);
+    async function informormacaoSalas() {
+        let url = `http://localhost:5000/pesquisar`
+        let connect = await axios.get(url);
+        setInfo(...connect.data);
     }
 
-    async function chamarVisitantes(){
+    async function TotalUsuarios() {
+        let url = `http://localhost:5000/total`;
+        let connect = await axios.get(url);
 
-        const url='http://localhost:5000/inscricao/visitantes';
-
-        const resp=await axios.get(url);
-
-        setVisitantes(resp.data);
+        setTotuser(connect.data.Visitantes)
     }
+    
+    async function TotalCadastros() {
+        let url = `http://localhost:5000/totalcadastros`;
+        let connect = await axios.get(url);
 
-    function calcularPorcentagem(){
-
-        const inscritos=Number(usuariosCadastrados);
-        const qtdVisitantes=Number(visitantes);
-
-        for(let cont=0;cont<=100;cont++){
-
-            let calculo=(inscritos*cont)/100;
-
-            if(calculo===qtdVisitantes){
-
-                setPorcentagem(cont);
-            }
-        }
-    }
-
-    async function listarSalas(){
-
-        const url='http://localhost:5000/salas/'+filtro;
-
-        const resp=await axios.get(url);
-
-        setSalas(resp.data);
+        setCadasuser(connect.data.UserCadastros);
     }
 
     useEffect(() => {
-
-        chamarUsuariosInscritos();
-        chamarVisitantes();
-    },[]);
-
-    useEffect(() => {
-
-        if(usuariosCadastrados!=='' || visitantes!==''){
-
-            calcularPorcentagem();
-        }
-    },[usuariosCadastrados,visitantes]);
-
-    useEffect(() => {
-
-        listarSalas();
-
-    },[filtro]);
+        informormacaoSalas();
+        TotalUsuarios();
+        TotalCadastros();
+    }, []);
 
     return(
         
@@ -94,20 +54,15 @@ export default function HomeAdm(){
 
                                 <h5>USUÁRIOS CADASTRADOS</h5>
 
-                                <div> <span>{usuariosCadastrados}</span> USUÁRIOS</div>
+                                <div> <span>{cadasuser}</span> USUÁRIOS</div>
                             </div>
 
                             <div className='visitantes-totais'>
 
                                 <h5>VISITANTES TOTAIS</h5>
 
-                                <div> <span>{visitantes}</span>VISITANTES</div>
+                                <div> <span>{totuser}</span>VISITANTES</div>
                             </div>
-                        </div>
-
-                        <div className='taxa-presenca'>
-                            <h5>Taxa de presença: <span>{porcentagem}%</span> </h5>
-                            <hr/>
                         </div>
                     </div>
 
@@ -130,38 +85,15 @@ export default function HomeAdm(){
                                 </thead>
 
                                 <tbody>
-
-                                    {salas.map(item => 
+                                    {info.map(item => 
 
                                     <tr>
-                                        <td>{item.DS_SALAS}</td>
-                                        <td>{item.NR_PESSOAS}</td>
-                                        <td>{item.DS_APRESENTACAO}</td>
+                                        <td>{item.Sala}</td>
+                                        <td>{item.Quantidade_Visitantes}</td>
+                                        <td>{item.Descricao}</td>
                                     </tr>)}
                                 </tbody>
                             </table>
-                        </div>
-                        
-                        <div className='filtro'>
-
-                            <h6>FILTRAR POR:</h6>
-                            <hr/>
-
-                            <div className='inputs-filtro'>
-
-                                <div>
-                                    <input type='checkbox' id='maior' value='maior' checked={filtro==='maior'} onChange={(e) => {setFiltro(e.target.value)}}/>
-                                    <label for='maior'>MAIOR</label>
-                                </div>
-                                
-                                <div>
-                                    
-                                    <input type='checkbox' id='menor' value='menor'checked={filtro==='menor'}  onChange={(e) => {setFiltro(e.target.value)}}/>
-                                    <label for='menor'>MENOR</label>
-                                </div>
-                            </div>
-
-                            <div></div>
                         </div>
                     </div>
                 </div>
