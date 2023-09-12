@@ -1,6 +1,6 @@
-
 import Cabecalho from "../../components/cabecalho";
 import "./index.scss"
+import { Link } from "react-router-dom";
 
 export default function Ingresso() {
   return (
@@ -11,22 +11,16 @@ export default function Ingresso() {
         <img src="/assets/images/faixa-reta.png" alt="" />
       </div>
 
-      <nav>
-        <img src="/assets/images/ingressoo.png" alt="" />
-        <h2>Ingresso reservado com sucesso !!
-            Esperamos voce no dia 30/09
-            Em nosso instituto</h2>
+      <main>
+        <nav>
+          <h2>Ingresso reservado com sucesso!</h2>
+          <img src="/assets/images/ingressoImagem.png" alt="" />
+          <p>Esperamos você no dia 30/09 <br/> em nosso Instituto.</p>
 
-
-      </nav>
-
-
-      <footer>
-        <img src="/assets/images/background-quadrados.png" alt=""/>
-      </footer>
-
+          <Link to={"/"}>Voltar</Link>
+        </nav>
+      </main>
+      
     </div>
   );
 }
-
-
