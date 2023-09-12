@@ -16,7 +16,7 @@ export default function ListagemAdm() {
                     <section className='blocos'>
                         <div>
                             <h1>Pátio</h1>
-                            <Link to='/adm/contador/0'>
+                            <Link to='/adm/contador/1'>
                                 Ótica Brauzo
                                 <span>SALA 4</span>
                             </Link>
@@ -31,15 +31,15 @@ export default function ListagemAdm() {
                         </div>
                         <div>
                             <h1>1° Andar</h1>
-                            <Link to='/'>
+                            <Link to='/adm/contador/4'>
                                 Posto de Saúde
                                 <span>SALA 17</span>
                             </Link>
-                            <Link to='/'>
+                            <Link to='/adm/contador/5'>
                                 ADM - RH e POC
                                 <span>SALA 18</span>
                             </Link>
-                            <Link to='/'>
+                            <Link to='/adm/contador/6'>
                                 ADM - Empreendedorismo e Logística
                                 <span>SALA 19</span>
                             </Link>
@@ -49,28 +49,28 @@ export default function ListagemAdm() {
                     <section className='blocos'>
                         <div>
                             <h1>2° Andar</h1>
-                            <Link to='/'>
+                            <Link to='/adm/contador/7'>
                                 Comunicação Visual
                                 <span>SALA 24</span>
                             </Link>
-                            <Link to='/'>
+                            <Link to='/adm/contador/8'>
                                 Informática - Montagem, Configuração e Redes
                                 <span>SALA 25</span>
                             </Link>
-                            <Link to='/'>
+                            <Link to='/adm/contador/9'>
                                 Informatica - Programação
                                 <span>SALA 26</span>
                             </Link>
                         </div>
                         <div>
                             <h1>3° Andar</h1>
-                            <Link to='/'>
+                            <Link to='/adm/contador/10'>
                                 AUDITORIO - CATE e Simulação de Entrevista
                             </Link>
-                            <Link to='/'>
+                            <Link to='/adm/contador/11'>
                                 AUDITÓRIO - SAS
                             </Link>
-                            <Link to='/'>
+                            <Link to='/adm/contador/12'>
                                 LINKEDIN
                                 <span>SALA 33</span>
                             </Link>
