@@ -85,29 +85,13 @@ export default function Verificar() {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr className='border-tr'>
+                                    {/* <tr className='border-tr'>
 
                                         <td>Kauan Pedro de Abreu</td>
                                         <td>Kauanpedropedrocauan@gmail.com</td>
                                         <button>Validado</button>
 
-                                    </tr>
-
-                                    <tr className='border-tr'>
-
-                                        <td>Kauan Pedro de Abreu</td>
-                                        <td>Kauanpedropedrocauan@gmail.com</td>
-                                        <button>Validado</button>
-
-                                    </tr>
-
-                                    <tr className='border-tr'>
-
-                                        <td>Kauan Pedro de Abreu</td>
-                                        <td>Kauanpedropedrocauan@gmail.com</td>
-                                        <button>Validado</button>
-
-                                    </tr>
+                                    </tr> */}
                                 </tbody>
                             </table>
                         </div>
