@@ -94,7 +94,7 @@ export default function Landpage() {
                         <h2>3ª <span>Feira Frei</span> das Profissões!</h2>
                         <h3>2000 mil visitantes por ano, 4.600 atendimentos</h3>
 
-                        <p>Nossa terceira ediçao da feira das Profissões do <span>Instituto Nossa Senhora de Fátima.</span></p>
+                        <p>Nossa terceira edição da Feira das Profissões do <span>Instituto Social Nossa Senhora de Fátima.</span></p>
                         <p>Você é nosso CONVIDADO para conhecer a nossa MISSÃO, os nossos cursos e fazer parte da nossa trajetória!<span> Um evento para a família, empresários, educadores e estudantes.</span> </p>
                         <p>Além de poder participar e observar os projetos, pode ser uma oportunidade para os <span>que buscam uma vaga de emprego.</span></p>
                     </div>
@@ -115,8 +115,8 @@ export default function Landpage() {
                         <h2>Um <span>DIA</span> especial!</h2>
                         <h3>Estandes de convidados (Doação de Cabelo, Universidades, Nutricionista, Exame de vista e muito mais!).</h3>
                         
-                        <p>Na Feira das Profissões, você terá oportunidade de conhecer os cursos oferecidos pelo Instituto por meio de projetos criativos feitos pelos próprios alunos para demonstrarem seu conhecimento.</p>
-                        <p>Haverá troca de livros, bate papo sobre profissões, caricuturas, apresentação de montagens e redes, oficina mecânica, elaboração de currículos, linkedin, simulação de entrevistas, e claro, a lanchonete do Frei com preços especial!</p>
+                        <p>Na Feira das Profissões, você terá oportunidade de conhecer os cursos oferecidos pelo Instituto por meio de <span>projetos criativos</span> feitos pelos próprios alunos para demonstrarem seu conhecimento.</p>
+                        <p>Haverá troca de livros, bate papo sobre profissões, caricaturas, apresentação de montagens de redes, oficina mecânica, elaboração de currículos, LinkedIn, simulação de entrevistas – e, é claro, a Lanchonete do Frei com preços especiais!</p>
                     </div>
                 </div>
             </section>
