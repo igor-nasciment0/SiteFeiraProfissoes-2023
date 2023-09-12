@@ -7,7 +7,6 @@
 
     border-radius: 6px;
     background-color: rgba($color: #FFF, $alpha: 0.1);
-    color: #FFF;
 
     cursor: pointer;
     transition: 0.3s;
@@ -23,6 +22,7 @@
         {
             font-size: 12px;
             font-weight: 600;
+            color: #FFF;
         }
 
         h5
@@ -31,6 +31,7 @@
             height: 18px;
             background-color: rgba($color: #FFF, $alpha: 0.1);
             border-radius: 100px;
+            color: #FFF;
 
             text-align: center;
             vertical-align: middle;
@@ -42,8 +43,13 @@
         padding: 15px;
         font-size: 12px;
         font-weight: 500;
-    
-        transition: 0.3s;
+        transition: none;
+        color: #FFF;
+            
+        a
+        {
+            color: #FFF;
+        }
     }
 
     ul
@@ -71,5 +77,21 @@
     h5
     {
         background-color: rgba($color: #000, $alpha: 0.1);
+        color: #33215B;
+    }
+
+    h4
+    {
+        color: #33215B;
+    }
+
+    p
+    {
+        color: #33215B;
+
+        a
+        {
+            color: #33215B;
+        }
     }
 }

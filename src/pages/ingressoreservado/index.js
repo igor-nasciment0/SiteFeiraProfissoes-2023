@@ -8,7 +8,7 @@ export default function Ingresso() {
       <Cabecalho />
 
       <div className="faixa-ingresso">
-        <img src="/assets/images/faixa-reta.png" alt="" />
+        <img src="/assets/images/faixa.png" alt="" />
       </div>
 
       <main>

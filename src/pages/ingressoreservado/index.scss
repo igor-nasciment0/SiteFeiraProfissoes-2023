@@ -19,10 +19,12 @@
 
   .faixa-ingresso {
     width: 100%;
+    margin-top: 16px;
   
     img {
+      object-fit: cover;
       width: 100%;
-      height: 5vh;
+      height: 3vh;
     }
   }
 
@@ -46,7 +48,7 @@
     max-width: 500px;
 
     background-color: #A8DAEA;
-    padding: 20px;
+    padding: 30px 20px;
     border-radius: 16px;
     color: #33215B;
     box-shadow: 0 4px 4px 0 rgba($color: #33215B, $alpha: 0.2);
