@@ -43,7 +43,7 @@ export default function Inscricao() {
   return (
     <div className="pagina-ingresso">
       <Cabecalho />
-      <div className="faixa-inscricao">
+      <div className="faixa-inscricao" >
         <img src="/assets/images/faixa.png" alt="" />
       </div>
 
