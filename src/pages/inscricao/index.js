@@ -58,7 +58,7 @@ export default function Inscricao() {
             <aside>
               <div>
                 <h1>Nome</h1>
-                <input value={nome} onChange={e => setNome(e.target.value)} placeholder="Ex: João Lucas da Silva" maxlength="50"></input>
+                <input value={nome} onChange={e => setNome(e.target.value)} placeholder="Ex: João Lucas da Silva" maxlength="99"></input>
               </div>
 
               <div>
@@ -86,7 +86,7 @@ export default function Inscricao() {
 
               <div>
                 <h1>Já foi aluno do FREI?</h1>
-                <input value={foialuno} onChange={e => setFoialuno(e.target.value)} placeholder="Ex: Sim" maxlength="50"></input>
+                <input value={foialuno} onChange={e => setFoialuno(e.target.value)} placeholder="Ex: Sim" maxlength="99"></input>
 
               </div>
             </aside>

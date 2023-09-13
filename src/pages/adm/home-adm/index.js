@@ -18,8 +18,9 @@ export default function HomeAdm(){
     async function TotalUsuarios() {
         let url = `http://localhost:5000/total`;
         let connect = await axios.get(url);
-
-        setTotuser(connect.data.Visitantes)
+        
+        setTotuser(connect.data.UserCadastros);
+        console.log(connect);
     }
     
     async function TotalCadastros() {

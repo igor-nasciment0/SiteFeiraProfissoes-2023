@@ -37,15 +37,6 @@ export default function Verificar() {
         // }
         // resp(Filtro)
         // setNomeEmail(resp)
-
-        if (Filtro === '') {
-            alert('esta incompleto')
-        }
-
-        else {
-            setLista(true);
-        }
-
     }
 
     return (
@@ -72,30 +63,7 @@ export default function Verificar() {
                         </div>
                     </div>
 
-                    <div className='validar-adm'>
-                        <h2>Visitantes <br /> Encontrados </h2>
-
-                        <div className={`container edit ${Lista ? 'mostrar' : ''}`}>
-                            <table className={`edit ${Lista ? 'mostrar' : ''}`}>
-                                <thead>
-                                    <tr>
-                                        <th>Nome</th>
-                                        <th>Email</th>
-                                        <th>Validação</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {/* <tr className='border-tr'>
-
-                                        <td>Kauan Pedro de Abreu</td>
-                                        <td>Kauanpedropedrocauan@gmail.com</td>
-                                        <button>Validado</button>
-
-                                    </tr> */}
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                    
                 </section>
             </main>
 
