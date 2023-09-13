@@ -2,7 +2,7 @@ import './index.scss';
 import './responsive.scss';
 import {useState } from 'react';
 import Cabecalho from '../../../components/adm/cabecalho';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
 
@@ -13,7 +13,9 @@ export default function Verificar() {
     const[mostrarResultado,setMostrarResultado]=useState(false);
     const[resultado,setResultado]=useState([]);
 
-    const notify = () => toast.success("Visitante validado com sucesso!");
+     function handleSuccess() {
+        toast.success('Mensagem success');
+    }
 
     async function verificar() {
         const resp = await axios.get('http://localhost:5000/buscar-user?nomeEmail='+nomeEmail);
@@ -80,7 +82,7 @@ export default function Verificar() {
                                         <td>{item.ds_email}</td>
                                         {item.bt_verificacao===null ||  item.bt_verificacao==false? 
                                         <td>
-                                            <button className='botao-validar' onClick={() => {validar(item.id_inscricao);}}>Validar 
+                                            <button className='botao-validar' onClickCapture={handleSuccess} onClick={() => {validar(item.id_inscricao); }}>Validar  
                                                 <svg width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M4.28417 4.25C4.28417 3.12283 4.78831 2.04183 5.6857 1.2448C6.58309 0.447767 7.80021 0 9.0693 0C10.3384 0 11.5555 0.447767 12.4529 1.2448C13.3503 2.04183 13.8544 3.12283 13.8544 4.25C13.8544 5.37717 13.3503 6.45817 12.4529 7.2552C11.5555 8.05223 10.3384 8.5 9.0693 8.5C7.80021 8.5 6.58309 8.05223 5.6857 7.2552C4.78831 6.45817 4.28417 5.37717 4.28417 4.25ZM0.695312 16.0139C0.695312 12.7434 3.67855 10.0938 7.36086 10.0938H10.7777C14.4601 10.0938 17.4433 12.7434 17.4433 16.0139C17.4433 16.5584 16.9461 17 16.333 17H1.80561C1.19252 17 0.695312 16.5584 0.695312 16.0139ZM24.0602 5.87695L19.2751 10.127C18.9237 10.4391 18.3555 10.4391 18.0078 10.127L15.6152 8.00195C15.2638 7.68984 15.2638 7.18516 15.6152 6.87637C15.9666 6.56758 16.5349 6.56426 16.8825 6.87637L18.6396 8.43691L22.7892 4.74805C23.1406 4.43594 23.7088 4.43594 24.0565 4.74805C24.4042 5.06016 24.4079 5.56484 24.0565 5.87363L24.0602 5.87695Z" fill="white"/>
                                                 </svg>
@@ -114,9 +116,6 @@ export default function Verificar() {
                 </section>
             </main>
 
-            <footer>
-                <img src="/assets/images/adm/Footer-adm.png" alt="" />
-            </footer>
         </div>
     )
 }
