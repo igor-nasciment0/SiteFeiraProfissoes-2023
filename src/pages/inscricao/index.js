@@ -58,12 +58,12 @@ export default function Inscricao() {
             <aside>
               <div>
                 <h1>Nome</h1>
-                <input value={nome} onChange={e => setNome(e.target.value)} placeholder="Ex: João Lucas da Silva"></input>
+                <input value={nome} onChange={e => setNome(e.target.value)} placeholder="Ex: João Lucas da Silva" maxlength="50"></input>
               </div>
 
               <div>
                 <h1>E-mail</h1>
-                <InputMask type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Ex: nome123@gmail.com" maskPlaceholder={setEmail} required />
+                <InputMask type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Ex: nome123@gmail.com" maxlength="99" maskPlaceholder={setEmail} required />
               </div>
 
               <div>
@@ -75,18 +75,18 @@ export default function Inscricao() {
             <aside>
               <div>
                 <h1>Bairro</h1>
-                <input value={bairro} onChange={e => setBairro(e.target.value)} placeholder="Ex: Cocaia"></input>
+                <input value={bairro} onChange={e => setBairro(e.target.value)} placeholder="Ex: Cocaia" maxlength="99"></input>
               </div>
 
 
               <div>
                 <h1>Como ficou sabendo da feira?</h1>
-                <input value={sabendo} onChange={e => setSabendo(e.target.value)} placeholder="Ex: Amigos"></input>
+                <input value={sabendo} onChange={e => setSabendo(e.target.value)} placeholder="Ex: Amigos" maxlength="99"></input>
               </div>
 
               <div>
                 <h1>Já foi aluno do FREI?</h1>
-                <input value={foialuno} onChange={e => setFoialuno(e.target.value)} placeholder="Ex: Sim"></input>
+                <input value={foialuno} onChange={e => setFoialuno(e.target.value)} placeholder="Ex: Sim" maxlength="50"></input>
 
               </div>
             </aside>
