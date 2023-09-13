@@ -18,16 +18,15 @@ export default function HomeAdm(){
     async function TotalUsuarios() {
         let url = `http://localhost:5000/total`;
         let connect = await axios.get(url);
-        
-        setTotuser(connect.data.UserCadastros);
-        console.log(connect);
+
+        setTotuser(connect.data.Visitantes)
     }
     
     async function TotalCadastros() {
         let url = `http://localhost:5000/totalcadastros`;
         let connect = await axios.get(url);
 
-        setCadasuser(connect.data.UserCadastros);
+        setCadasuser(connect.data.Verificados);
     }
 
     useEffect(() => {
@@ -60,7 +59,7 @@ export default function HomeAdm(){
 
                             <div className='visitantes-totais'>
 
-                                <h5>VISITANTES TOTAIS</h5>
+                                <h5>USUÁRIOS VERIFICADOS</h5>
 
                                 <div> <span>{totuser}</span>VISITANTES</div>
                             </div>
