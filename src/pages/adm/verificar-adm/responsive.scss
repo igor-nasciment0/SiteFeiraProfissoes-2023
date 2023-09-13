@@ -43,43 +43,7 @@
                             }
                         }
                     }
-                }
-
-                .validar-adm {
-                    margin-top: 35px;
-                    padding: 0 0 18px;
-
-                    h2 {
-                        font-size: 22px;
-                    }
-
-                    .edit {
-                        max-height: 300px;
-
-                        thead {
-                            height: 35px;
-
-                            th {
-                                font-size: 14.5px;
-                            }
-                        }
-
-                        tbody {
-                            tr {
-                                height: 40px;
-                            }
-
-                            td {
-                                font-size: 15px;
-                            }
-
-                            button {
-                                font-size: 12.33px;
-                                margin-top: 2.5px;
-                            }
-                        }
-                    }
-                }
+                }    
             }
         }
     }
@@ -127,42 +91,6 @@
                                 width: 225px;
                                 height: 40px;
                                 font-size: 11.5px;
-                            }
-                        }
-                    }
-                }
-
-                .validar-adm {
-                    margin-top: 35px;
-                    padding: 0 0 18px;
-
-                    h2 {
-                        font-size: 22px;
-                    }
-
-                    .edit {
-                        max-height: 300px;
-
-                        thead {
-                            height: 35px;
-
-                            th {
-                                font-size: 14.5px;
-                            }
-                        }
-
-                        tbody {
-                            tr {
-                                height: 40px;
-                            }
-
-                            td {
-                                font-size: 15px;
-                            }
-
-                            button {
-                                font-size: 12.33px;
-                                margin-top: 2.5px;
                             }
                         }
                     }
@@ -219,40 +147,43 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
 
-                .validar-adm {
-                    width: 90%;
-                    margin-top: 35px;
-                    padding: 0 0 20px;
+@media(max-width:768px){
 
-                    h2 {
-                        font-size: 22px;
-                        margin: 25px 0px;
-                    }
-
-                    .edit {
-                        max-height: 300px;
-
-                        thead {
-                            height: 35px;
-
-                            th {
-                                font-size: 13px;
-                            }
+    .page-verificar-adm{
+        main{
+            section{
+                .resultado-verificacao{
+                    .usuarios-encontrados,.usuarios-nao-encontrados{
+                        
+                        >h2{
+    
+                            font-size:20px;
                         }
 
-                        tbody {
-                            tr {
-                                height: 40px;
+                        table{
+                            thead{
+                                font-size:16px;
                             }
+    
+                            tbody{
+    
+                                tr{
+                                    font-size:13px !important;
+    
+                                    td .botao-validar,.botao-validado{
 
-                            td {
-                                font-size: 12px;
-                            }
-
-                            button {
-                                font-size: 10.33px;
-                                margin-top: 2.5px;
+                                        padding:6px;
+                                        svg{
+                                            width:22px;
+                                             height:14px;
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -311,40 +242,29 @@
                     }
                 }
 
-                .validar-adm {
-                    width: 100%;
-                    margin-top: 25px;
-                    padding: 0 0 20px;
+                .resultado-verificacao{
+                    .usuarios-encontrados,.usuarios-nao-encontrados{
 
-                    h2 {
-                        font-size: 15px;
-                        margin: 25px 0px;
-                    }
-
-                    .edit {
-                        max-height: 300px;
-                        width: 95%;
-
-                        thead {
-                            height: 45px;
-
-                            th {
-                                font-size: 10.5px;
+                        table{
+                            thead{
+                                font-size:14px;
                             }
-                        }
+    
+                            tbody{
+    
+                                tr{
+                                    font-size:12px !important;
+    
+                                    td .botao-validar,.botao-validado{
 
-                        tbody {
-                            tr {
-                                height: 40px;
-                            }
-
-                            td {
-                                font-size: 9px;
-                            }
-
-                            button {
-                                font-size: 8px;
-                                margin-top: 2.5px;
+                                        padding:4px;
+                                        svg{
+                                            width:20px;
+                                            height:12px;
+                                            margin-left:0;
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
