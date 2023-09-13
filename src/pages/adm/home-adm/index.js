@@ -19,14 +19,14 @@ export default function HomeAdm(){
         let url = `http://localhost:5000/total`;
         let connect = await axios.get(url);
 
-        setTotuser(connect.data.Visitantes)
+        setTotuser(connect.data.Verificados)
     }
     
     async function TotalCadastros() {
         let url = `http://localhost:5000/totalcadastros`;
         let connect = await axios.get(url);
 
-        setCadasuser(connect.data.Verificados);
+        setCadasuser(connect.data.UserCadastros);
     }
 
     useEffect(() => {
