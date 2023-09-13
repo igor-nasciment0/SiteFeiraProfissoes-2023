@@ -723,6 +723,18 @@
                 justify-content: center;
 
                 gap: 22px;
+                
+                .carousel__slide-focus-ring
+                {
+                    outline: none !important;
+                    border: none !important;
+                }
+
+                .horizontalSlider___281Ls:focus-visible
+                {
+                    outline: none !important;
+                    border: none !important;
+                }
 
                 > div
                 {
@@ -759,10 +771,13 @@
                     align-items: center;
                     gap: 30px;
                     height: 120px;
+
+                    outline: none !important;
                 }
 
                 .carousel__inner-slide
                 {
+                    outline: none !important;
                     display: flex;
                 }
                 .local
