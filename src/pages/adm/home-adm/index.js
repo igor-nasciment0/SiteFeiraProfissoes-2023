@@ -19,7 +19,7 @@ export default function HomeAdm(){
         let url = `http://localhost:5000/total`;
         let connect = await axios.get(url);
 
-        setTotuser(connect.data.Visitantes)
+        setTotuser(connect.data.Verificados)
     }
     
     async function TotalCadastros() {
@@ -59,7 +59,7 @@ export default function HomeAdm(){
 
                             <div className='visitantes-totais'>
 
-                                <h5>VISITANTES TOTAIS</h5>
+                                <h5>USUÁRIOS VERIFICADOS</h5>
 
                                 <div> <span>{totuser}</span>VISITANTES</div>
                             </div>
