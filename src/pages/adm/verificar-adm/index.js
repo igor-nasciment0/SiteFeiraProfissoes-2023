@@ -13,7 +13,7 @@ export default function Verificar() {
     const[mostrarResultado,setMostrarResultado]=useState(false);
     const[resultado,setResultado]=useState([]);
 
-
+    
     async function verificar() {
         const resp = await axios.get('http://localhost:5000/buscar-user?nomeEmail='+nomeEmail);
         setResultado(resp.data);
