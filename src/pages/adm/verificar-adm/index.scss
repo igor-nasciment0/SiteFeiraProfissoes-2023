@@ -1,6 +1,7 @@
 .page-verificar-adm {
     
     width: 100%;
+    overflow-x:hidden;
 
     main {
         display: flex;
@@ -147,7 +148,6 @@
                         tbody{
 
                             tr{
-                                height:50px;
 
                                 padding:10px;
 
@@ -159,7 +159,7 @@
 
                                 td{
 
-                                    margin:10px;
+                                    padding:10px;
 
                                     word-break: break-all;
                                     max-width: 50px;
@@ -194,6 +194,12 @@
                                 .botao-validado{
 
                                     background-color: #474899;
+                                    margin-bottom:10px;
+                                }
+
+                                .botao-validado:hover{
+
+                                    opacity:1;
                                 }
                             }
                         }
