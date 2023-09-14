@@ -84,7 +84,7 @@ export default function Verificar() {
                                     {resultado.map(item=> 
                                     <tr> 
                                         <td>{item.nm_nome}</td>
-                                        <td>{item.ds_email}</td>
+                                        <td style={{wordBreak: "break-all"}}>{item.ds_email}</td>
                                         {item.bt_verificacao===null ||  item.bt_verificacao==false? 
                                         <td>
                                             <button className='botao-validar' onClick={() => {validar(item.id_inscricao);}}><span>Validar</span>

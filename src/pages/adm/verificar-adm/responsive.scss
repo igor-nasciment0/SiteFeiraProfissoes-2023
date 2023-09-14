@@ -280,6 +280,15 @@
     
                                 tr{
                                     font-size:12px !important;
+
+                                    td{
+
+                                        .botao-validado, .botao-validar{
+
+                                            height:50px;
+                                            width:50px;
+                                        }
+                                    }
                                 }
                             }
                         }
