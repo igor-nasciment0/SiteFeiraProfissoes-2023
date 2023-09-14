@@ -109,6 +109,7 @@
                 align-items: center;
 
                 width:100vw;
+
                 margin-top:40px;
 
                 .usuarios-encontrados,.usuarios-nao-encontrados{
@@ -137,12 +138,18 @@
                     table{
 
                         border-collapse: collapse;
+                        
 
                         width:100%;
                         thead{
                             font-size:20px;
                             tr{
                                 text-align:left;
+
+                                th{
+
+                                    padding:10px;
+                                }
                             }
                         }
 
@@ -156,7 +163,13 @@
                                 border: 1px solid #FFF;
 
                                 background-color: #313C8D;
-                                font-size:14px !important;                           
+                                font-size:14px !important;   
+                                overflow-x: hidden;                        
+
+                                #celula-validado{
+
+                                    vertical-align: middle;
+                                }
 
                                 td{
 
@@ -196,11 +209,6 @@
 
                                     background-color: #474899;
                                     margin-bottom:10px;
-                                }
-
-                                .botao-validado:hover{
-
-                                    opacity:1;
                                 }
                             }
                         }

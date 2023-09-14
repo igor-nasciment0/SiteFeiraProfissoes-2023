@@ -103,8 +103,6 @@
 @media(max-width:910px) {
 
     .page-verificar-adm {
-        width: 100%;
-
         main {
             >h2 {
                 font-size: 18.5px;
@@ -193,6 +191,34 @@
     }
 }
 
+@media(max-width:600px){
+
+    // Dê alt Z para ficar melhor de ver o caminho até o elemento
+
+    .page-verificar-adm main section .resultado-verificacao{
+
+        .usuarios-encontrados table tbody tr td{
+
+            .botao-validado,.botao-validar{
+
+                padding:15px;
+
+                span{
+                    display:none;
+                }
+
+                svg{
+
+                    width:100%;
+                    height:auto;
+
+                    margin-left:0;
+                }
+            }
+        }
+    }   
+}
+
 @media(max-width: 428px) {
 
     .page-verificar-adm {
@@ -254,18 +280,6 @@
     
                                 tr{
                                     font-size:12px !important;
-    
-                                    td .botao-validar,.botao-validado{
-
-                                        height:20px;
-                                        width:85px;
-                                        padding:2px;
-                                        svg{
-                                            width:20px;
-                                            height:12px;
-                                            margin-left:0;
-                                        }
-                                    }
                                 }
                             }
                         }
