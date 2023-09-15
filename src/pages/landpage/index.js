@@ -181,7 +181,7 @@ export default function Landpage() {
                                                 
                                                 <div>
                                                     <h5>Ótica Brauzo</h5>
-                                                    <p style={{color: 'red'}}>(descobrir o que a otica Brauzo vai fazer)</p>
+                                                    <p>Experimente alguns serviços da Ótica Brauzo: testes de visão, consultas com optometrista entre outros.</p>
                                                 </div>
                                             </div>   
                                         </Slide>
@@ -270,7 +270,7 @@ export default function Landpage() {
                                                 
                                                 <div>
                                                     <h5>ADM: Empreendedorismo e Logística</h5>
-                                                    <p>Conheça o processo empreendedor, desde a ideia inicial de uma empresa até o sistema logístico</p>
+                                                    <p>Conheça o processo empreendedor, desde a ideia inicial de uma empresa até o sistema logístico.</p>
                                                 </div>
                                             </div>   
                                         </Slide>
@@ -318,7 +318,7 @@ export default function Landpage() {
                                                 
                                                 <div>
                                                     <h5>Comunicação Visual</h5>
-                                                    <p>Aprenda sobre o trabalho de um Designer, as ferramentas, processos e conceitos-chave da criação gráfica.</p>
+                                                    <p>Aprenda sobre o trabalho de um Designer, os processos e ferramentas da criação gráfica. Participe também da criação de caricaturas!</p>
                                                 </div>
                                             </div>   
                                         </Slide>
@@ -432,6 +432,23 @@ export default function Landpage() {
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <section className='empresas'>
+                <h2>NOSSOS COLABORADORES</h2>
+                <div className='empresa'>
+                <div className='emp'>
+                    <img className='img-casa' src='../assets/images/emp1.png' alt='Casa da Mulher Paulistana'/>
+                    <img src='../assets/images/emp2.png' alt='UNISA - Universidade de Santo Amaro'/>
+                    <img src='../assets/images/emp3.png' alt='STB - Student Travel Bureau'/>
+                </div> 
+                <div className='emp'>   
+                    <img src='../assets/images/emp4.png' alt='Centro Universitário Católico Ítalo Brasileiro'/>
+                    <img src='../assets/images/emp5.png' alt='Daniela Matos - Nutricionista'/>
+                    <img src='../assets/images/emp6.png' alt='CUJA - Cursinho Popular'/>
+                    <img src='../assets/images/emp7.png' alt='São Paulo Open Centre'/>     
+                </div>    
                 </div>
             </section>
 
