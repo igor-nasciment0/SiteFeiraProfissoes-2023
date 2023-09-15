@@ -152,6 +152,10 @@
     }
 
     @media (max-width: 660px) {
+        .contador > div{
+            flex-direction: column-reverse;
+            
+        }
         .contador > h1 {
             font: 40px "Lexend Deca";
             margin-bottom: 40px;
@@ -160,6 +164,7 @@
 
         #nr-visitantes {
             font: 50px "Lexend Deca";
+            margin: 20px;
         }
     }
 }
