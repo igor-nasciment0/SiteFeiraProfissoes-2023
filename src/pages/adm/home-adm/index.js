@@ -52,14 +52,14 @@ export default function HomeAdm(){
                         <div className='container-infs-gerais'>
                             <div className='usuarios-cadastrados'>
 
-                                <h5>USUÁRIOS CADASTRADOS</h5>
+                                <h5>VISITANTES CADASTRADOS</h5>
 
                                 <div> <span>{cadasuser}</span> USUÁRIOS</div>
                             </div>
 
                             <div className='visitantes-totais'>
 
-                                <h5>USUÁRIOS VERIFICADOS</h5>
+                                <h5>VISITANTES VERIFICADOS</h5>
 
                                 <div> <span>{totuser}</span>VISITANTES</div>
                             </div>
