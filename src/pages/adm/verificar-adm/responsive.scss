@@ -173,7 +173,7 @@
                                 tr{
                                     font-size:13px !important;
     
-                                    td .botao-validar,.botao-validado{
+                                    td .botao-validar,.botao-desvalidar{
 
                                         padding:6px;
                                         svg{
@@ -189,34 +189,6 @@
             }
         }
     }
-}
-
-@media(max-width:600px){
-
-    // Dê alt Z para ficar melhor de ver o caminho até o elemento
-
-    .page-verificar-adm main section .resultado-verificacao{
-
-        .usuarios-encontrados table tbody tr td{
-
-            .botao-validado,.botao-validar{
-
-                padding:15px;
-
-                span{
-                    display:none;
-                }
-
-                svg{
-
-                    width:100%;
-                    height:auto;
-
-                    margin-left:0;
-                }
-            }
-        }
-    }   
 }
 
 @media(max-width: 428px) {
@@ -280,15 +252,6 @@
     
                                 tr{
                                     font-size:12px !important;
-
-                                    td{
-
-                                        .botao-validado, .botao-validar{
-
-                                            height:50px;
-                                            width:50px;
-                                        }
-                                    }
                                 }
                             }
                         }

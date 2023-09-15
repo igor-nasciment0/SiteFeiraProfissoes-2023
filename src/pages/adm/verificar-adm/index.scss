@@ -2,6 +2,7 @@
     
     width: 100%;
     overflow-x:hidden;
+    
 
     main {
         display: flex;
@@ -9,7 +10,7 @@
         align-items: center;
         margin-top: 40px;
         margin-bottom: 40px;
-       
+       padding: 10px;
 
         >h2 {
             color: #33215B;
@@ -109,7 +110,7 @@
                 flex-direction: column;
                 align-items: center;
 
-                width:100vw;
+                width:100%;
 
                 margin-top:40px;
 
@@ -181,7 +182,7 @@
                                     max-width: 150px;
                                 }
 
-                                td .botao-validar,.botao-validado{
+                                td .botao-validar,.botao-desvalidar{
 
                                     display:flex;
                                     flex-direction: row;
@@ -204,12 +205,12 @@
 
                                 .botao-validar{
 
-                                    background-color:#242C6B;
+                                    background-color:#25a16e;
                                 }
 
-                                .botao-validado{
+                                .botao-desvalidar{
 
-                                    background-color: #474899;
+                                    background-color: #ce2020;
                                     margin-bottom:10px;
                                 }
                             }
