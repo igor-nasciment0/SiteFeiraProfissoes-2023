@@ -360,7 +360,7 @@ export default function Landpage() {
                                                 
                                                 <div>
                                                     <h5>Elaboração de Currículo</h5>
-                                                    <p>Aprenda as possibilidades, convenções e diferenciais na hora de criar o seu currículo com a empresa Maphre.</p>
+                                                    <p>Aprenda com a empresa Maphre as possibilidades, convenções e diferenciais na hora de criar o seu currículo.</p>
                                                 </div>
                                             </div>   
                                         </Slide>
