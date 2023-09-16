@@ -30,16 +30,16 @@ export default function Landpage() {
     };
 
     const duvidas1 =
-        [
-            {pergunta: 'Quem pode ir à feira?', resposta: 'Todos podem participar! Para tanto, inscreva-se.' },
-            {pergunta: 'O evento é gratuito?', resposta: 'Sim! A entrada na Feira das Profissões do Instituto é gratuita e sempre será.'},
-            {pergunta: 'Quem fez os projetos?', resposta:'Todos os projetos apresentados na feira são feitos pelos alunos, enquanto alguns serviços (como a simulação de entrevista) serão oferecidos por empresas e organizações convidadas.'},
-        ]
+    [
+        {pergunta: 'Quem pode ir à feira?', resposta: 'Todos podem participar! Para tanto, inscreva-se.' },
+        {pergunta: 'O evento é gratuito?', resposta: 'Sim! A entrada na Feira das Profissões do Instituto é gratuita e sempre será.'},
+        {pergunta: 'Quem fez os projetos?', resposta:'Todos os projetos apresentados na feira são feitos pelos alunos, enquanto alguns serviços (como a simulação de entrevista) serão oferecidos por empresas e organizações convidadas.'},
+    ]
 
     const duvidas2 =
     [
         {pergunta: 'Sobre a alimentação', resposta:'No prédio do Instituto, você também encontrará a nossa lanchonete. Bom apetite!'},
-        {pergunta: 'Empresas convidadas', resposta:'Estas são algumas das empresas convidadas para nosso evento:', lista: ['Fios de Berenice (Doação de Cabelo)', 'Universidade Ítalo-Brasileiro', 'UNISA', 'STB Intercâmbio', 'Instituto ITMídia', 'Daniela Matos (Nutricionista)', 'São Paulo Open Centre']},
+        {pergunta: 'Empresas convidadas', resposta:'Estas são algumas das empresas convidadas para nosso evento:', lista: ['Fios de Berenice (Doação de Cabelo)', 'Universidade Ítalo-Brasileiro', 'UNISA', 'STB Intercâmbio', 'Paraoficina', 'SupplyTech', 'Daniela Matos (Nutricionista)', 'São Paulo Open Centre', 'Seguradora Maphre']},
         {pergunta: 'Como fazer a inscrição?', resposta:'Preencha o formulário ', link: {texto: 'neste link', url:'/inscricao'}},
     ]
 
@@ -154,7 +154,7 @@ export default function Landpage() {
                                                 
                                                 <div>
                                                     <h5>Estandes de Empresas Convidadas</h5>
-                                                    <p>Doe seu cabelo para quem precisa, visite o nutricionista e muito mais com algumas de nossas empresas colaboradoras.</p>
+                                                    <p>Doe seu cabelo para quem precisa, visite o nutricionista, conheça um cursinho gratuito e muito mais com algumas de nossas empresas colaboradoras.</p>
                                                 </div>
                                             </div>   
                                         </Slide>
@@ -167,7 +167,7 @@ export default function Landpage() {
                                                 
                                                 <div>
                                                     <h5>Outros Estandes</h5>
-                                                    <p>Conheça os cursos do CEDESP AVE MARIA, nosso sistema de troca de livros, os livros do Frei Xavier e mais.</p>
+                                                    <p>Conheça os cursos do CEDESP AVE MARIA, os livros do Frei Xavier, soluções em automação e eletroténica com a Supplytech e mais.</p>
                                                 </div>
                                             </div>   
                                         </Slide>
@@ -241,8 +241,8 @@ export default function Landpage() {
                                                 </div>
                                                 
                                                 <div>
-                                                    <h5>Posto de Saúde</h5>
-                                                    <p>Faça um check-up da sua saúde com profissionais qualificados.</p>
+                                                    <h5>UBS – Veleiros</h5>
+                                                    <p>Faça um check-up da sua saúde com profissionais qualificados da UBS de Veleiros.</p>
                                                 </div>
                                             </div>   
                                         </Slide>
@@ -255,8 +255,8 @@ export default function Landpage() {
                                                 </div>
                                                 
                                                 <div>
-                                                    <h5>ADM: RH e POC</h5>
-                                                    <p>Descubra o que são e como funcionam os Recursos Humanos e a Prova de Conceito no contexto da administração de empresas.</p>
+                                                    <h5>ADM: RH e Contabilidade</h5>
+                                                    <p>Descubra o que são e como funcionam os Recursos Humanos e a Contabilidade no contexto da administração de empresas.</p>
                                                 </div>
                                             </div>   
                                         </Slide>
@@ -269,7 +269,7 @@ export default function Landpage() {
                                                 </div>
                                                 
                                                 <div>
-                                                    <h5>ADM: Empreendedorismo e Logística</h5>
+                                                    <h5>ADM: Logística e Empreendedorismo</h5>
                                                     <p>Conheça o processo empreendedor, desde a ideia inicial de uma empresa até o sistema logístico.</p>
                                                 </div>
                                             </div>   
@@ -283,8 +283,8 @@ export default function Landpage() {
                                                 </div>
                                                 
                                                 <div>
-                                                    <h5>Teste de Conhecimento de Inglês</h5>
-                                                    <p>Sabe um pouco de Inglês? Não deixe de testar esse conhecimento e saber como ainda pode melhorar!</p>
+                                                    <h5>Teste – Conversação em Inglês</h5>
+                                                    <p>Sabe falar Inglês? Não deixe de testar esse conhecimento conosco e saber como ainda pode melhorar!</p>
                                                 </div>
                                             </div>   
                                         </Slide>
@@ -360,7 +360,7 @@ export default function Landpage() {
                                                 
                                                 <div>
                                                     <h5>Elaboração de Currículo</h5>
-                                                    <p>Aprenda as possibilidades, convenções e diferenciais na hora de criar o seu currículo. </p>
+                                                    <p>Aprenda as possibilidades, convenções e diferenciais na hora de criar o seu currículo com a empresa Maphre.</p>
                                                 </div>
                                             </div>   
                                         </Slide>
@@ -404,8 +404,8 @@ export default function Landpage() {
                                                 </div>
                                                 
                                                 <div>
-                                                    <h5>SAS (Cad único)</h5>
-                                                    <p style={{color: 'red'}}>(as pessoas vão se cadastrar no CadÚnico?)</p>
+                                                    <h5>CadÚnico</h5>
+                                                    <p>Cadastre-se no CadÚnico conosco para receber benefícios como o Bolsa Família.</p>
                                                 </div>
                                             </div>   
                                         </Slide>
@@ -419,7 +419,7 @@ export default function Landpage() {
                                                 
                                                 <div>
                                                     <h5>LinkedIn</h5>
-                                                    <p>Aprenda sobre o LinkedIn, e a como criar uma conta que te ajude a trabalhar na área que deseja. </p>
+                                                    <p>Aprenda sobre o LinkedIn, e a como criar uma conta que te ajude a trabalhar na área que deseja.</p>
                                                 </div>
                                             </div>   
                                         </Slide>
