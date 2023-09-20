@@ -32,7 +32,7 @@ export default function Inscricao() {
         foialuno: foialuno,
       };
 
-      let url = 'http://vps41771.publiccloud.com.br:5000/inserir';
+      let url = 'http://localhost:5000/inserir';
       let resposta = await axios.post(url, inscricao);
       
       if (resposta.status === 200) {
