@@ -2,6 +2,7 @@ import './index.scss';
 import { useState } from 'react';
 import axios from 'axios';
 import Cabecalho from '../../../components/cabecalho';
+import { useNavigate } from 'react-router-dom';
 
 export default function LoginAdm() {
   const [showPassword, setShowPassword] = useState(false);
@@ -9,13 +10,16 @@ export default function LoginAdm() {
   const [senha, setSenha] = useState('');
   const [message, setMessage] = useState('');
 
+  const navigate = useNavigate();
+
   async function entrar() {
     try {
       const response = await axios.get('http://localhost:5000/login-admin');
       const credencial = response.data;
 
       if (login === credencial.login && senha === credencial.senha) {
-        window.location.href = 'http://localhost:3000/adm';
+        navigate('/adm');
+        
       } else {
         setMessage('⚠ Login ou senha incorretos ');
       }

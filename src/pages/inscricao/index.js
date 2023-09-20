@@ -4,6 +4,7 @@ import axios from 'axios';
 import 'react-confirm-alert/src/react-confirm-alert.css';
 import InputMask from 'react-input-mask';
 import Cabecalho from '../../components/cabecalho';
+import { useNavigate } from 'react-router-dom';
 
 
 export default function Inscricao() {
@@ -16,6 +17,8 @@ export default function Inscricao() {
   const [foialuno, setFoialuno] = useState('')
 
   const [campoobrigatorio, setCampoobrigatorio] = useState('')
+
+  const navigate = useNavigate();
 
   async function inscrever() {
     try {
@@ -31,8 +34,9 @@ export default function Inscricao() {
 
       let url = 'http://localhost:5000/inserir';
       let resposta = await axios.post(url, inscricao);
+      
       if (resposta.status === 200) {
-        window.location.href = 'http://localhost:3000/reservado';
+        navigate('/reservado');
       }
 
     } catch (err) {
