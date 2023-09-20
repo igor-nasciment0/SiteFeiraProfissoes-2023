@@ -14,7 +14,7 @@ export default function LoginAdm() {
 
   async function entrar() {
     try {
-      const response = await axios.get('http://localhost:5000/login-admin');
+      const response = await axios.get('http://vps41771.publiccloud.com.br:5000/login-admin');
       const credencial = response.data;
 
       if (login === credencial.login && senha === credencial.senha) {

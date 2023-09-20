@@ -12,7 +12,7 @@ export default function ContadorAdm() {
     const { salaId } = useParams();
 
     async function informormacaoSala() {
-        let url = `http://localhost:5000/pesquisar/${salaId}`
+        let url = `http://vps41771.publiccloud.com.br:5000/pesquisar/${salaId}`
         let connect = await axios.get(url);
         setInfo(connect.data[0]);
     }
@@ -23,13 +23,13 @@ export default function ContadorAdm() {
 
     
     async function AdicionarVisitante() {
-        let url = `http://localhost:5000/adicionar/${salaId}`
+        let url = `http://vps41771.publiccloud.com.br:5000/adicionar/${salaId}`
         let connect = await axios.put(url)
         informormacaoSala()
     }
 
     async function RemoverVisitante() {
-        let url = `http://localhost:5000/diminuir/${salaId}`
+        let url = `http://vps41771.publiccloud.com.br:5000/diminuir/${salaId}`
         let connect = await axios.put(url)
         informormacaoSala()
     }

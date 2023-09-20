@@ -15,7 +15,7 @@ export default function Verificar() {
 
     
     async function verificar() {
-        const resp = await axios.get('http://localhost:5000/buscar-user?nomeEmail='+nomeEmail);
+        const resp = await axios.get('http://vps41771.publiccloud.com.br:5000/buscar-user?nomeEmail='+nomeEmail);
         setResultado(resp.data);
  
         setMostrarResultado(true);
@@ -24,7 +24,7 @@ export default function Verificar() {
     async function validar(id){
 
         const idAlterar=id;
-        const resp = await axios.put('http://localhost:5000/verificacao-user/'+idAlterar);
+        const resp = await axios.put('http://vps41771.publiccloud.com.br:5000/verificacao-user/'+idAlterar);
 
         verificar();
     }
@@ -32,7 +32,7 @@ export default function Verificar() {
     async function desvalidar(id){
 
         const idDesvalidar=id;
-        const resp = await axios.put('http://localhost:5000/desvalidacao-user/'+idDesvalidar);
+        const resp = await axios.put('http://vps41771.publiccloud.com.br:5000/desvalidacao-user/'+idDesvalidar);
 
         verificar();
     }
