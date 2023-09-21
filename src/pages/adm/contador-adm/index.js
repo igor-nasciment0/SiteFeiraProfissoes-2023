@@ -1,7 +1,7 @@
 import './index.scss';
 import Cabecalho from '../../../components/adm/cabecalho';
 
-import { redirect, useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { useContext, useEffect } from 'react';
 import { useState } from 'react';
 
