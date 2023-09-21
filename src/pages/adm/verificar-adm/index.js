@@ -1,10 +1,12 @@
 import './index.scss';
 import './responsive.scss';
-import {useState } from 'react';
+import {useContext, useEffect, useState } from 'react';
 import Cabecalho from '../../../components/adm/cabecalho';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+import { LoginContext } from '../../../context';
 
 export default function Verificar() {
 
@@ -36,6 +38,16 @@ export default function Verificar() {
 
         verificar();
     }
+
+    const navigate = useNavigate();
+    const login = useContext(LoginContext)
+
+    useEffect(() => {
+        if(!login.logado)
+        {
+            navigate('/adm/login');
+        }
+    })
 
     return (
         <div className='page-verificar-adm'>

@@ -1,13 +1,15 @@
 import './index.scss';
 import Cabecalho from '../../../components/adm/cabecalho';
 
-import { useParams } from 'react-router-dom';
-import { useEffect } from 'react';
+import { redirect, useNavigate, useParams } from 'react-router-dom';
+import { useContext, useEffect } from 'react';
 import { useState } from 'react';
 
 import axios from 'axios';
+import { LoginContext } from '../../../context';
 
 export default function ContadorAdm() {
+
     const [info, setInfo] = useState([]);
     const { salaId } = useParams();
 
@@ -20,6 +22,16 @@ export default function ContadorAdm() {
     useEffect(() => {
         informormacaoSala();
     }, []);
+
+    const navigate = useNavigate();
+    const login = useContext(LoginContext)
+
+    useEffect(() => {
+        if(!login.logado)
+        {
+            navigate('/adm/login');
+        }
+    })
 
     
     async function AdicionarVisitante() {

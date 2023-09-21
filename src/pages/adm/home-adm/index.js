@@ -1,8 +1,9 @@
 import './index.scss';
 import AdmHeader from '../../../components/adm/cabecalho';
 import axios from 'axios';
-import { useState,useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { useState,useEffect, useContext } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { LoginContext } from '../../../context';
 
 export default function HomeAdm(){
     const [info, setInfo] = useState([]);
@@ -34,6 +35,16 @@ export default function HomeAdm(){
         TotalUsuarios();
         TotalCadastros();
     }, []);
+    
+    const navigate = useNavigate();
+    const login = useContext(LoginContext)
+
+    useEffect(() => {
+        if(!login.logado)
+        {
+            navigate('/adm/login');
+        }
+    })
 
     return(
         

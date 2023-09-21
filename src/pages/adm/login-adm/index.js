@@ -1,8 +1,9 @@
 import './index.scss';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import axios from 'axios';
 import Cabecalho from '../../../components/cabecalho';
 import { useNavigate } from 'react-router-dom';
+import { LoginContext } from '../../../context';
 
 export default function LoginAdm() {
   const [showPassword, setShowPassword] = useState(false);
@@ -12,12 +13,15 @@ export default function LoginAdm() {
 
   const navigate = useNavigate();
 
+  const loginContext = useContext(LoginContext)
+
   async function entrar() {
     try {
       const response = await axios.get('http://vps41771.publiccloud.com.br:5000/login-admin');
       const credencial = response.data;
 
       if (login === credencial.login && senha === credencial.senha) {
+        loginContext.logar();
         navigate('/adm');
         
       } else {
