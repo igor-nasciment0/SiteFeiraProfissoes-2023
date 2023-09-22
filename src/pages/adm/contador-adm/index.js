@@ -21,7 +21,7 @@ export default function ContadorAdm() {
 
     useEffect(() => {
         informormacaoSala();
-    }, []);
+    });
 
     const navigate = useNavigate();
     const login = useContext(LoginContext)
@@ -36,13 +36,13 @@ export default function ContadorAdm() {
     
     async function AdicionarVisitante() {
         let url = `http://vps41771.publiccloud.com.br:5000/adicionar/${salaId}`
-        let connect = await axios.put(url)
+        await axios.put(url)
         informormacaoSala()
     }
 
     async function RemoverVisitante() {
         let url = `http://vps41771.publiccloud.com.br:5000/diminuir/${salaId}`
-        let connect = await axios.put(url)
+        await axios.put(url)
         informormacaoSala()
     }
 
