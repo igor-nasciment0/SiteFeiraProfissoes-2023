@@ -20,7 +20,7 @@ export default function LoginAdm() {
       const response = await axios.get('http://vps41771.publiccloud.com.br:5000/login-admin');
       const credencial = response.data;
 
-      if (login === '1' && senha === '1') {
+      if (login === credencial.login && senha === credencial.senha) {
         loginContext.logar();
         navigate('/adm');
         
