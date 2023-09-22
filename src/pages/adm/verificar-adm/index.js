@@ -2,7 +2,6 @@ import './index.scss';
 import './responsive.scss';
 import {useContext, useEffect, useState } from 'react';
 import Cabecalho from '../../../components/adm/cabecalho';
-import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
@@ -26,7 +25,7 @@ export default function Verificar() {
     async function validar(id){
 
         const idAlterar=id;
-        const resp = await axios.put('http://vps41771.publiccloud.com.br:5000/verificacao-user/'+idAlterar);
+        await axios.put('http://vps41771.publiccloud.com.br:5000/verificacao-user/'+idAlterar);
 
         verificar();
     }
@@ -34,7 +33,7 @@ export default function Verificar() {
     async function desvalidar(id){
 
         const idDesvalidar=id;
-        const resp = await axios.put('http://vps41771.publiccloud.com.br:5000/desvalidacao-user/'+idDesvalidar);
+        await axios.put('http://vps41771.publiccloud.com.br:5000/desvalidacao-user/'+idDesvalidar);
 
         verificar();
     }
@@ -97,7 +96,7 @@ export default function Verificar() {
                                     <tr> 
                                         <td>{item.nm_nome}</td>
                                         <td style={{wordBreak: "break-all"}}>{item.ds_email}</td>
-                                        {item.bt_verificacao===null ||  item.bt_verificacao==false? 
+                                        {item.bt_verificacao === null ||  item.bt_verificacao === false? 
                                         <td>
                                             <button className='botao-validar' onClick={() => {validar(item.id_inscricao);}}><span>Validar</span>
                                                 <svg width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
