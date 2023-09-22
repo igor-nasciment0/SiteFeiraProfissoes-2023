@@ -16,24 +16,24 @@ export default function Verificar() {
 
     
     async function verificar() {
-        const resp = await axios.get('http://vps41771.publiccloud.com.br:5000/buscar-user?nomeEmail='+nomeEmail);
+        const resp = await axios.get('https://vps41771.publiccloud.com.br/buscar-user?nomeEmail=' + nomeEmail);
         setResultado(resp.data);
  
         setMostrarResultado(true);
     }
 
-    async function validar(id){
+    async function validar(user, id){
 
         const idAlterar=id;
-        await axios.put('https://vps41771.publiccloud.com.br/verificacao-user/'+idAlterar);
+        await axios.put('https://vps41771.publiccloud.com.br/verificacao/'+idAlterar, user);
 
         verificar();
     }
 
-    async function desvalidar(id){
+    async function desvalidar(user, id){
 
         const idDesvalidar=id;
-        await axios.put('https://vps41771.publiccloud.com.br/desvalidacao-user/'+idDesvalidar);
+        await axios.put('https://vps41771.publiccloud.com.br/desvalidacao/'+idDesvalidar, user);
 
         verificar();
     }
@@ -96,9 +96,9 @@ export default function Verificar() {
                                     <tr> 
                                         <td>{item.nm_nome}</td>
                                         <td style={{wordBreak: "break-all"}}>{item.ds_email}</td>
-                                        {item.bt_verificacao === null ||  item.bt_verificacao === false? 
+                                        {item.bt_verificacao === null ||  item.bt_verificacao === 0 ? 
                                         <td>
-                                            <button className='botao-validar' onClick={() => {validar(item.id_inscricao);}}><span>Validar</span>
+                                            <button className='botao-validar' onClick={() => {validar(item, item.id_inscricao);}}><span>Validar</span>
                                                 <svg width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M4.28417 4.25C4.28417 3.12283 4.78831 2.04183 5.6857 1.2448C6.58309 0.447767 7.80021 0 9.0693 0C10.3384 0 11.5555 0.447767 12.4529 1.2448C13.3503 2.04183 13.8544 3.12283 13.8544 4.25C13.8544 5.37717 13.3503 6.45817 12.4529 7.2552C11.5555 8.05223 10.3384 8.5 9.0693 8.5C7.80021 8.5 6.58309 8.05223 5.6857 7.2552C4.78831 6.45817 4.28417 5.37717 4.28417 4.25ZM0.695312 16.0139C0.695312 12.7434 3.67855 10.0938 7.36086 10.0938H10.7777C14.4601 10.0938 17.4433 12.7434 17.4433 16.0139C17.4433 16.5584 16.9461 17 16.333 17H1.80561C1.19252 17 0.695312 16.5584 0.695312 16.0139ZM24.0602 5.87695L19.2751 10.127C18.9237 10.4391 18.3555 10.4391 18.0078 10.127L15.6152 8.00195C15.2638 7.68984 15.2638 7.18516 15.6152 6.87637C15.9666 6.56758 16.5349 6.56426 16.8825 6.87637L18.6396 8.43691L22.7892 4.74805C23.1406 4.43594 23.7088 4.43594 24.0565 4.74805C24.4042 5.06016 24.4079 5.56484 24.0565 5.87363L24.0602 5.87695Z" fill="white"/>
                                                 </svg>
@@ -107,7 +107,7 @@ export default function Verificar() {
                                         : 
                                         <td className='celula-validado'>
 
-                                            <button className='botao-desvalidar' onClick={() => {desvalidar(item.id_inscricao);}}><span>Desvalidar</span>
+                                            <button className='botao-desvalidar' onClick={() => {desvalidar(item, item.id_inscricao);}}><span>Desvalidar</span>
                                                 <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <g clip-path="url(#clip0_1350_2)">
                                                     <path d="M1.45521 0.169523C1.06521 -0.102743 0.498961 -0.0396571 0.191461 0.305655C-0.116039 0.650968 -0.0447892 1.15234 0.345211 1.4246L22.5452 16.8309C22.9352 17.1031 23.5015 17.04 23.809 16.6947C24.1165 16.3494 24.0452 15.848 23.6552 15.5758L14.3215 9.09784C16.1402 8.32753 17.4002 6.68398 17.4002 4.78144C17.4002 2.14179 14.9815 0.000186634 12.0002 0.000186634C9.39021 0.000186634 7.21521 1.6371 6.70896 3.81523L1.45521 0.169523ZM20.4565 17.0002H19.8002L10.6615 10.6252H8.44896C5.10771 10.6252 2.40021 13.0225 2.40021 15.9809C2.40021 16.5453 2.91771 17.0002 3.55146 17.0002H20.449H20.4602H20.4565Z" fill="white"/>
