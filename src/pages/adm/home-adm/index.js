@@ -11,20 +11,20 @@ export default function HomeAdm(){
     const [totuser, setTotuser] = useState(0)
 
     async function informormacaoSalas() {
-        let url = `http://vps41771.publiccloud.com.br:5000/pesquisar`
+        let url = `https://vps41771.publiccloud.com.br/pesquisar`
         let connect = await axios.get(url);
         setInfo(...connect.data);
     }
 
     async function TotalUsuarios() {
-        let url = `http://vps41771.publiccloud.com.br:5000/total`;
+        let url = `https://vps41771.publiccloud.com.br/total`;
         let connect = await axios.get(url);
 
         setTotuser(connect.data.Verificados)
     }
     
     async function TotalCadastros() {
-        let url = `http://vps41771.publiccloud.com.br:5000/totalcadastros`;
+        let url = `https://vps41771.publiccloud.com.br/totalcadastros`;
         let connect = await axios.get(url);
 
         setCadasuser(connect.data.UserCadastros);
