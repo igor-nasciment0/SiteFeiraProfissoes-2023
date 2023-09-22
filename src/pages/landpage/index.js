@@ -131,7 +131,7 @@ export default function Landpage() {
 
             <section className="sec-andares">
                 <div className="container-tela">
-                    <h2>As melhores experiências te aguardam <br/> no Instituto</h2>
+                <h2>As melhores experiências te aguardam <br/> no Instituto</h2>
                     
                     <div className="container-andares">
                         <div className="grupo-andares">
@@ -241,8 +241,8 @@ export default function Landpage() {
                                                 </div>
                                                 
                                                 <div>
-                                                    <h5>UBS – Veleiros</h5>
-                                                    <p>Faça um check-up da sua saúde com profissionais qualificados da UBS de Veleiros.</p>
+                                                    <h5>Higiene Bucal</h5>
+                                                    <p>Faça um check-up da sua higiene bucal com profissionais qualificados.</p>
                                                 </div>
                                             </div>   
                                         </Slide>
@@ -377,7 +377,7 @@ export default function Landpage() {
 
                                 <CarouselProvider
                                     {...settings}
-                                    totalSlides={3}
+                                    totalSlides={4}
                                 >
                                     <ButtonBack disabled={false}>
                                         <img src="/assets/images/icons/chevron-left.svg" alt="" />
@@ -391,8 +391,8 @@ export default function Landpage() {
                                                 </div>
                                                 
                                                 <div>
-                                                    <h5>Simulação de Entrevista</h5>
-                                                    <p>Simule uma entrevista de emprego com a Seguradora Maphre!</p>
+                                                    <h5>CATE</h5>
+                                                    <p>Vagas para adultos e informações sobre a Carteira de Trabalho.</p>
                                                 </div>
                                             </div>   
                                         </Slide>
@@ -404,7 +404,7 @@ export default function Landpage() {
                                                 </div>
                                                 
                                                 <div>
-                                                    <h5>CadÚnico</h5>
+                                                    <h5>CADÚnico</h5>
                                                     <p>Cadastre-se no CadÚnico conosco para receber benefícios como o Bolsa Família.</p>
                                                 </div>
                                             </div>   
@@ -413,13 +413,26 @@ export default function Landpage() {
                                         <Slide index={2}>
                                             <div className="carrossel-item">
                                                 <div className="local">
+                                                    <span className="titulo-unico">Auditório</span>
+                                                </div>
+                                                
+                                                <div>
+                                                    <h5>Cohab</h5>
+                                                    <p>Cadastramento, renegociação e informações sobre premiação.</p>
+                                                </div>
+                                            </div>   
+                                        </Slide>
+
+                                        <Slide index={3}>
+                                            <div className="carrossel-item">
+                                                <div className="local">
                                                     <h4>Sala</h4>
                                                     <span>33</span>
                                                 </div>
                                                 
                                                 <div>
-                                                    <h5>LinkedIn</h5>
-                                                    <p>Aprenda sobre o LinkedIn, e a como criar uma conta que te ajude a trabalhar na área que deseja.</p>
+                                                    <h5>Simulação de Entrevista</h5>
+                                                    <p>Simule uma entrevista de emprego com a Seguradora Maphre!</p>
                                                 </div>
                                             </div>   
                                         </Slide>
