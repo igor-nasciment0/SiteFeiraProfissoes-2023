@@ -52,7 +52,7 @@ export default function Landpage() {
                     <div>
                         <h1>Esperamos você na</h1>
                         <h2>Feira das Profissões 2023</h2>
-                        <Link to='/inscricao' >Inscreva-se Agora</Link>
+                        <Link to='https://forms.gle/WR157key1EyZubcDA'>Inscreva-se Agora</Link>
                     </div>
 
                     <div className="data">
@@ -125,7 +125,7 @@ export default function Landpage() {
                 <div>
                     <h2>Está gostando?</h2>
                     <h3>Não perca tempo.</h3>
-                    <Link to='/inscricao' >Inscreva-se Agora</Link>
+                    <Link to='https://forms.gle/WR157key1EyZubcDA' >Inscreva-se Agora</Link>
                 </div>
             </section>
 
