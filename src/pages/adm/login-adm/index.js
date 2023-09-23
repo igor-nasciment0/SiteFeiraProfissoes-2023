@@ -69,7 +69,7 @@ export default function LoginAdm() {
 
 
 
-          <button onClick={entrar}>Salvar</button>
+          <button onClick={entrar}>Entrar</button>
           <div>
             <p>{message} </p>
           </div>
