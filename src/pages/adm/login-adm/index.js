@@ -22,13 +22,13 @@ export default function LoginAdm() {
         senha: senha
       }     
 
-      const response = await axios.post('http://localhost:5000/login-admin', credencial);
+      const response = await axios.post('https://vps41771.publiccloud.com.br/login-admin', credencial);
 
       if (response.status === 204) {
         loginContext.logar();
         navigate('/adm');
       }
-      
+
     } catch (error) {
       if(error.response) {
         setMessage(error.response.data)
