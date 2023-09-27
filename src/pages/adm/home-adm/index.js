@@ -13,7 +13,7 @@ export default function HomeAdm(){
     async function informormacaoSalas() {
         let url = `https://vps41771.publiccloud.com.br/pesquisar`
         let connect = await axios.get(url);
-        setInfo(...connect.data);
+        setInfo(connect.data);
     }
 
     async function TotalUsuarios() {

@@ -17,19 +17,24 @@ export default function LoginAdm() {
 
   async function entrar() {
     try {
-      const response = await axios.get('https://vps41771.publiccloud.com.br/login-admin');
-      const credencial = response.data;
+      const credencial = {
+        login: login,
+        senha: senha
+      }     
 
-      if (login === credencial.login && senha === credencial.senha) {
+      const response = await axios.post('http://localhost:5000/login-admin', credencial);
+
+      if (response.status === 204) {
         loginContext.logar();
         navigate('/adm');
-        
-      } else {
-        setMessage('⚠ Login ou senha incorretos ');
       }
+      
     } catch (error) {
-      console.error('⚠ Erro ao verificar as credenciais:', error);
-      setMessage('⚠ Erro ao verificar as credenciais. Tente novamente mais tarde.');
+      if(error.response) {
+        setMessage(error.response.data)
+      } else {
+        setMessage(error.message)
+      }
     }
   }
 
