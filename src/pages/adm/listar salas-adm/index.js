@@ -44,7 +44,7 @@ export default function ListagemAdm() {
                         <div>
                             <h1>1° Andar</h1>
                             <Link to='/adm/contador/4'>
-                                Posto de Saúde
+                                Higiene Bucal
                                 <span>SALA 17</span>
                             </Link>
                             <Link to='/adm/contador/5'>
@@ -77,13 +77,16 @@ export default function ListagemAdm() {
                         <div>
                             <h1>3° Andar</h1>
                             <Link to='/adm/contador/10'>
-                                AUDITORIO - CATE e Simulação de Entrevista
+                                AUDITORIO - CATE
                             </Link>
                             <Link to='/adm/contador/11'>
-                                AUDITÓRIO - SAS
+                                AUDITÓRIO - CadÚnico
                             </Link>
                             <Link to='/adm/contador/12'>
-                                LINKEDIN
+                                Cohab
+                            </Link>
+                            <Link to='/adm/contador/12'>
+                                Simulação de Entrevista
                                 <span>SALA 33</span>
                             </Link>
                         </div>
