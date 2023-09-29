@@ -31,9 +31,9 @@ export default function LoginAdm() {
 
     } catch (error) {
       if(error.response) {
-        setMessage(error.response.data)
+        setMessage(error.response.data.erro)
       } else {
-        setMessage(error.message)
+        setMessage(error.message.erro)
       }
     }
   }
