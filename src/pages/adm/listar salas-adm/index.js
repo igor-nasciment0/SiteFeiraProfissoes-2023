@@ -55,6 +55,10 @@ export default function ListagemAdm() {
                                 ADM - Empreendedorismo e Logística
                                 <span>SALA 19</span>
                             </Link>
+                            <Link to='/adm/contador/15'>
+                                Inglês - Teste de Conhecimento em Bate Papo em Inglês
+                                <span>SALA 20</span>
+                            </Link>
                         </div>
                     </section>
 
@@ -73,6 +77,10 @@ export default function ListagemAdm() {
                                 Informatica - Programação
                                 <span>SALA 26</span>
                             </Link>
+                            <Link to='/adm/contador/14'>
+                                Elaboração de Currículos
+                                <span>SALA 27</span>
+                            </Link>
                         </div>
                         <div>
                             <h1>3° Andar</h1>
@@ -85,7 +93,7 @@ export default function ListagemAdm() {
                             <Link to='/adm/contador/12'>
                                 Cohab
                             </Link>
-                            <Link to='/adm/contador/12'>
+                            <Link to='/adm/contador/13'>
                                 Simulação de Entrevista
                                 <span>SALA 33</span>
                             </Link>
