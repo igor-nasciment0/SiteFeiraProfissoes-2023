@@ -40,7 +40,7 @@ export default function Landpage() {
     [
         {pergunta: 'Sobre a alimentação', resposta:'No prédio do Instituto, você também encontrará a nossa lanchonete. Bom apetite!'},
         {pergunta: 'Empresas convidadas', resposta:'Estas são algumas das empresas convidadas para nosso evento:', lista: ['Casa da Mulher Paulistana (Doação de Cabelo)', 'Universidade Ítalo-Brasileiro', 'UNISA', 'STB Intercâmbio', 'Paraoficina', 'SupplyTech', 'Daniela Matos (Nutricionista)', 'São Paulo Open Centre', 'Seguradora Maphre']},
-        {pergunta: 'Como fazer a inscrição?', resposta:'Preencha o formulário ', link: {texto: 'neste link.', url:'https://forms.gle/WR157key1EyZubcDA'}},
+        {pergunta: 'Como fazer a inscrição?', resposta:'Preencha o formulário ', link: {texto: 'neste link.', url:'/inscricao'}},
     ]
 
     return(
@@ -52,7 +52,7 @@ export default function Landpage() {
                     <div>
                         <h1>Esperamos você na</h1>
                         <h2>Feira das Profissões 2023</h2>
-                        <Link to='https://forms.gle/WR157key1EyZubcDA'>Inscreva-se Agora</Link>
+                        <Link to='/inscricao'>Inscreva-se Agora</Link>
                     </div>
 
                     <div className="data">
@@ -125,7 +125,7 @@ export default function Landpage() {
                 <div>
                     <h2>Está gostando?</h2>
                     <h3>Não perca tempo.</h3>
-                    <Link to='https://forms.gle/WR157key1EyZubcDA' >Inscreva-se Agora</Link>
+                    <Link to='/inscricao' >Inscreva-se Agora</Link>
                 </div>
             </section>
 
