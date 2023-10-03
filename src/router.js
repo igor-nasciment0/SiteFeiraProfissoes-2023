@@ -8,6 +8,7 @@ import HomeAdm from './pages/adm/home-adm';
 import Verificar from './pages/adm/verificar-adm';
 import ListagemAdm from './pages/adm/listar salas-adm';
 import ContadorAdm from './pages/adm/contador-adm';
+import ImgFeira from "./pages/exposicaoFeira";
 import { LoginContext } from "./context";
 import { useContext, useState } from "react";
 
@@ -33,6 +34,7 @@ export default function Router()
                 <Routes>
                     <Route path='/' exact={true} element={<Landpage/>}/>
                     <Route path='/inscricao' exact={true} element={<Inscricao/>}/>
+                    <Route path='/ExposicaoFeira' exact={true} element={<ImgFeira/>}/>
                     <Route path='/reservado' exact={true} element={<Reservado/>}/>
                     <Route path='/adm/login' exact={true} element={<LoginAdm/>}/>
                     <Route path='/adm/verificacao' exact={true} element={<Verificar/>} />

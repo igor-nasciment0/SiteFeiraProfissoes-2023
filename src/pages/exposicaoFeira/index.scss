@@ -1,0 +1,42 @@
+.Pag-imgs{
+    display: flex;
+    flex-direction: column;
+
+    .sec-inicio{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        padding: 20px;
+        padding-top: 68px;
+        padding-bottom: 110px;
+
+        background-image: url('../../../public/assets/images/background-quadrados.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+
+        div{
+            display: flex;
+                flex-direction: column;
+                color: #33215B;
+                align-items: flex-end;
+                text-align: right;
+
+                h1{
+                    font-size: 49px;
+                    font-weight: 700;
+                    margin-bottom: 8px;
+                }
+
+                h2{
+                    font-size: 45px;
+                    font-weight: 400;
+                    margin-bottom: 24px;
+                }
+        }
+    }
+
+    
+}
