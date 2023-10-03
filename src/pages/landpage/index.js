@@ -8,6 +8,8 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 import './index.scss';
 import Duvida from '../../components/duvida';
 import Rodape from '../../components/rodape';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { useState } from 'react';
 
 export default function Landpage() {
 
@@ -43,6 +45,24 @@ export default function Landpage() {
         {pergunta: 'Como fazer a inscrição?', resposta:'Preencha o formulário ', link: {texto: 'neste link.', url:'/inscricao'}},
     ]
 
+    const [sombra, setSombra] = useState({boxShadow: 'none'});
+
+    function sombrear() {
+        setSombra({boxShadow: '0 0 4px 2px #33215b'})
+
+        setTimeout(() => {
+            setSombra({boxShadow: 'none'})
+        }, 600);
+
+        setTimeout(() => {
+            setSombra({boxShadow: '0 0 4px 2px #33215b'})
+        }, 900);
+
+        setTimeout(() => {
+            setSombra({boxShadow: 'none'})
+        }, 1700);
+    }
+
     return(
         <div className="pagina-landpage">
             <Cabecalho />
@@ -52,7 +72,7 @@ export default function Landpage() {
                     <div>
                         <h1>Esperamos você na</h1>
                         <h2>Feira das Profissões 2023</h2>
-                        <Link to='/inscricao'>Inscreva-se Agora</Link>
+                        <AnchorLink href='#fotos' offset={300} onClick={sombrear}>Inscreva-se Agora</AnchorLink>
                     </div>
 
                     <div className="data">
@@ -63,7 +83,17 @@ export default function Landpage() {
                 </div>
             </section>
 
-            <section className="sec-tempo">
+            <section className="sec-tempo" id='fotos' style={sombra}>
+                <div className="container-tela">
+                    <h1>Foi incrível!</h1>
+
+                    <p>A 3° Feira de Profissões já passou, e para todos os que participaram, foi uma experiência memorável. Convidamos você a visitar algumas dessas nossas lembranças:</p>
+
+                    <Link>Acessar</Link>
+                </div>
+            </section>
+
+            {/* <section className="sec-tempo">
                 <div className="container-tela">
                     <h1>Faltam:</h1>
 
@@ -86,7 +116,7 @@ export default function Landpage() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <section className="sec-sobre">
                 <div className="container-tela">
@@ -125,7 +155,7 @@ export default function Landpage() {
                 <div>
                     <h2>Está gostando?</h2>
                     <h3>Não perca tempo.</h3>
-                    <Link to='/inscricao' >Inscreva-se Agora</Link>
+                    <AnchorLink href='#fotos' offset={100} onClick={sombrear}>Inscreva-se Agora</AnchorLink>
                 </div>
             </section>
 
