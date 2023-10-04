@@ -1,7 +1,7 @@
 .Pag-imgs{
     display: flex;
     flex-direction: column;
-
+    overflow-x: hidden;
     .sec-inicio{
         display: flex;
         flex-direction: column;
@@ -153,6 +153,18 @@
                 .slide{
                     width: 372px;
                     height: 209px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 411px){
+        .sec-fotos{
+            
+            .expo-images{
+                .slide{
+                    width: 350px;
+                    height: 190px;
                 }
             }
         }
