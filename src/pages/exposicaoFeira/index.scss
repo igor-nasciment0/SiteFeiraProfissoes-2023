@@ -4,7 +4,7 @@
 
     .sec-inicio{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
 
@@ -16,13 +16,13 @@
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: center bottom;
-
+        max-height: 350px;
         div{
             display: flex;
                 flex-direction: column;
                 color: #33215B;
                 align-items: flex-end;
-                text-align: right;
+                text-align: center;
 
                 h1{
                     font-size: 49px;
@@ -36,7 +36,135 @@
                     margin-bottom: 24px;
                 }
         }
+
+        .inicio-agradecimento{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            h3{
+                text-align: center;
+                margin-bottom: 10px;
+                background-color: #f6f6f661;
+            }
+        }
+
+        
+
+       
+    }
+    .sec-fotos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 30px;
+        width: 100%;
+
+        .expo-images{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            overflow-x: hidden;
+            padding: 10px 20px;
+            
+            .slide{
+                width: 870px;
+                height: 489px;
+            }
+
+            .carrosel{
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 30px;
+                max-width: 870px;
+                width: 100%;
+
+                height: 100%;
+
+                .Button-chevron{
+                    background-color: transparent;
+                    outline: none;
+                    border: none;
+                }
+            }
+
+            .carrosel-item{
+                img{
+                    height: 100%;
+                    width:100%;
+                    
+                }
+                
+            }
+        }
+        
     }
 
+    @media screen and (max-width: 1000px){
+        .sec-fotos{
+            .expo-images{
+                .slide{
+                    width: 720px;
+                    height: 400px;
+                }
+        
+                .carrosel{
+                    max-width: 720px;
+                    max-height: 400px;
+                }
+            }
+        }
+        
+    }
+
+    @media screen and (max-width: 770px){
+        .sec-fotos{
+            .expo-images{
+                .slide{
+                    width: 509px;
+                    height: 286px;
+                }
+            }
+        }
+        
+    }
+
+
+    @media screen and (max-width: 700px){
+        .sec-inicio{
+            div{
+                h1{
+                    font-size: 35px;
+                }
+
+                h2{
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 590px){
+        .sec-fotos{
+            
+
+            .expo-images{
+                .slide{
+                    width: 372px;
+                    height: 209px;
+                }
+            }
+        }
+    }
+
+    
+    @media screen and (max-width: 390px){
+        .sec-inicio{
+            max-height: 425px;
+        }
+    }
+
+    
     
 }

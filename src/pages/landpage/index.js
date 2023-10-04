@@ -89,7 +89,7 @@ export default function Landpage() {
 
                     <p>A 3° Feira de Profissões já passou, e para todos os que participaram, foi uma experiência memorável. Convidamos você a visitar algumas dessas nossas lembranças:</p>
 
-                    <Link>Acessar</Link>
+                    <Link to={'/exposicaoFeira'}>Acessar</Link>
                 </div>
             </section>
 
