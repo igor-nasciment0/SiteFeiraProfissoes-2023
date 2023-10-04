@@ -187,6 +187,22 @@
         }
     }
 
+    @media screen and (max-width: 360px){
+        .sec-inicio{
+            max-height: 425px;
+        }
+
+        .sec-fotos{
+            
+            .expo-images{
+                .slide{
+                    width: 315px;
+                    height: 155px;
+                }
+            }
+        }
+    }
+
     
     
 }
