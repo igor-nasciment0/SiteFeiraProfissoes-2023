@@ -2,15 +2,17 @@
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+
     .sec-inicio{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: center;
 
         padding: 20px;
-        padding-top: 68px;
-        padding-bottom: 110px;
+        padding-top: 35px;
+        padding-bottom: 80px;
 
         background-image: url('../../../public/assets/images/background-quadrados.png');
         background-size: 100%;
@@ -18,24 +20,57 @@
         background-position: center bottom;
         max-height: 500px;
         height: 100%;
+
+        border-bottom: solid 15px #44a4df;
+        
         div{
             display: flex;
-                flex-direction: column;
-                color: #33215B;
-                align-items: flex-end;
-                text-align: center;
+            flex-direction: column;
+            color: #33215B;
+            align-items: center;
+            text-align: center;
 
-                h1{
-                    font-size: 49px;
-                    font-weight: 700;
-                    margin:20px 0px;
+            h1{
+                font-size: 49px;
+                font-weight: 700;
+                margin:20px 0px;
+            }
+
+            h2{
+                font-size: 45px;
+                font-weight: 400;
+                margin-bottom: 24px;
+            }
+
+            @media screen and (max-width: 1024px) {
+                h1 {
+                    font-size: 40px;
                 }
 
-                h2{
-                    font-size: 45px;
-                    font-weight: 400;
-                    margin-bottom: 24px;
+                h2 {
+                    font-size: 32px;
                 }
+
+                h3 {
+                    font-size: 16px;
+                }
+            }   
+
+            @media screen and (max-width: 768px) {
+                h1 {
+                    font-size: 35px;
+                }
+
+                h2 {
+                    font-size: 28px;
+                }
+            }
+            
+            @media screen and (max-width: 500px) {
+                h3 {
+                    font-size: 14px;
+                }
+            }
         }
 
         .inicio-agradecimento{
@@ -44,15 +79,13 @@
             align-items: center;
             padding: 10px;
             h3{
+                font-weight: 600;
                 text-align: center;
                 margin-bottom: 10px;
             }
         }
-
-        
-
-       
     }
+
     .sec-fotos{
         display: flex;
         flex-direction: column;
