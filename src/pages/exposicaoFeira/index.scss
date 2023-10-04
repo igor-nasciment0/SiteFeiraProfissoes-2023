@@ -16,7 +16,8 @@
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: center bottom;
-        max-height: 350px;
+        max-height: 500px;
+        height: 100%;
         div{
             display: flex;
                 flex-direction: column;
@@ -27,7 +28,7 @@
                 h1{
                     font-size: 49px;
                     font-weight: 700;
-                    margin:15px 0px;
+                    margin:20px 0px;
                 }
 
                 h2{
@@ -174,7 +175,7 @@
     
     @media screen and (max-width: 390px){
         .sec-inicio{
-            max-height: 425px;
+            max-height: 480px;
         }
 
         .sec-fotos{
@@ -190,7 +191,7 @@
 
     @media screen and (max-width: 360px){
         .sec-inicio{
-            max-height: 425px;
+            max-height: 470px;
         }
 
         .sec-fotos{
@@ -198,6 +199,32 @@
             .expo-images{
                 .slide{
                     width: 315px;
+                    height: 155px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 320px){
+
+        .sec-fotos{
+            
+            .expo-images{
+                .slide{
+                    width: 270px;
+                    height: 155px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 280px){
+
+        .sec-fotos{
+            
+            .expo-images{
+                .slide{
+                    width: 235px;
                     height: 155px;
                 }
             }
