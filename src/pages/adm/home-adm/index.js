@@ -39,12 +39,6 @@ export default function HomeAdm(){
     const navigate = useNavigate();
     const login = useContext(LoginContext)
 
-    useEffect(() => {
-        if(!login.logado)
-        {
-            navigate('/adm/login');
-        }
-    })
 
     return(
         

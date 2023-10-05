@@ -41,13 +41,6 @@ export default function Verificar() {
     const navigate = useNavigate();
     const login = useContext(LoginContext)
 
-    useEffect(() => {
-        if(!login.logado)
-        {
-            navigate('/adm/login');
-        }
-    })
-
     return (
         <div className='page-verificar-adm'>
 

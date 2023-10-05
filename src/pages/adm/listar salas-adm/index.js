@@ -10,12 +10,6 @@ export default function ListagemAdm() {
     const navigate = useNavigate();
     const login = useContext(LoginContext)
 
-    useEffect(() => {
-        if(!login.logado)
-        {
-            navigate('/adm/login');
-        }
-    })
 
     return (
         <div className='pagina-contador-adm'>

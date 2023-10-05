@@ -26,12 +26,6 @@ export default function ContadorAdm() {
     const navigate = useNavigate();
     const login = useContext(LoginContext)
 
-    useEffect(() => {
-        if(!login.logado)
-        {
-            navigate('/adm/login');
-        }
-    })
 
     
     async function AdicionarVisitante() {
