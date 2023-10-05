@@ -54,7 +54,7 @@ export default function ExposicaoFeira(){
                         </Slide>
 
                         <Slide index={4}>
-                            <div className='carrosel-item'><img src='/assets/images/FOTOS FEIRA 2023/carrosel4.jpg'></img></div>
+                            <div className='carrosel-item'><img src='/assets/images/FOTOS FEIRA 2023/carrosel7.jpg'></img></div>
                         </Slide>
                     </Slider>
                     
@@ -73,7 +73,7 @@ export default function ExposicaoFeira(){
 
                     <Slider className='slide'>
                         <Slide index={0}>
-                            <div className='carrosel-item'><img src='/assets/images/FOTOS FEIRA 2023/carrosel7.jpg'></img></div>
+                            <div className='carrosel-item'><img src='/assets/images/FOTOS FEIRA 2023/carrosel4.jpg'></img></div>
                         </Slide>
 
                         <Slide index={1}>
